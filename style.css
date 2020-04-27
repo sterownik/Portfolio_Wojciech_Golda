@@ -31,17 +31,20 @@ body{
 .top p{
     display: block;
     position: absolute;
-    font-size: 18px;
-    font-family: sans-serif;
+    font-size: 20px;
+    font-family: 'Comic Neue', cursive;
     color: #a8dadc;
+    text-shadow: 1px 1px 1px black;
     top: 30%;
     left: 0;
+    padding: 10px;
     transform: translateY(-50%);
-    opacity: 0.8;
+    opacity: 0.9;
     
     width: 100%;
     text-align: center;
 }
+
 
 .top i{
     font-size: 30px;
@@ -108,12 +111,15 @@ nav.active{
 .menu ul li{
     float: left;
     width: 25%;
-  
+   
     text-align: center;
 }
 .menu ul li a{
     font-size: 13px;
     text-align: center;
+    text-shadow: 1px 1px 1px black;
+    display: block;
+    cursor: pointer;
     width: 100%;
     line-height: 30px;
     color: white;
@@ -278,7 +284,7 @@ i.fa-user-graduate{
     }
 }
 section.skills{
-    height: 50vh;
+    height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -323,13 +329,23 @@ div.tlo3{
     right: 15%;
     top: calc(21% + 120px);
 }
+.tlo3 p.tytul{
+    position: absolute;
+    left: 50%;
+    letter-spacing: 10px;
+    top: 5%;
+    font-size: 20px;
+    transform:translateX(-50%);
+    color: black;
+  text-shadow: 2px 2px 2px white;
+}
 .tlo3 p.numer{
     position: absolute;
     text-align: center;
     left: 50%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transform: translateX(-50%);
-    top: 4%;
+    top: 12%;
 }
 /* .tlo3 .fa-html5{
     color: black;
