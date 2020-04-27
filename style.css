@@ -185,7 +185,7 @@ div.highschool .tlo{
     position: absolute;
     top: 20%;
     left: 50%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.5);
     transform: translateX(-50%);
     box-shadow: 0 0 15px #3a506b;
     
@@ -197,6 +197,7 @@ div.highschool .tlo{
     color: black;
     left: 50%;
     width: 80%;
+    font-family: 'Comic Neue', cursive;
     text-align: justify;
     margin-right: 5px;
     box-shadow: 0 0 5px white;
@@ -206,8 +207,9 @@ div.highschool .tlo{
 .tlo p{
     position: absolute;
     top: 50%;
-    font-size: 12px;
+    font-size: 10px;
     color: black;
+    font-family: 'Comic Neue', cursive;
     left: calc(7% + 154px);
     text-align: justify;
     margin-right: 5px;
