@@ -329,7 +329,7 @@ div.tlo3{
     text-align: center;
     left: 15%;
     right: 15%;
-    top: calc(21% + 120px);
+    top: calc(33% + 120px);
 }
 .tlo3 p.tytul{
     position: absolute;
@@ -340,6 +340,16 @@ div.tlo3{
     transform:translateX(-50%);
     color: black;
   text-shadow: 2px 2px 2px white;
+}
+.tlo3 p.umiejetnosc{
+    position: absolute;
+    left: 50%;
+    letter-spacing: 7px;
+    top: calc(23% + 120px);
+    font-size: 30px;
+    transform:translateX(-50%);
+    color: #ffe066;
+  text-shadow: 2px 2px 2px black;
 }
 .tlo3 p.numer{
     position: absolute;
