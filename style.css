@@ -20,7 +20,7 @@ body{
     background-position: bottom;
     min-height: 100vh;
     overflow: hidden;
-    
+    background-attachment: fixed;
   
    
 }
