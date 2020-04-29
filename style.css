@@ -328,8 +328,22 @@ div.tlo3{
     position: absolute;
     text-align: center;
     left: 15%;
+    
     right: 15%;
     top: calc(33% + 120px);
+}
+
+.efektopis{
+    animation: opisefekt 2s;
+}
+    @keyframes opisefekt{
+        0%{
+            transform: scale(1.2);
+            }
+            
+            100%{
+                transform: scale(1);
+            }
 }
 .tlo3 p.tytul{
     position: absolute;
@@ -346,10 +360,45 @@ div.tlo3{
     left: 50%;
     letter-spacing: 7px;
     top: calc(23% + 120px);
+    overflow: hidden;
     font-size: 30px;
     transform:translateX(-50%);
     color: #ffe066;
-  text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px black;
+    
+}
+.tlo3 div.kropki{
+    position: absolute;
+    width: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 12%;
+    border: 2px solid black;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tlo3 div.kropki div.kropka{
+    margin: 2px;
+    border: 2px solid black;
+    height: 80%;
+    flex-basis: 11%;
+    border-radius: 50%;
+
+
+}
+.efekt{
+animation: zwieksz 2s;
+}
+@keyframes zwieksz{
+    0%{
+        transform: translateX(-50%) scale(0.8);
+        }
+        
+        100%{
+            transform: translateX(-50%) scale(1);
+        }
 }
 .tlo3 p.numer{
     position: absolute;
@@ -365,6 +414,8 @@ div.tlo3{
  .active{
     animation:iconsappear 1s ;
 }
+
+
 
 @keyframes iconsappear{
     0%{

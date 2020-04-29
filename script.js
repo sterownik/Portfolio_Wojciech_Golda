@@ -18,15 +18,23 @@ $(".numer").text(licznikikon + 1 + " / " + liczbaumiejetnosci);
 $(".opis").text(opisy[0]);
 $(".umiejetnosc").text(umiejetności[0]);
 
+
+
+
+
 $(".fa-arrow-right").on("click", function () {
 
     $(".fab").removeClass(icons[licznikikon]);
-
+    $(".umiejetnosc").removeClass("efekt");
+    $(".opis").removeClass("efektopis");
 
     licznikikon++;
     $(".fa-arrow-right").animate({ right: '0' }, "slow");
     $(".fa-arrow-right").animate({ right: '5%' }, "slow");
 
+
+    $(".umiejetnosc").animate({ opacity: '0.3' }, "fast");
+    $(".umiejetnosc").animate({ opacity: '1' }, "fast");
 
     if (licznikikon == icons.length) {
         licznikikon = 0;
@@ -35,10 +43,10 @@ $(".fa-arrow-right").on("click", function () {
 
     console.log(licznikikon);
     $(".fab").animate({ opacity: '0' }, "slow");
-
-
+    $(".umiejetnosc").addClass("efekt");
     $(".fab").addClass(icons[licznikikon]);
     $(".opis").text(opisy[licznikikon]);
+    $(".opis").addClass("efektopis");
     $(".umiejetnosc").text(umiejetności[licznikikon]);
     $(".fab").animate({ opacity: '1' }, "slow");
 
@@ -49,7 +57,8 @@ $(".fa-arrow-left").on("click", function () {
     licznikikon--;
     $(".fa-arrow-left").animate({ left: '0' }, "slow");
     $(".fa-arrow-left").animate({ left: '5%' }, "slow");
-
+    $(".umiejetnosc").animate({ opacity: '0.3' }, "fast");
+    $(".umiejetnosc").animate({ opacity: '1' }, "fast");
     if (licznikikon < 0) {
         licznikikon = icons.length - 1;
     }
