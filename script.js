@@ -17,7 +17,7 @@ var liczbaumiejetnosci = icons.length;
 $(".numer").text(licznikikon + 1 + " / " + liczbaumiejetnosci);
 $(".opis").text(opisy[0]);
 $(".umiejetnosc").text(umiejetności[0]);
-
+zmientlo(0);
 
 
 
@@ -27,6 +27,7 @@ $(".fa-arrow-right").on("click", function () {
     $(".fab").removeClass(icons[licznikikon]);
     $(".umiejetnosc").removeClass("efekt");
     $(".opis").removeClass("efektopis");
+
 
     licznikikon++;
     $(".fa-arrow-right").animate({ right: '0' }, "slow");
@@ -41,7 +42,7 @@ $(".fa-arrow-right").on("click", function () {
     }
     $(".numer").text(licznikikon + 1 + " / " + liczbaumiejetnosci);
 
-    console.log(licznikikon);
+    // console.log(licznikikon);
     $(".fab").animate({ opacity: '0' }, "slow");
     $(".umiejetnosc").addClass("efekt");
     $(".fab").addClass(icons[licznikikon]);
@@ -49,6 +50,7 @@ $(".fa-arrow-right").on("click", function () {
     $(".opis").addClass("efektopis");
     $(".umiejetnosc").text(umiejetności[licznikikon]);
     $(".fab").animate({ opacity: '1' }, "slow");
+    zmientlo(licznikikon);
 
 
 })
@@ -62,6 +64,7 @@ $(".fa-arrow-left").on("click", function () {
     if (licznikikon < 0) {
         licznikikon = icons.length - 1;
     }
+    zmientlo(licznikikon);
     $(".numer").text(licznikikon + 1 + " / " + liczbaumiejetnosci)
     console.log(licznikikon);
     $(".fab").animate({ opacity: '0' }, "slow");
@@ -71,6 +74,21 @@ $(".fa-arrow-left").on("click", function () {
 
     $(".fab").animate({ opacity: '1' }, "slow");
 })
+function zmientlo(licznik) {
+    for (i = 1; i <= 8; i++) {
+        $(".tlo3 div.kropki div.kropka:nth-of-type(" + i + ")").removeClass("dodawanietla");
+        $(".tlo3 div.kropki div.kropka:nth-of-type(" + i + ")").removeClass("odejmowanietla");
+        if (i <= licznik + 1) {
+            $(".tlo3 div.kropki div.kropka:nth-of-type(" + i + ")").addClass("dodawanietla");
+            console.log("dodaj" + i);
+
+        }
+        else {
+            console.log("odejmij" + i);
+            $(".tlo3 div.kropki div.kropka:nth-of-type(" + i + ")").addClass("odejmowanietla");
+        }
+    }
+}
 
 function typeWriter() {
     if (i < txt.length) {

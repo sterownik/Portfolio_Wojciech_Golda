@@ -373,7 +373,7 @@ div.tlo3{
     left: 50%;
     transform: translateX(-50%);
     top: 12%;
-    border: 2px solid black;
+    
     height: 5%;
     display: flex;
     justify-content: space-around;
@@ -385,8 +385,12 @@ div.tlo3{
     height: 80%;
     flex-basis: 11%;
     border-radius: 50%;
-
-
+}
+.dodawanietla{
+    background-color: black;
+}
+.odejmowanietla{
+    background-color: transparent;
 }
 .efekt{
 animation: zwieksz 2s;
