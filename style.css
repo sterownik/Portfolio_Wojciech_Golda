@@ -195,13 +195,14 @@ div.highschool .tlo{
     top: calc(20% + 120px);
     font-size: 12px;
     color: black;
+    
     left: 50%;
-    width: 80%;
+    width: 100%;
     font-family: 'Comic Neue', cursive;
     text-align: justify;
     margin-right: 5px;
     box-shadow: 0 0 5px white;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.4);
     transform: translateX(-50%);
 }
 .tlo p{
@@ -286,17 +287,18 @@ i.fa-user-graduate{
     }
 }
 section.skills{
-    height: 60vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-image: url(img/skill2.jpg);
+    
 }
 div.tlo3{
     height: 100%;
     position: relative;
     width: 100%;
-    background-color: rgba(26, 147, 111, 0.7);
+    background-color: rgba(139,69,19, 0.7);
 }
 .tlo3 .fab{
     position: absolute;
@@ -369,12 +371,12 @@ div.tlo3{
 }
 .tlo3 div.kropki{
     position: absolute;
-    width: 15%;
+    width: 30%;
     left: 50%;
     transform: translateX(-50%);
     top: 12%;
     
-    height: 5%;
+    height: 3%;
     display: flex;
     justify-content: space-around;
 }
@@ -435,6 +437,91 @@ animation: zwieksz 2s;
         opacity: 1;
     }
 }
+.tlo4{
+    height: 100vh;
+   
+}
+.projects{
+    height: 100vh;
+    
+    background-color: rgba(0,0,0, 0.7);
+}
+div.first{
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+div.first a{
+    display: none;
+    position: absolute;
+    left: 12%;
+    padding-top: 30px;
+}
+
+div.first img{
+    position: absolute;
+    display: block;
+    height: 50vh;
+   
+    padding:10px 0;
+    
+    
+}
+p.first{
+    position: absolute;
+    right: 5%;
+    width: 40%;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+div.first a:nth-of-type(1){
+    display: block;
+    position: absolute;
+    padding-top: 30px;
+    left: 8%;
+}
+
+
+div.second{
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+div.second a{
+    display: none;
+    
+    right: 8%;
+    
+}
+
+div.second img{
+    position: absolute;
+    display: block;
+    height: 50vh;
+    
+    padding:10px 0;
+    
+    
+}
+p.second{
+    position: absolute;
+    left: 5%;
+    width: 40%;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+div.second a:nth-of-type(1){
+    display: block;
+    position: absolute;
+    left: 53%;
+}
+
+
+
+
+
 
 
 

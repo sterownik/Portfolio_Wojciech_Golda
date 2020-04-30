@@ -1,6 +1,6 @@
 var i = 0;
 var licznikikon = 0;
-var txt = 'Witam, nazywam się Wojciech Gołda i oto moje porfolio.';
+var txt = 'Wojciech Gołda i oto moje porfolio.';
 var speed = 75;
 typeWriter();
 var umiejetności = ["Android", "HTML5", "CSS3", "JavaScript", "Java", "Github", "React.js", "Node.js"];
