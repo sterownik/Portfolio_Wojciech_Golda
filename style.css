@@ -100,10 +100,10 @@ nav.active{
 }
 @keyframes menuappears{
     0%{
-        left: -100%;
+        top: -100%;
     }
     100%{
-        left: 0%;
+        top: 0;
     }
 }
 .menu ul{
@@ -145,7 +145,7 @@ div.highschool{
     position: absolute;
     top:0;
     left: 0;
-    padding: 20px;
+  
     background-image:url(img/highschool.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,7 +159,7 @@ div.studies{
     position: absolute;
     top:50% ;
     left: 0;
-    padding: 20px;
+   
     
     background-image:url(img/uniwersytet.jpg);
     background-repeat: no-repeat;
@@ -182,22 +182,44 @@ div.highschool .tlo{
 .tlo .budynek{
     width: 150px;
     position: absolute;
-    top: 20%;
     left: 50%;
-    transform: translateX(-50%);
+    top: 20%;
+    
+    transform: translateX(-100vw);
     box-shadow: 0 0 15px #3a506b;
     
 }
+.budynek.activeb{
+    animation:  szkola 2s both linear;
+} 
+@keyframes szkola{
+    0%{
+        transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
 .tlo2 .budynek{
-    
     height: 100px;
     position: absolute;
     top: 20%;
     left: 50%;
     background-color: rgba(0,0,0,0.5);
-    transform: translateX(-50%);
+    transform: translateX(100%);
     box-shadow: 0 0 15px #3a506b;
-    
+}
+.tlo2 .budynek.active{
+    animation:tlo2budynek 2s both linear;
+}
+@keyframes tlo2budynek{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
 }
 .tlo2 p{
     position: absolute;
@@ -205,16 +227,26 @@ div.highschool .tlo{
     font-size: 14px;
     color: black;
     width: calc(100% - 40px);
-    
-    
+    padding: 0 10px;
+    width: 100%;
+    left: -100%;
     font-family: 'Comic Neue', cursive;
     text-align: justify;
-    
     box-shadow: 0 0 5px white;
-   
     background-color: rgba(255,255,255,0.4);
-    
 }
+.tlo2 p.tekst2{
+    animation: tekst2 2s linear both;
+    }
+@keyframes tekst2{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
 .tlo p{
     position: absolute;
     bottom: 20px;
@@ -223,10 +255,22 @@ div.highschool .tlo{
     font-family: 'Comic Neue', cursive;
     width: calc(100% - 40px);
     text-align: justify;
-    margin-right: 5px;
+    right: -100%;
+    width: 100%;
+    padding: 0 10px;
     box-shadow: 0 0 3px white;
     background-color: rgba(255,255,255,0.5);
-    
+}
+.tlo p.tekst{
+animation: tekst 2s linear both;
+}
+@keyframes tekst{
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 0%;
+    }
 }
 i.fa-graduation-cap{
     color: rgb(58,80,107);

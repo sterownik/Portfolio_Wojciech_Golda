@@ -150,3 +150,27 @@ $(".menu ul li a.kontakty").on("click", function () {
 })
 
 
+$(window).on("scroll", function () {
+    const skroll = $(window).scrollTop();
+    const wys2 = $(".highschool").outerHeight();
+    const pos2 = $(".highschool").offset().top;
+
+    const wys3 = $(".studies").outerHeight();
+    const pos3 = $(".studies").offset().top;
+
+    const windowHeight = $(window).height();
+
+    if (skroll > pos2 + wys2 - windowHeight) {
+        $(".tlo .budynek").addClass("activeb");
+        $(".tlo p").addClass("tekst");
+        console.log("teraz");
+    }
+
+    if (skroll > pos3 + wys2 - windowHeight) {
+        $(".tlo2 .budynek").addClass("active");
+        $(".tlo2 p").addClass("tekst2");
+
+    }
+})
+
+
