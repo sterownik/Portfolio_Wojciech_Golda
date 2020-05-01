@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" href="img/ikonastronny.png">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
     <link href="dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
@@ -15,15 +16,14 @@
     <div class="wrapper">
         <header class="top">
 
-            <p id="text"></p>
+            <p id="text2"></p>
             <i class="fas fa-arrow-down"></i>
         </header>
-        <nav class="menu">
-            <ul>
-                <li><a href="">Nauka</a></li>
-                <li><a href="">Projekty</a></li>
-                <li><a href="">Pasje</a></li>
-                <li><a href="">Kontakt</a></li>
+        <nav class="menu clearfix">
+            <ul class="clearfix">
+                <li><a class="nauka" href="#">Nauka</a></li>
+                <li><a class="projekty" href="#">Projekty</a></li>
+                <li><a class="kontakty" href="#">Kontakt</a></li>
             </ul>
         </nav>
         <section class="schools">
@@ -72,57 +72,105 @@
                 <p class="opis">Mam roczne komercyjne doświadczenie w programowaniu aplikacji na system android
                     dodatkowo tematem mojej pracy inżynierskiej było między innymi zaprogramowanie aplikacji mobilnej
                 </p>
-                <p class="numer"></p>
+
 
             </div>
-            </sectiom>
-            <section class="projects">
-                <div class="tlo4">
-                    <div class="first">
+        </section>
+        <section class="projects">
+            <div class="tlo4">
+                <div class="first">
 
-                        <a data-lightbox="obrazek 1" href="img/gra1.jpg">
-                            <div class="divik"></div>
-                            <img src="img/gra1thumb.jpg" alt="Miniatura">
-                        </a>
-                        <a data-lightbox="obrazek 1" href="img/gra2.jpg">
-                            <img src="img/gra2thumb.jpg" alt="Miniatura"></a>
-                        <a data-lightbox="obrazek 1" href="img/gra3.jpg">
-                            <img src="img/gra3thumb.jpg" alt="Miniatura"></a>
-                        <a data-lightbox="obrazek 1" href="img/gra4.jpg">
-                            <img src="img/gra4thumb.jpg" alt="Miniatura"></a>
-                        <a data-lightbox="obrazek 1" href="img/gra5.jpg">
-                            <img src="img/gra5thumb.jpg" alt="Miniatura"></a>
-                        <a data-lightbox="obrazek 1" href="img/gra6.jpg">
-                            <img src="img/gra6thumb.jpg" alt="Miniatura"></a>
-                        <a data-lightbox="obrazek 1" href="img/gra7.jpg">
-                            <img src="img/gra7thumb.jpg" alt="Miniatura"></a>
-                        <p class="first">Projekt aplikacji Referee Master</p>
-                    </div>
-
-                    <div class="second">
-
-                        <a data-lightbox="obrazek 2" href="img/second.jpg">
-                            <div class="divik"></div>
-                            <img src="img/secondtheme.jpg" alt="Miniatura">
-                        </a>
-                        <a data-lightbox="obrazek 2" href="img/first.jpg">
-                            <img src="img/firsttheme.jpg" alt="Miniatura"></a>
-                        <a data-lightbox="obrazek 2" href="img/three.jpg">
-                            <img src="img/threetheme.jpg" alt="Miniatura"></a>
-                        <a data-lightbox="obrazek 2" href="img/four.jpg">
-                            <img src="img/fourtheme.jpg" alt="Miniatura"></a>
-                        <a data-lightbox="obrazek 2" href="img/five.jpg">
-                            <img src="img/fivetheme.jpg" alt="Miniatura"></a>
-                        <a data-lightbox="obrazek 2" href="img/six.jpg">
-                            <img src="img/sixtheme.jpg" alt="Miniatura"></a>
-
-                        <p class="second">Projekt aplikacji mFiszki</p>
-                    </div>
+                    <a class="trzeci" data-lightbox="obrazek 1" href="img/gra1.jpg">
+                        <div class="divik"></div>
+                        <img class="focus" src="img/focus.png" alt="">
+                        <img class="git" src="img/git-logo.png" alt="">
+                        <img class="wlasciwe" src="img/gra1thumb.jpg" alt="Miniatura">
+                    </a>
+                    <a data-lightbox="obrazek 1" href="img/gra2.jpg">
+                        <img src="img/gra2thumb.jpg" alt="Miniatura"></a>
+                    <a data-lightbox="obrazek 1" href="img/gra3.jpg">
+                        <img src="img/gra3thumb.jpg" alt="Miniatura"></a>
+                    <a data-lightbox="obrazek 1" href="img/gra4.jpg">
+                        <img src="img/gra4thumb.jpg" alt="Miniatura"></a>
+                    <a data-lightbox="obrazek 1" href="img/gra5.jpg">
+                        <img src="img/gra5thumb.jpg" alt="Miniatura"></a>
+                    <a data-lightbox="obrazek 1" href="img/gra6.jpg">
+                        <img src="img/gra6thumb.jpg" alt="Miniatura"></a>
+                    <a data-lightbox="obrazek 1" href="img/gra7.jpg">
+                        <img src="img/gra7thumb.jpg" alt="Miniatura"></a>
+                    <p class="first">Projekt aplikacji Referee Master</p>
                 </div>
-            </section>
+
+                <div class="second">
+
+                    <a class="drugi" data-lightbox="obrazek 2" href="img/second.jpg">
+                        <div class="divik"></div>
+                        <img class="focus" src="img/focus.png" alt="">
+                        <img class="git" src="img/git-logo.png" alt="">
+                        <img class="wlasciwe" src="img/secondtheme.jpg" alt="Miniatura">
+                    </a>
+                    <a data-lightbox="obrazek 2" href="img/first.jpg">
+                        <img src="img/firsttheme.jpg" alt="Miniatura"></a>
+                    <a data-lightbox="obrazek 2" href="img/three.jpg">
+                        <img src="img/threetheme.jpg" alt="Miniatura"></a>
+                    <a data-lightbox="obrazek 2" href="img/four.jpg">
+                        <img src="img/fourtheme.jpg" alt="Miniatura"></a>
+                    <a data-lightbox="obrazek 2" href="img/five.jpg">
+                        <img src="img/fivetheme.jpg" alt="Miniatura"></a>
+                    <a data-lightbox="obrazek 2" href="img/six.jpg">
+                        <img src="img/sixtheme.jpg" alt="Miniatura"></a>
+                    <p class="second">Projekt aplikacji mFiszki</p>
+                </div>
+                <div class="three">
+
+
+                    <a class="trzeci" data-lightbox="obrazek 3" href="img/proj3.jpeg">
+
+                        <img class="wlasciwe" src="img/proj3theme.jpeg" alt="Miniatura">
+                        <img class="focus" src="img/focus.png" alt="">
+                        <img class="git" src="img/git-logo.png" alt="">
+                    </a>
+                    <p class="three">Projekt aplikacji pogodowej</p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <div class="rest">
+            <div class="logogita"><img src="img/gicik.png" alt=""></i></div>
+        </div>
+
     </div>
+    <section class="contact">
+        <div class="container">
+            <div class="form-container">
+                <h1>
+                    Contact Us
+                </h1>
+                <form method="post" id="reused_form">
+                    <label for="name">Twoje imię:</label>
+                    <input id="name" type="text" name="Name" required maxlength="50">
+                    <label for="email">Twój mail:</label>
+                    <input id="email" type="email" name="Email" required maxlength="50">
+                    <label for="message">Wiadomość:</label>
+                    <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+                    <button class="button-primary" type="submit">Wyślij</button>
+                </form>
+                <div id="success_message" style="display:none">
+                    <h3>Submitted the form successfully!</h3>
+                    <p> We will get back to you soon. </p>
+                </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3> Sorry there was an error sending your form.
+                </div>
+            </div>
+        </div>
+    </section>
 
-
+    <footer>
+        <p>Wojciech Gołda &copy; 2020 </p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"
         integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>

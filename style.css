@@ -7,6 +7,7 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-image: url(img/drogamleczna.jpg);
+    position: relative;
    
     
     
@@ -87,7 +88,7 @@ body{
     height: 30px;
     background-color:rgb(58,80,107);
     border-bottom: 2px solid rgb(58,80,107);
-    z-index: 1;
+    z-index: 4;
 }
 nav.active{
     display: block;
@@ -110,10 +111,15 @@ nav.active{
 }
 .menu ul li{
     float: left;
-    width: 25%;
+    width: 33.333%;
    
     text-align: center;
 }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 .menu ul li a{
     font-size: 13px;
     text-align: center;
@@ -139,6 +145,7 @@ div.highschool{
     position: absolute;
     top:0;
     left: 0;
+    padding: 20px;
     background-image:url(img/highschool.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,6 +159,8 @@ div.studies{
     position: absolute;
     top:50% ;
     left: 0;
+    padding: 20px;
+    
     background-image:url(img/uniwersytet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,9 +182,9 @@ div.highschool .tlo{
 .tlo .budynek{
     width: 150px;
     position: absolute;
-    top: 50%;
-    left: 7%;
-    transform: translateY(-50%);
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
     box-shadow: 0 0 15px #3a506b;
     
 }
@@ -192,31 +201,32 @@ div.highschool .tlo{
 }
 .tlo2 p{
     position: absolute;
-    top: calc(20% + 120px);
-    font-size: 12px;
+    bottom: 20px;
+    font-size: 14px;
     color: black;
+    width: calc(100% - 40px);
     
-    left: 50%;
-    width: 100%;
+    
     font-family: 'Comic Neue', cursive;
     text-align: justify;
-    margin-right: 5px;
+    
     box-shadow: 0 0 5px white;
+   
     background-color: rgba(255,255,255,0.4);
-    transform: translateX(-50%);
+    
 }
 .tlo p{
     position: absolute;
-    top: 50%;
-    font-size: 10px;
+    bottom: 20px;
+    font-size: 15px;
     color: black;
     font-family: 'Comic Neue', cursive;
-    left: calc(7% + 154px);
+    width: calc(100% - 40px);
     text-align: justify;
     margin-right: 5px;
-    box-shadow: 0 0 5px white;
+    box-shadow: 0 0 3px white;
     background-color: rgba(255,255,255,0.5);
-    transform: translateY(-50%);
+    
 }
 i.fa-graduation-cap{
     color: rgb(58,80,107);
@@ -287,18 +297,19 @@ i.fa-user-graduate{
     }
 }
 section.skills{
-    height: 100vh;
+    height: 70vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(img/skill2.jpg);
+    /* background-image: url(img/skill2.jpg); */
+    
     
 }
 div.tlo3{
     height: 100%;
     position: relative;
     width: 100%;
-    background-color: rgba(139,69,19, 0.7);
+     background-color: rgba(0,0,0, 0.7);
 }
 .tlo3 .fab{
     position: absolute;
@@ -317,6 +328,7 @@ div.tlo3{
     position: absolute;
     top: 30%;
     right: 5%;
+    color: #b8f2e6;
     font-size: 70px;
     
 }
@@ -324,13 +336,14 @@ div.tlo3{
     position: absolute;
     top: 30%;
     left: 5%;
+    color: #b8f2e6;
     font-size: 70px;
 }
 .tlo3 p.opis{
     position: absolute;
     text-align: center;
     left: 15%;
-    
+    color: #d9dbbc;
     right: 15%;
     top: calc(33% + 120px);
 }
@@ -354,8 +367,8 @@ div.tlo3{
     top: 5%;
     font-size: 20px;
     transform:translateX(-50%);
-    color: black;
-  text-shadow: 2px 2px 2px white;
+    color: #b8f2e6;
+  text-shadow: 2px 2px 2px #007300;
 }
 .tlo3 p.umiejetnosc{
     position: absolute;
@@ -365,8 +378,8 @@ div.tlo3{
     overflow: hidden;
     font-size: 30px;
     transform:translateX(-50%);
-    color: #ffe066;
-    text-shadow: 2px 2px 2px black;
+    color: #b8f2e6;
+    text-shadow: 2px 2px 2px #7d8597;
     
 }
 .tlo3 div.kropki{
@@ -383,13 +396,13 @@ div.tlo3{
 
 .tlo3 div.kropki div.kropka{
     margin: 2px;
-    border: 2px solid black;
+    border: 2px solid #d9dbbc;
     height: 80%;
     flex-basis: 11%;
     border-radius: 50%;
 }
 .dodawanietla{
-    background-color: black;
+    background-color: #d9dbbc;
 }
 .odejmowanietla{
     background-color: transparent;
@@ -442,8 +455,8 @@ animation: zwieksz 2s;
    
 }
 .projects{
-    height: 100vh;
-    
+    height: 150vh;
+    position: relative;
     background-color: rgba(0,0,0, 0.7);
 }
 div.first{
@@ -454,8 +467,8 @@ div.first{
 div.first a{
     display: none;
     position: absolute;
-    left: 12%;
-    padding-top: 30px;
+    left: 53%;
+    
 }
 
 div.first img{
@@ -469,7 +482,7 @@ div.first img{
 }
 p.first{
     position: absolute;
-    right: 5%;
+    left: 5%;
     width: 40%;
     color: white;
     top: 50%;
@@ -478,9 +491,72 @@ p.first{
 div.first a:nth-of-type(1){
     display: block;
     position: absolute;
-    padding-top: 30px;
-    left: 8%;
+    
+    left: 53%;
 }
+
+
+
+
+
+div.three{
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+div.three a{
+    display: none;
+    right: 8%;
+}
+
+div.three img.wlasciwe{
+    margin: 0 auto;
+    display: block;
+    height: 50vh;
+    width: 100%;
+    padding:10px 0;
+    filter: blur(1px);
+    
+}
+p.three{
+    position: absolute;
+    left: 5%;
+    width: 40%;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+div.three a:nth-of-type(1){
+    display: block;
+    position: absolute;
+    
+    height: 100%;
+    left: 53%;
+    pointer-events: none;
+}
+div.three img.focus{
+    position: absolute;
+    z-index: 2;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 50px;
+    opacity: 1;
+    pointer-events: all;
+    height: 60px;
+}
+
+div.three img.git{
+    position: absolute;
+    z-index: 2;
+   left: 50%;
+   
+   transform: translateX(-50%);
+   pointer-events: all;
+   top: 160px;
+    opacity: 1;
+    height: 60px;
+}
+
 
 
 div.second{
@@ -490,18 +566,16 @@ div.second{
 }
 div.second a{
     display: none;
-    
     right: 8%;
-    
 }
 
-div.second img{
-    position: absolute;
+div.second img.wlasciwe{
+    margin: 0 auto;
     display: block;
     height: 50vh;
-    
+    width: 100%;
     padding:10px 0;
-    
+    filter: blur(1px);
     
 }
 p.second{
@@ -515,8 +589,192 @@ p.second{
 div.second a:nth-of-type(1){
     display: block;
     position: absolute;
+    
+    height: 100%;
     left: 53%;
+    pointer-events: none;
 }
+div.second img.focus{
+    position: absolute;
+    z-index: 2;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 50px;
+    opacity: 1;
+    pointer-events: all;
+    height: 60px;
+}
+
+div.second img.git{
+    position: absolute;
+    z-index: 2;
+   left: 50%;
+   
+   transform: translateX(-50%);
+   pointer-events: all;
+   top: 160px;
+    opacity: 1;
+    height: 60px;
+}
+
+
+div.first{
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+div.first a{
+    display: none;
+    right: 8%;
+}
+
+div.first img.wlasciwe{
+    margin: 0 auto;
+    display: block;
+    height: 50vh;
+    width: 100%;
+    padding:10px 0;
+    filter: blur(1px);
+    
+}
+p.first{
+    position: absolute;
+    left: 5%;
+    width: 40%;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+div.first a:nth-of-type(1){
+    display: block;
+    position: absolute;
+    
+    height: 100%;
+    left: 53%;
+    pointer-events: none;
+}
+div.first img.focus{
+    position: absolute;
+    z-index: 2;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 50px;
+    opacity: 1;
+    pointer-events: all;
+    height: 80px;
+}
+
+div.first img.git{
+    position: absolute;
+    z-index: 2;
+   left: 50%;
+   
+   transform: translateX(-50%);
+   pointer-events: all;
+   top: 160px;
+    opacity: 1;
+    height: 80px;
+}
+div.rest{
+    position: relative;
+    height: 12vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+div.logogita{
+    background-color: #fca311;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    animation: swiecenie 6s infinite linear alternate-reverse;
+}
+div.rest img{
+    
+    padding: 10px;
+    height: 60px;
+    
+}
+@keyframes swiecenie{
+    0%{
+        transform: translate(-50%,-50%) scale(0.7) ;
+        box-shadow: 0 0 10px #fca311;
+    }
+    100%{
+        transform: translate(-50%,-50%) scale(1) ;
+        box-shadow: 0 0 50px #fca311;
+    }
+}
+footer{
+    height: 4vh;
+    width: 100vw;
+    background-color: black;
+}
+footer p{
+    color: white;
+    text-align: center;
+    line-height: 4vh;
+}
+section.contact{
+    
+}
+
+
+@media  only screen and (min-device-width: 768px) 
+{
+    .form-container {
+      padding: 5%;
+      background: #ffffff;
+      border: 9px solid #f2f2f2;            
+      max-width: 520px;
+      margin: auto;
+    }
+
+}
+
+.contact h1, p 
+{
+  text-align: center;
+  color: #2ec4b6;
+}
+.contact label{
+    color: #2ec4b6;
+    width: 100%;
+    text-align: center;
+}
+
+.contact input, textarea , button
+{
+  width: 100%;
+  background-color: #ddd;
+}    
+.contact textarea
+{
+  height: 100px;
+  background-color: #ddd;
+}
+.container{
+    background-color: rgba(0,0,0,0.7);
+}
+.button-primary{
+    text-align: center;
+    width: 90%;
+    margin: 2% 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 8px;
+    border: none;
+}
+
+
+
+
+
+
+
 
 
 

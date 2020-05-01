@@ -1,6 +1,7 @@
 var i = 0;
+var w = 0;
 var licznikikon = 0;
-var txt = 'Wojciech Gołda i oto moje porfolio.';
+var txt3 = "Nazywam się Wojciech Gołda i oto moje portfolio";
 var speed = 75;
 typeWriter();
 var umiejetności = ["Android", "HTML5", "CSS3", "JavaScript", "Java", "Github", "React.js", "Node.js"];
@@ -14,7 +15,6 @@ var opisy = ["Mam roczne komercyjne doświadczenie w programowaniu aplikacji na 
     "Reacta zaczałem uczyć sie od miesiąca i staram się go coraz bardziej poznawać"
     , "W przyszłości planuje zgłebiać swoją wiedze na temad Node.js"];
 var liczbaumiejetnosci = icons.length;
-$(".numer").text(licznikikon + 1 + " / " + liczbaumiejetnosci);
 $(".opis").text(opisy[0]);
 $(".umiejetnosc").text(umiejetności[0]);
 zmientlo(0);
@@ -40,7 +40,7 @@ $(".fa-arrow-right").on("click", function () {
     if (licznikikon == icons.length) {
         licznikikon = 0;
     }
-    $(".numer").text(licznikikon + 1 + " / " + liczbaumiejetnosci);
+
 
     // console.log(licznikikon);
     $(".fab").animate({ opacity: '0' }, "slow");
@@ -65,7 +65,7 @@ $(".fa-arrow-left").on("click", function () {
         licznikikon = icons.length - 1;
     }
     zmientlo(licznikikon);
-    $(".numer").text(licznikikon + 1 + " / " + liczbaumiejetnosci)
+
     console.log(licznikikon);
     $(".fab").animate({ opacity: '0' }, "slow");
     $(".fab").addClass(icons[licznikikon]);
@@ -91,9 +91,9 @@ function zmientlo(licznik) {
 }
 
 function typeWriter() {
-    if (i < txt.length) {
-        document.getElementById("text").innerHTML += txt.charAt(i);
-        i++;
+    if (w < txt3.length) {
+        document.getElementById("text2").innerHTML += txt3.charAt(w);
+        w++;
         setTimeout(typeWriter, speed);
     }
 }
@@ -114,6 +114,39 @@ $(".fa-arrow-down").on("click", function () {
     }, 1000);
     setTimeout(function () { $('.menu ').addClass("active"); }, 1000);
 
+})
+
+
+
+$("div.three img.git").on("click", function () {
+    document.querySelector("div.three a:nth-of-type(1)").href = "#";
+    window.open("https://github.com/sterownik/mPogoda", "_self");
+})
+$("div.second img.git").on("click", function () {
+    document.querySelector("div.three a:nth-of-type(1)").href = "#";
+    window.open("https://github.com/sterownik/mPogoda", "_self");
+})
+$("div.three img.git").on("click", function () {
+    document.querySelector("div.three a:nth-of-type(1)").href = "#";
+    window.open("https://github.com/sterownik/mPogoda", "_self");
+})
+$("div.logogita").on("click", function () {
+    window.open("https://github.com/sterownik?tab=repositories", "_self");
+})
+$(".menu ul li a.nauka").on("click", function () {
+    $('body,html').animate({
+        scrollTop: $(".schools").offset().top
+    }, 1000);
+})
+$(".menu ul li a.projekty").on("click", function () {
+    $('body,html').animate({
+        scrollTop: $(".projects").offset().top
+    }, 1000);
+})
+$(".menu ul li a.kontakty").on("click", function () {
+    $('body,html').animate({
+        scrollTop: $(".contact").offset().top
+    }, 1000);
 })
 
 
