@@ -41,7 +41,6 @@ body{
     padding: 10px;
     transform: translateY(-50%);
     opacity: 0.9;
-    
     width: 100%;
     text-align: center;
 }
@@ -364,7 +363,7 @@ div.tlo3{
     color: #007300;
     transform: translateX(-50%) scale(0.2);
     border: 2px solid transparent;
-    background-color: #88d498;
+    background-color: #ffffff;
     border-radius: 50%;
     padding: 15px;
     box-shadow:  0 0 10px white;
@@ -423,8 +422,8 @@ div.tlo3{
     color: #d9dbbc;
     right: 15%;
     transform: rotate(10%);
-    
-    top: 200%;
+    top: 100%;
+    /* top: calc(33% + 120px); */
 }
 .dodajopiszdolu{
     animation: opiszdolu 2s linear both;
@@ -440,14 +439,16 @@ div.tlo3{
 
 
 .efektopis{
-    animation: opisefekt 2s;
+    animation: opisefekt 2s both;
 }
     @keyframes opisefekt{
         0%{
+            top: calc(33% + 120px);
             transform: scale(1.2);
             }
             
             100%{
+                top: calc(33% + 120px);
                 transform: scale(1);
             }
 }
@@ -612,18 +613,16 @@ div.first{
 }
 div.first a{
     display: none;
-    position: absolute;
-    left: 53%;
-    
+    right: 8%;
 }
 
-div.first img{
-    position: absolute;
+div.first img.wlasciwe{
+    margin: 0 auto;
     display: block;
     height: 50vh;
-   
+    width: 100%;
     padding:10px 0;
-    
+    filter: blur(1px);
     
 }
 p.first{
@@ -632,14 +631,75 @@ p.first{
     width: 40%;
     color: white;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-120%);
 }
 div.first a:nth-of-type(1){
     display: block;
     position: absolute;
-    
+    transform: translateX(50vw);
+    height: 100%;
     left: 53%;
+    pointer-events: none;
+   
 }
+div.second{
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+div.second a{
+    display: none;
+    right: 8%;
+}
+
+div.second img.wlasciwe{
+    margin: 0 auto;
+    display: block;
+    height: 50vh;
+    width: 100%;
+    padding:10px 0;
+    filter: blur(1px);
+    
+}
+p.second{
+    position: absolute;
+    left: 5%;
+    width: 40%;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%) translateX(-120%);
+}
+div.second a:nth-of-type(1){
+    display: block;
+    position: absolute;
+    transform: translateX(50vw);
+    height: 100%;
+    left: 53%;
+    pointer-events: none;
+}
+div.second img.focus{
+    position: absolute;
+    z-index: 2;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 50px;
+    opacity: 1;
+    pointer-events: all;
+    height: 60px;
+}
+
+div.second img.git{
+    position: absolute;
+    z-index: 2;
+   left: 50%;
+   
+   transform: translateX(-50%);
+   pointer-events: all;
+   top: 160px;
+    opacity: 1;
+    height: 60px;
+}
+
 
 
 
@@ -671,7 +731,10 @@ p.three{
     color: white;
     top: 50%;
     transform: translateY(-50%) translateX(-120%);
-    animation:animacjanapisprojekt 2s both linear ;
+    
+}
+.animacjatytulprojektu{
+    animation:animacjanapisprojekt 2s both linear;
 }
 @keyframes animacjanapisprojekt{
     0%{
@@ -714,101 +777,10 @@ div.three img.git{
 
 
 
-div.second{
-    position: relative;
-    height: 50%;
-    width: 100%;
-}
-div.second a{
-    display: none;
-    right: 8%;
-}
-
-div.second img.wlasciwe{
-    margin: 0 auto;
-    display: block;
-    height: 50vh;
-    width: 100%;
-    padding:10px 0;
-    filter: blur(1px);
-    
-}
-p.second{
-    position: absolute;
-    left: 5%;
-    width: 40%;
-    color: white;
-    top: 50%;
-    transform: translateY(-50%);
-}
-div.second a:nth-of-type(1){
-    display: block;
-    position: absolute;
-    transform: translateX(50vw);
-    height: 100%;
-    left: 53%;
-    pointer-events: none;
-}
-div.second img.focus{
-    position: absolute;
-    z-index: 2;
-   left: 50%;
-   transform: translateX(-50%);
-   top: 50px;
-    opacity: 1;
-    pointer-events: all;
-    height: 60px;
-}
-
-div.second img.git{
-    position: absolute;
-    z-index: 2;
-   left: 50%;
-   
-   transform: translateX(-50%);
-   pointer-events: all;
-   top: 160px;
-    opacity: 1;
-    height: 60px;
-}
 
 
-div.first{
-    position: relative;
-    height: 50%;
-    width: 100%;
-}
-div.first a{
-    display: none;
-    right: 8%;
-}
 
-div.first img.wlasciwe{
-    margin: 0 auto;
-    display: block;
-    height: 50vh;
-    width: 100%;
-    padding:10px 0;
-    filter: blur(1px);
-    
-}
-p.first{
-    position: absolute;
-    left: 5%;
-    width: 40%;
-    color: white;
-    top: 50%;
-    transform: translateY(-50%);
-}
-div.first a:nth-of-type(1){
-    display: block;
-    position: absolute;
-    transform: translateX(50vw);
-    height: 100%;
-    left: 53%;
-    pointer-events: none;
-   
-}
+
 .klasaprojektyanimacja{
     animation: animacjaprojekty 2s both linear;
 }
@@ -840,7 +812,7 @@ div.first img.git{
    pointer-events: all;
    top: 160px;
     opacity: 1;
-    height: 80px;
+    height: 60px;
 }
 div.rest{
     position: relative;
@@ -888,17 +860,7 @@ section.contact{
 }
 
 
-@media  only screen and (min-device-width: 768px) 
-{
-    .form-container {
-      padding: 5%;
-      background: #ffffff;
-      border: 9px solid #f2f2f2;            
-      max-width: 520px;
-      margin: auto;
-    }
 
-}
 
 .contact h1, p 
 {
@@ -934,6 +896,191 @@ section.contact{
     border-radius: 5%;
     padding: 8px;
     border: none;
+}
+
+@media  only screen and (min-device-width: 768px) 
+{
+    .form-container {
+      padding: 5%;
+      background: #ffffff;
+      border: 9px solid #f2f2f2;            
+      max-width: 520px;
+      margin: auto;
+    }
+
+}
+@media (min-width: 768px) 
+{
+    .top p{
+        font-size: 60px;
+    }
+    .menu {
+        height: 60px;
+    }
+    .menu ul li a{
+        font-size: 23px;
+        
+        line-height: 60px;
+        
+    }
+    .top i{
+        font-size: 60px;
+       
+    }
+
+    .tlo p{
+       
+        font-size: 28px;
+        
+    }
+    .tlo .budynek{
+        width: 350px;
+        top: 10%;
+    }
+    .tlo2 .budynek{
+        
+        height: 250px;
+        top: 10%;
+    }
+    .tlo2 p{
+       
+        font-size: 28px;
+        
+    }
+    .tlo3 p.tytul{
+        
+        letter-spacing: 12px;
+        
+        font-size: 56px;
+       
+    }
+
+    .tlo3 div.kropki{
+        
+        top: 20%;
+        
+    }
+    .tlo3 .fab{
+      
+        top: 26%;
+        
+        font-size: 120px;
+        
+    }
+
+    .tlo3 p.umiejetnosc{
+        letter-spacing: 7px;
+        top: calc(46% + 80px);
+        font-size: 60px;
+    }
+    .tlo3 p.opis{
+        position: absolute;
+        text-align: center;
+        left: 8%;
+        font-size: 32px;
+        color: #d9dbbc;
+        right: 8%;
+        transform: rotate(10%);
+        top: 100%;
+        /* top: calc(33% + 120px); */
+    }
+    .dodajopiszdolu{
+        animation: opiszdolu 2s linear both;
+    }
+    @keyframes opiszdolu{
+        0%{
+            top: 100%;
+        }
+        100%{
+            top: calc(53% + 120px);
+        }
+    }
+    .efektopis{
+        animation: opisefekt 2s both;
+    }
+        @keyframes opisefekt{
+            0%{
+                top: calc(53% + 120px);
+                transform: scale(1.2);
+                }
+                
+                100%{
+                    top: calc(53% + 120px);
+                    transform: scale(1);
+                }
+    }
+    div.first{
+        position: relative;
+        height: 50%;
+        width: 100%;
+    }
+    div.first a{
+        display: none;
+        position: absolute;
+        left: 73%;
+    }
+    div.first img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        width: 40vw;
+        padding:10px 0;
+        filter: blur(3px);
+    }
+    div.second img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        width: 40vw;
+        padding:10px 0;
+        filter: blur(3px);
+    }
+    div.three img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        width: 40vw;
+        padding:10px 0;
+        filter: blur(3px);
+    }
+    div.first img.git{
+        height: 80px;
+       top: 260px;
+    }
+    div.second img.git{
+        height: 80px;
+       top: 260px;
+    }
+    div.three img.git{
+        height: 80px;
+       top: 260px;
+    }
+    div.first img.focus{
+        height: 80px;
+       top: 160px; 
+    }
+    div.second img.focus{
+        height: 80px;
+        top: 160px; 
+     }
+     div.three img.focus{
+        height: 80px;
+        top: 160px; 
+     }
+     div.rest img{
+    
+        padding: 10px;
+        height: 80px;
+        
+    }
+    p.first{
+        
+        font-size: 35px;
+        
+    }
+    p.second{
+        font-size: 35px;
+    }
+    p.three{
+        font-size: 35px;
+    }
 }
 
 

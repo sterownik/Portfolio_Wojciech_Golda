@@ -23,6 +23,7 @@ zmientlo(0);
 
 
 $(".fa-arrow-right").on("click", function () {
+    $("p.opis").removeClass("dodajopiszdolu");
 
     $(".fab").removeClass(icons[licznikikon]);
     $(".umiejetnosc").removeClass("efekt");
@@ -55,6 +56,7 @@ $(".fa-arrow-right").on("click", function () {
 
 })
 $(".fa-arrow-left").on("click", function () {
+    $(".tlo3 p.opis").removeClass("dodajopiszdolu");
     $(".fab").removeClass(icons[licznikikon]);
     licznikikon--;
     $(".fa-arrow-left").animate({ left: '0' }, "slow");
@@ -195,12 +197,35 @@ $(window).on("scroll", function () {
     }
     if (skroll > pos5 + wys5 - windowHeight) {
         $("div.first a:nth-of-type(1)").addClass("klasaprojektyanimacja");
+        $("p.first").addClass("animacjatytulprojektu");
     }
     if (skroll > pos6 + wys6 - windowHeight) {
         $("div.second a:nth-of-type(1)").addClass("klasaprojektyanimacja");
+        $("p.second").addClass("animacjatytulprojektu");
     }
     if (skroll > pos7 + wys7 - windowHeight) {
         $("div.three a:nth-of-type(1)").addClass("klasaprojektyanimacja");
+        $("p.three").addClass("animacjatytulprojektu");
+    }
+
+    if (skroll < 100) {
+        $(".tlo .budynek").removeClass("activeb");
+        $(".tlo p").removeClass("tekst");
+        $(".tlo2 .budynek").removeClass("active");
+        $(".tlo2 p").removeClass("tekst2");
+        $(".tlo3 .fab").removeClass("fabadd");
+        $(".tytul").removeClass("efekttytul");
+        $(".kropki").removeClass("dodajkropki");
+        $(".tlo3 .fa-arrow-right").removeClass("prawastrzalka");
+        $(".tlo3 .fa-arrow-left").removeClass("lewastrzalka");
+        $(".tlo3 p.umiejetnosc").removeClass("dodajanimacjanazwa");
+        $(".tlo3 p.opis").removeClass("dodajopiszdolu");
+        $("div.first a:nth-of-type(1)").removeClass("klasaprojektyanimacja");
+        $("p.first").removeClass("animacjatytulprojektu");
+        $("div.second a:nth-of-type(1)").removeClass("klasaprojektyanimacja");
+        $("p.second").removeClass("animacjatytulprojektu");
+        $("div.three a:nth-of-type(1)").removeClass("klasaprojektyanimacja");
+        $("p.three").removeClass("animacjatytulprojektu");
     }
 })
 
