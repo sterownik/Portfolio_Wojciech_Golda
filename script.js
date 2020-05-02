@@ -158,6 +158,18 @@ $(window).on("scroll", function () {
     const wys3 = $(".studies").outerHeight();
     const pos3 = $(".studies").offset().top;
 
+    const wys4 = $(".skills").outerHeight();
+    const pos4 = $(".skills").offset().top;
+
+    const wys5 = $(".first").outerHeight();
+    const pos5 = $(".first").offset().top;
+
+    const wys6 = $(".second").outerHeight();
+    const pos6 = $(".second").offset().top;
+
+    const wys7 = $(".three").outerHeight();
+    const pos7 = $(".three").offset().top;
+
     const windowHeight = $(window).height();
 
     if (skroll > pos2 + wys2 - windowHeight) {
@@ -166,10 +178,29 @@ $(window).on("scroll", function () {
         console.log("teraz");
     }
 
-    if (skroll > pos3 + wys2 - windowHeight) {
+    if (skroll > pos3 + wys3 - windowHeight) {
         $(".tlo2 .budynek").addClass("active");
         $(".tlo2 p").addClass("tekst2");
+    }
 
+    if (skroll > pos4 + wys4 - windowHeight) {
+        $(".tlo3 .fab").addClass("fabadd");
+        $(".tytul").addClass("efekttytul");
+        $(".kropki").addClass("dodajkropki");
+        $(".tlo3 .fa-arrow-right").addClass("prawastrzalka");
+        $(".tlo3 .fa-arrow-left").addClass("lewastrzalka");
+        $(".tlo3 p.umiejetnosc").addClass("dodajanimacjanazwa");
+        $(".tlo3 p.opis").addClass("dodajopiszdolu");
+        //  $(".tlo2 p").addClass("tekst2");
+    }
+    if (skroll > pos5 + wys5 - windowHeight) {
+        $("div.first a:nth-of-type(1)").addClass("klasaprojektyanimacja");
+    }
+    if (skroll > pos6 + wys6 - windowHeight) {
+        $("div.second a:nth-of-type(1)").addClass("klasaprojektyanimacja");
+    }
+    if (skroll > pos7 + wys7 - windowHeight) {
+        $("div.three a:nth-of-type(1)").addClass("klasaprojektyanimacja");
     }
 })
 

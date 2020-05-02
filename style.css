@@ -342,6 +342,7 @@ i.fa-user-graduate{
 }
 section.skills{
     height: 70vh;
+    overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -361,27 +362,59 @@ div.tlo3{
     left: 50%;
     font-size: 80px;
     color: #007300;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(0.2);
     border: 2px solid transparent;
     background-color: #88d498;
     border-radius: 50%;
     padding: 15px;
     box-shadow:  0 0 10px white;
 }
+.fabadd{
+    animation: logorosnie 2s both linear;
+}
+@keyframes logorosnie{
+    0%{
+        transform: translateX(-50%) scale(0.2);
+    }
+    100%{
+        transform: translateX(-50%) scale(1);
+    }
+}
 .tlo3 .fa-arrow-right{
     position: absolute;
     top: 30%;
-    right: 5%;
+    right: -50%;
     color: #b8f2e6;
     font-size: 70px;
-    
+}
+.prawastrzalka{
+    animation:prawaefekt 2s both linear ;
+}
+@keyframes prawaefekt{
+    0%{
+        right: -50%;
+    }
+    100%{
+        right: 5%;
+    }
 }
 .tlo3 .fa-arrow-left{
     position: absolute;
     top: 30%;
-    left: 5%;
+    left: -50%;
     color: #b8f2e6;
     font-size: 70px;
+}
+.lewastrzalka{
+    animation:lewaefekt 2s both linear ;
+}
+@keyframes lewaefekt{
+    0%{
+        left: -50%;
+    }
+    100%{
+        left: 5%;
+    }
 }
 .tlo3 p.opis{
     position: absolute;
@@ -389,8 +422,22 @@ div.tlo3{
     left: 15%;
     color: #d9dbbc;
     right: 15%;
-    top: calc(33% + 120px);
+    transform: rotate(10%);
+    
+    top: 200%;
 }
+.dodajopiszdolu{
+    animation: opiszdolu 2s linear both;
+}
+@keyframes opiszdolu{
+    0%{
+        top: 100%;
+    }
+    100%{
+        top: calc(33% + 120px);
+    }
+}
+
 
 .efektopis{
     animation: opisefekt 2s;
@@ -409,11 +456,28 @@ div.tlo3{
     left: 50%;
     letter-spacing: 10px;
     top: 5%;
-    font-size: 20px;
-    transform:translateX(-50%);
+    font-size: 23px;
+    transform:translateX(-50%) translateY(-200%);
+    opacity: 0;
+    
     color: #b8f2e6;
-  text-shadow: 2px 2px 2px #007300;
+    text-shadow: 2px 2px 2px #007300;
 }
+.efekttytul{
+    animation: tytulzgory 2s both linear;
+}
+@keyframes tytulzgory{
+    0%{
+        transform:translateX(-50%) translateY(-200%);
+         opacity: 0;
+    }
+
+    100%{
+        transform:translateX(-50%) translateY(0);
+    opacity: 1;
+    }
+}
+
 .tlo3 p.umiejetnosc{
     position: absolute;
     left: 50%;
@@ -421,21 +485,58 @@ div.tlo3{
     top: calc(23% + 120px);
     overflow: hidden;
     font-size: 30px;
-    transform:translateX(-50%);
+    opacity: 0.2;
+    transform:translateX(-50%) rotate(0);
+    
     color: #b8f2e6;
     text-shadow: 2px 2px 2px #7d8597;
-    
+}
+.dodajanimacjanazwa{
+    animation: opisanimacja2 3s both ease;
+}
+@keyframes opisanimacja2{
+    0%{
+        opacity: 0.2;
+        transform:translateX(-50%) rotate(10deg) ;
+    }
+    20%{
+        transform:translateX(-50%) rotate(-10deg);
+    }
+    40%{
+        transform:translateX(-50%) rotate(10deg);
+    }
+    60%{
+        transform:translateX(-50%) rotate(-10deg);
+    }
+    80%{
+        transform:translateX(-50%) rotate(10deg);
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(-50%) rotate(0);
+    }
+
 }
 .tlo3 div.kropki{
     position: absolute;
     width: 30%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(0);
     top: 12%;
-    
     height: 3%;
     display: flex;
     justify-content: space-around;
+}
+.dodajkropki{
+    animation: kropkirosnie 2s both linear;
+}
+@keyframes kropkirosnie{
+    0%{
+        transform: translateX(-50%) scale(0);
+    }
+    100%{
+        transform: translateX(-50%) scale(1);
+    }
 }
 
 .tlo3 div.kropki div.kropka{
@@ -500,6 +601,7 @@ animation: zwieksz 2s;
 }
 .projects{
     height: 150vh;
+    overflow: hidden;
     position: relative;
     background-color: rgba(0,0,0, 0.7);
 }
@@ -568,12 +670,21 @@ p.three{
     width: 40%;
     color: white;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-120%);
+    animation:animacjanapisprojekt 2s both linear ;
+}
+@keyframes animacjanapisprojekt{
+    0%{
+        transform: translateY(-50%) translateX(-120%);
+    }
+    100%{
+        transform: translateY(-50%) translateX(0);
+    }
 }
 div.three a:nth-of-type(1){
     display: block;
     position: absolute;
-    
+    transform: translateX(50vw);
     height: 100%;
     left: 53%;
     pointer-events: none;
@@ -633,7 +744,7 @@ p.second{
 div.second a:nth-of-type(1){
     display: block;
     position: absolute;
-    
+    transform: translateX(50vw);
     height: 100%;
     left: 53%;
     pointer-events: none;
@@ -692,10 +803,22 @@ p.first{
 div.first a:nth-of-type(1){
     display: block;
     position: absolute;
-    
+    transform: translateX(50vw);
     height: 100%;
     left: 53%;
     pointer-events: none;
+   
+}
+.klasaprojektyanimacja{
+    animation: animacjaprojekty 2s both linear;
+}
+@keyframes animacjaprojekty{
+    0%{
+        transform: translateX(50vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 div.first img.focus{
     position: absolute;
