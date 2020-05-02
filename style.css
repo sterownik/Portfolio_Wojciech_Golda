@@ -186,7 +186,6 @@ div.highschool .tlo{
     
     transform: translateX(-100vw);
     box-shadow: 0 0 15px #3a506b;
-    
 }
 .budynek.activeb{
     animation:  szkola 2s both linear;
@@ -382,7 +381,8 @@ div.tlo3{
 .tlo3 .fa-arrow-right{
     position: absolute;
     top: 30%;
-    right: -50%;
+    right: 5%;
+    opacity: 0;
     color: #b8f2e6;
     font-size: 70px;
 }
@@ -392,15 +392,18 @@ div.tlo3{
 @keyframes prawaefekt{
     0%{
         right: -50%;
+        opacity: 0;
     }
     100%{
         right: 5%;
+        opacity: 1;
     }
 }
 .tlo3 .fa-arrow-left{
     position: absolute;
     top: 30%;
-    left: -50%;
+    left: 5%;
+    opacity: 0;
     color: #b8f2e6;
     font-size: 70px;
 }
@@ -409,9 +412,11 @@ div.tlo3{
 }
 @keyframes lewaefekt{
     0%{
+        opacity: 0;
         left: -50%;
     }
     100%{
+        opacity: 1;
         left: 5%;
     }
 }
@@ -722,7 +727,6 @@ div.three img.wlasciwe{
     width: 100%;
     padding:10px 0;
     filter: blur(1px);
-    
 }
 p.three{
     position: absolute;
@@ -1065,10 +1069,8 @@ section.contact{
         top: 160px; 
      }
      div.rest img{
-    
         padding: 10px;
         height: 80px;
-        
     }
     p.first{
         
@@ -1081,6 +1083,121 @@ section.contact{
     p.three{
         font-size: 35px;
     }
+}
+@media (orientation:landscape) 
+{
+    .tlo .budynek{
+        top: 3%;
+    }
+
+    .tlo p{
+        bottom: 3%;
+    }
+    .tlo2 .budynek{
+        transform: translateX(170%);
+        height: 80px;
+        top: 3%;
+    }
+
+    .tlo2 p{
+        bottom: 3%;
+    }
+    .tlo3 .fab{
+        
+        font-size: 60px;
+        top: 30%;
+    }
+    .tlo3 div.kropki{
+        
+        width: 20%;
+        left: 50%;
+        transform: translateX(-50%) scale(0);
+        top: 20%;
+        height: 4%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .tlo3 p.umiejetnosc{
+        
+        top: calc(21% + 120px);
+        
+        font-size: 26px;
+        
+    }
+    .tlo3 p.opis{
+        
+        left: 2%;
+        font-size: 14.5px;
+        right: 2%;
+        
+        /* top: calc(33% + 120px); */
+    }
+    div.first{
+        overflow: hidden;
+        position: relative;
+        height: 50%;
+        width: 50%;
+        float: left;
+    }
+    div.second{
+        overflow: hidden;
+        position: relative;
+        height: 50%;
+        float: left;
+        width: 50%;
+    }
+    div.three{
+        overflow: hidden;
+        position: relative;
+        height: 50%;
+        width: 100%;
+    }
+    .projects{
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        background-color: rgba(0,0,0, 0.7);
+    }
+    div.three img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 50%;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.rest{
+        position: relative;
+        height: 20vh;
+        width: 100%;
+        background-color: rgba(0,0,0,0.7);
+    }
+    div.first img.git{
+        height: 30px;
+       top: 100px;
+    }
+    div.second img.git{
+        height: 30px;
+       top: 100px;
+    }
+    div.three img.git{
+        height: 30px;
+       top: 100px;
+    }
+    div.first img.focus{
+        height: 30px;
+       top: 30px; 
+    }
+    div.second img.focus{
+        height: 30px;
+        top: 30px; 
+     }
+     div.three img.focus{
+        height: 30px;
+       top: 30px;  
+     }
+    
+    
 }
 
 

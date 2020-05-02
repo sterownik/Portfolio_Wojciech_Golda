@@ -23,6 +23,8 @@ zmientlo(0);
 
 
 $(".fa-arrow-right").on("click", function () {
+    $(".fa-arrow-right").animate({ opacity: '1' }, "0.2s");
+    $(".fa-arrow-right").removeClass("prawastrzalka");
     $("p.opis").removeClass("dodajopiszdolu");
 
     $(".fab").removeClass(icons[licznikikon]);
@@ -56,6 +58,8 @@ $(".fa-arrow-right").on("click", function () {
 
 })
 $(".fa-arrow-left").on("click", function () {
+    $(".fa-arrow-left").animate({ opacity: '1' }, "0.2s");
+    $(".fa-arrow-left").removeClass("lewastrzalka");
     $(".tlo3 p.opis").removeClass("dodajopiszdolu");
     $(".fab").removeClass(icons[licznikikon]);
     licznikikon--;
@@ -202,13 +206,16 @@ $(window).on("scroll", function () {
     if (skroll > pos6 + wys6 - windowHeight) {
         $("div.second a:nth-of-type(1)").addClass("klasaprojektyanimacja");
         $("p.second").addClass("animacjatytulprojektu");
-    }
-    if (skroll > pos7 + wys7 - windowHeight) {
         $("div.three a:nth-of-type(1)").addClass("klasaprojektyanimacja");
         $("p.three").addClass("animacjatytulprojektu");
     }
+    if (skroll / 2 > pos7 + wys7 - windowHeight) {
+
+    }
 
     if (skroll < 100) {
+        $(".fa-arrow-left").animate({ opacity: '0' }, "0.2s");
+        $(".fa-arrow-right").animate({ opacity: '0' }, "0.2s");
         $(".tlo .budynek").removeClass("activeb");
         $(".tlo p").removeClass("tekst");
         $(".tlo2 .budynek").removeClass("active");
