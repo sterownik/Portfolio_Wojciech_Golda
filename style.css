@@ -851,7 +851,7 @@ div.rest img{
 }
 footer{
     height: 4vh;
-    width: 100vw;
+    width: 100%;
     background-color: black;
 }
 footer p{
@@ -889,6 +889,8 @@ section.contact{
 }
 .container{
     background-color: rgba(0,0,0,0.7);
+    max-width: 1420px;
+    margin: 0 auto;
 }
 .button-primary{
     text-align: center;
@@ -934,7 +936,7 @@ section.contact{
 
     .tlo p{
        
-        font-size: 28px;
+        font-size: 22px;
         
     }
     .tlo .budynek{
@@ -943,12 +945,12 @@ section.contact{
     }
     .tlo2 .budynek{
         
-        height: 250px;
+        height: 220px;
         top: 10%;
     }
     .tlo2 p{
        
-        font-size: 28px;
+        font-size: 22px;
         
     }
     .tlo3 p.tytul{
@@ -981,7 +983,7 @@ section.contact{
         position: absolute;
         text-align: center;
         left: 8%;
-        font-size: 32px;
+        font-size: 24px;
         color: #d9dbbc;
         right: 8%;
         transform: rotate(10%);
@@ -1084,7 +1086,7 @@ section.contact{
         font-size: 35px;
     }
 }
-@media (orientation:landscape) 
+@media (orientation:landscape)
 {
     .tlo .budynek{
         top: 3%;
@@ -1226,7 +1228,6 @@ section.contact{
         top: 30%;
     }
     .tlo3 div.kropki{
-        
         width: 20%;
         left: 50%;
         transform: translateX(-50%) scale(0);
@@ -1381,6 +1382,299 @@ section.contact{
         line-height: 26px;
         
     }
+}
+@media (orientation:landscape) and (min-width: 812px)
+{
+
+   
+    .tlo .budynek{
+        top: 3%;
+        width: 380px;
+    }
+
+    .tlo p{
+        font-size: 20px;
+        bottom: 3%;
+    }
+    .tlo2 .budynek
+    {
+        height: 220px;
+    }
+    
+
+    .tlo2 p{
+        font-size: 20px;
+        bottom: 3%;
+    }
+    .tlo3 .fab{
+        font-size: 80px;
+        top: 30%;
+    }
+    .tlo3 div.kropki{
+        width: 20%;
+        left: 50%;
+        transform: translateX(-50%) scale(0);
+        top: 20%;
+        height: 5%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .tlo3 p.umiejetnosc{
+        top: 65%;
+        font-size: 50px;
+
+    }
+    .tlo3 p.tytul{
+        font-size: 28px;
+    }
+    .tlo3 p.opis{
+        
+        left: 2%;
+        font-size: 22px;
+        right: 2%;
+        opacity: 0;
+         top: calc(63% + 120px); 
+    }
+    .dodajopiszdolu{
+        animation: opiszdolu 2s linear both;
+    }
+    @keyframes opiszdolu{
+        0%{
+            top: 100%;
+            opacity: 0;
+        }
+        100%{
+            top: calc(63% + 120px);
+            opacity: 1;
+        }
+    }
+    .efektopis{
+        animation: opisefekt 2s both;
+    }
+        @keyframes opisefekt{
+            0%{
+                opacity: 0;
+                top: calc(63% + 120px);
+                transform: scale(1.2);
+                }
+                
+                100%{
+                    top: calc(63% + 120px);
+                    opacity: 1;
+                    transform: scale(1);
+                }
+    }
+    div.first img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 200px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.second img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 200px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.three img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 200px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+
+}
+@media (orientation:landscape) and (min-width: 1366px)
+{
+    .menu {
+        display: none;
+        height: 50px;
+        background-color:rgb(58,80,107);
+        border-bottom: 2px solid rgb(58,80,107);
+        z-index: 4;
+    }
+    .menu ul li a{
+        font-size: 23px;
+        
+        line-height: 50px;
+       
+    }
+    .tlo p{
+        font-size: 30px;
+        bottom: 3%;
+    }
+    .tlo2 p{
+        font-size: 30px;
+        bottom: 3%;
+    }
+    .tlo3 p.umiejetnosc{
+        top: 55%;
+        font-size: 50px;
+
+    }
+    .tlo3 p.tytul{
+        font-size: 38px;
+    }
+    .tlo3 p.opis{
+        
+        
+        font-size: 32px;
+        
+    }
+    div.first img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 250px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.second img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 250px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.three img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 250px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.first img.git{
+        height: 70px;
+       top: 200px;
+    }
+    div.second img.git{
+        height: 70px;
+       top: 200px;
+    }
+    div.three img.git{
+        height: 70px;
+       top: 200px;
+    }
+    div.first img.focus{
+        height: 70px;
+       top: 100px; 
+    }
+    div.second img.focus{
+        height: 70px;
+        top: 100px; 
+     }
+     div.three img.focus{
+        height: 70px;
+       top: 100px;  
+     }
+}
+@media (min-height: 500px) and (orientation:landscape)
+{
+    .menu {
+        display: none;
+        height: 25px;
+        background-color:rgb(58,80,107);
+        border-bottom: 2px solid rgb(58,80,107);
+        z-index: 4;
+    }
+    .menu ul li a{
+        font-size: 21px;
+        
+        line-height: 25px;
+       
+    }
+    .top p{
+        font-size: 30px;
+    }
+    .tlo p{
+        font-size: 15px;
+        bottom: 3%;
+    }
+    .tlo .budynek{
+        top: 3%;
+        width: 280px;
+    }
+
+   
+    .tlo2 .budynek
+    {
+        height: 120px;
+    }
+    
+    .tlo2 p{
+        font-size: 15px;
+        bottom: 3%;
+    }
+    .tlo3 p.umiejetnosc{
+        top: 55%;
+        font-size: 50px;
+
+    }
+    .tlo3 p.tytul{
+        font-size: 38px;
+    }
+    .tlo3 p.opis{
+        
+        
+        font-size: 16px;
+        
+    }
+    div.first img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 150px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.second img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 150px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.three img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 150px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.first img.git{
+        height: 40px;
+       top: 100px;
+    }
+    div.second img.git{
+        height: 40px;
+       top: 100px;
+    }
+    div.three img.git{
+        height: 40px;
+       top: 100px;
+    }
+    div.first img.focus{
+        height: 40px;
+       top: 50px; 
+    }
+    div.second img.focus{
+        height: 40px;
+        top: 50px; 
+     }
+     div.three img.focus{
+        height: 40px;
+       top: 50px;  
+     }
 }
 
 
