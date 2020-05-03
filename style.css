@@ -1199,6 +1199,189 @@ section.contact{
     
     
 }
+@media (orientation:landscape) and (min-width: 812px)
+{
+    .top p{
+       
+        font-size: 30px;
+        
+    }
+    .tlo .budynek{
+        top: 3%;
+        width: 180px;
+    }
+
+    .tlo p{
+        font-size: 16px;
+        bottom: 3%;
+    }
+    
+
+    .tlo2 p{
+        font-size: 16px;
+        bottom: 3%;
+    }
+    .tlo3 .fab{
+        font-size: 60px;
+        top: 30%;
+    }
+    .tlo3 div.kropki{
+        
+        width: 20%;
+        left: 50%;
+        transform: translateX(-50%) scale(0);
+        top: 20%;
+        height: 5%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .tlo3 p.umiejetnosc{
+        top: 65%;
+        font-size: 23px;
+
+    }
+    .tlo3 p.tytul{
+        font-size: 25px;
+    }
+    .tlo3 p.opis{
+        
+        left: 2%;
+        font-size: 14px;
+        right: 2%;
+        opacity: 0;
+         top: calc(33% + 120px); 
+    }
+    .dodajopiszdolu{
+        animation: opiszdolu 2s linear both;
+    }
+    @keyframes opiszdolu{
+        0%{
+            top: 100%;
+            opacity: 0;
+        }
+        100%{
+            top: calc(33% + 120px);
+            opacity: 1;
+        }
+    }
+    .efektopis{
+        animation: opisefekt 2s both;
+    }
+        @keyframes opisefekt{
+            0%{
+                opacity: 0;
+                top: calc(33% + 120px);
+                transform: scale(1.2);
+                }
+                
+                100%{
+                    top: calc(33% + 120px);
+                    opacity: 1;
+                    transform: scale(1);
+                }
+    }
+    div.first{
+        overflow: hidden;
+        position: relative;
+        height: 50%;
+        width: 50%;
+        float: left;
+    }
+    div.second{
+        overflow: hidden;
+        position: relative;
+        height: 50%;
+        float: left;
+        width: 50%;
+    }
+    div.three{
+        overflow: hidden;
+        position: relative;
+        height: 50%;
+        width: 100%;
+    }
+    .projects{
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        background-color: rgba(0,0,0, 0.7);
+    }
+    div.first img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 100px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.second img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 100px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.three img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 100px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.rest{
+        position: relative;
+        height: 30vh;
+        width: 100%;
+        background-color: rgba(0,0,0,0.7);
+    }
+    div.first img.git{
+        height: 30px;
+       top: 100px;
+    }
+    div.second img.git{
+        height: 30px;
+       top: 100px;
+    }
+    div.three img.git{
+        height: 30px;
+       top: 100px;
+    }
+    div.first img.focus{
+        height: 30px;
+       top: 30px; 
+    }
+    div.second img.focus{
+        height: 30px;
+        top: 30px; 
+     }
+     div.three img.focus{
+        height: 30px;
+       top: 30px;  
+     }
+     p.first{
+        
+        font-size: 27px;
+        
+    }
+    p.second{
+        font-size: 27px;
+    }
+    p.three{
+        font-size: 27px;
+    }
+    .menu {
+       
+        height: 26px;
+        
+    }
+    .menu ul li a{
+        font-size: 18px;
+        line-height: 26px;
+        
+    }
+}
 
 
 

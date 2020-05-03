@@ -29,7 +29,7 @@ $(".fa-arrow-right").on("click", function () {
 
     $(".fab").removeClass(icons[licznikikon]);
     $(".umiejetnosc").removeClass("efekt");
-    $(".opis").removeClass("efektopis");
+    $("p.opis").removeClass("efektopis");
 
 
     licznikikon++;
@@ -60,6 +60,7 @@ $(".fa-arrow-right").on("click", function () {
 $(".fa-arrow-left").on("click", function () {
     $(".fa-arrow-left").animate({ opacity: '1' }, "0.2s");
     $(".fa-arrow-left").removeClass("lewastrzalka");
+
     $(".tlo3 p.opis").removeClass("dodajopiszdolu");
     $(".fab").removeClass(icons[licznikikon]);
     licznikikon--;
