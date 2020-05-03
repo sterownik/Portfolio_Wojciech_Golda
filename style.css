@@ -1490,93 +1490,7 @@ section.contact{
     }
 
 }
-@media (orientation:landscape) and (min-width: 1366px)
-{
-    .menu {
-        display: none;
-        height: 50px;
-        background-color:rgb(58,80,107);
-        border-bottom: 2px solid rgb(58,80,107);
-        z-index: 4;
-    }
-    .menu ul li a{
-        font-size: 23px;
-        
-        line-height: 50px;
-       
-    }
-    .tlo p{
-        font-size: 30px;
-        bottom: 3%;
-    }
-    .tlo2 p{
-        font-size: 30px;
-        bottom: 3%;
-    }
-    .tlo3 p.umiejetnosc{
-        top: 55%;
-        font-size: 50px;
-
-    }
-    .tlo3 p.tytul{
-        font-size: 38px;
-    }
-    .tlo3 p.opis{
-        
-        
-        font-size: 32px;
-        
-    }
-    div.first img.wlasciwe{
-        margin: 0 auto;
-        display: block;
-        
-        width: 250px;
-        padding:10px 0;
-        filter: blur(1px);
-    }
-    div.second img.wlasciwe{
-        margin: 0 auto;
-        display: block;
-        
-        width: 250px;
-        padding:10px 0;
-        filter: blur(1px);
-    }
-    div.three img.wlasciwe{
-        margin: 0 auto;
-        display: block;
-        
-        width: 250px;
-        padding:10px 0;
-        filter: blur(1px);
-    }
-    div.first img.git{
-        height: 70px;
-       top: 200px;
-    }
-    div.second img.git{
-        height: 70px;
-       top: 200px;
-    }
-    div.three img.git{
-        height: 70px;
-       top: 200px;
-    }
-    div.first img.focus{
-        height: 70px;
-       top: 100px; 
-    }
-    div.second img.focus{
-        height: 70px;
-        top: 100px; 
-     }
-     div.three img.focus{
-        height: 70px;
-       top: 100px;  
-     }
-}
-@media (min-height: 500px) and (orientation:landscape)
+ @media (min-height: 600px) and (orientation:landscape) and (min-width: 1000px) 
 {
     .menu {
         display: none;
@@ -1675,7 +1589,94 @@ section.contact{
         height: 40px;
        top: 50px;  
      }
+} 
+@media (orientation:landscape) and (min-width: 1366px)
+{
+    .menu {
+        display: none;
+        height: 50px;
+        background-color:rgb(58,80,107);
+        border-bottom: 2px solid rgb(58,80,107);
+        z-index: 4;
+    }
+    .menu ul li a{
+        font-size: 23px;
+        
+        line-height: 50px;
+       
+    }
+    .tlo p{
+        font-size: 30px;
+        bottom: 3%;
+    }
+    .tlo2 p{
+        font-size: 30px;
+        bottom: 3%;
+    }
+    .tlo3 p.umiejetnosc{
+        top: 55%;
+        font-size: 50px;
+
+    }
+    .tlo3 p.tytul{
+        font-size: 38px;
+    }
+    .tlo3 p.opis{
+        
+        
+        font-size: 32px;
+        
+    }
+    div.first img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 250px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.second img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 250px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.three img.wlasciwe{
+        margin: 0 auto;
+        display: block;
+        
+        width: 250px;
+        padding:10px 0;
+        filter: blur(1px);
+    }
+    div.first img.git{
+        height: 70px;
+       top: 200px;
+    }
+    div.second img.git{
+        height: 70px;
+       top: 200px;
+    }
+    div.three img.git{
+        height: 70px;
+       top: 200px;
+    }
+    div.first img.focus{
+        height: 70px;
+       top: 100px; 
+    }
+    div.second img.focus{
+        height: 70px;
+        top: 100px; 
+     }
+     div.three img.focus{
+        height: 70px;
+       top: 100px;  
+     }
 }
+
 
 
 
