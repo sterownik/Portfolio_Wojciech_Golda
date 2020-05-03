@@ -1509,7 +1509,7 @@ section.contact{
         font-size: 30px;
     }
     .tlo p{
-        font-size: 15px;
+        font-size: 24px;
         bottom: 3%;
     }
     .tlo .budynek{
@@ -1536,8 +1536,6 @@ section.contact{
         font-size: 38px;
     }
     .tlo3 p.opis{
-        
-        
         font-size: 16px;
         
     }
@@ -1590,7 +1588,59 @@ section.contact{
        top: 50px;  
      }
 } 
-@media (orientation:landscape) and (min-width: 1366px)
+@media (orientation:landscape) and (min-width: 1000px) and (min-height: 500px)
+{
+    .tlo3 p.tytul{
+        font-size: 38px;
+    }
+    .tlo3 p.opis{
+        
+        font-size: 22px;
+    }
+    @keyframes opiszdolu{
+        0%{
+            top: 100%;
+            opacity: 0;
+        }
+        100%{
+            top: calc(53% + 120px);
+            opacity: 1;
+        }
+    }
+    .efektopis{
+        animation: opisefekt 2s both;
+    }
+        @keyframes opisefekt{
+            0%{
+                opacity: 0;
+                top: calc(53% + 120px);
+                transform: scale(1.2);
+                }
+                
+                100%{
+                    top: calc(53% + 120px);
+                    opacity: 1;
+                    transform: scale(1);
+                }
+    }
+    .tlo2 p{
+        
+        font-size: 25px;
+        
+    }
+    .tlo .budynek{
+        top: 3%;
+        width: 260px;
+    }
+
+   
+    .tlo2 .budynek
+    {
+        height: 120px;
+    }
+
+}
+@media (orientation:landscape) and (min-width: 1366px) and (min-height: 900px)
 {
     .menu {
         display: none;
@@ -1622,10 +1672,7 @@ section.contact{
         font-size: 38px;
     }
     .tlo3 p.opis{
-        
-        
         font-size: 32px;
-        
     }
     div.first img.wlasciwe{
         margin: 0 auto;
@@ -1642,6 +1689,16 @@ section.contact{
         width: 250px;
         padding:10px 0;
         filter: blur(1px);
+    }
+    .tlo .budynek{
+        top: 3%;
+        width: 380px;
+    }
+
+   
+    .tlo2 .budynek
+    {
+        height: 200px;
     }
     div.three img.wlasciwe{
         margin: 0 auto;
