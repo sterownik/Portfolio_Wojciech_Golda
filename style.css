@@ -382,28 +382,66 @@ div.tlo3{
     position: absolute;
     top: 30%;
     right: 5%;
-    opacity: 0;
+    opacity: 1;
     color: #b8f2e6;
     font-size: 70px;
 }
+.praweklikniecie{
+    animation:prawaklikniecie 2s both linear ;
+}
+@keyframes prawaklikniecie{
+    0%{
+        right: 0;
+    }
+    100%{
+        right: 5%;
+    }
+}
+.prawa{
+    animation:prawaanim 2s linear ;
+}
+@keyframes prawaanim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.lewa{
+    animation:lewaanim 2s linear ;
+}
+@keyframes lewaanim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
 .prawastrzalka{
     animation:prawaefekt 2s both linear ;
 }
 @keyframes prawaefekt{
     0%{
-        right: -50%;
         opacity: 0;
+        right: -50%;
+        
     }
     100%{
-        right: 5%;
         opacity: 1;
+        right: 5%;
+        
     }
 }
 .tlo3 .fa-arrow-left{
     position: absolute;
     top: 30%;
     left: 5%;
-    opacity: 0;
+    opacity: 1;
     color: #b8f2e6;
     font-size: 70px;
 }

@@ -18,13 +18,30 @@ var liczbaumiejetnosci = icons.length;
 $(".opis").text(opisy[0]);
 $(".umiejetnosc").text(umiejetności[0]);
 zmientlo(0);
+function prawe() {
+    // $(".fa-arrow-right").animate({ opacity: '1' }, "fast");
+    $(".fa-arrow-right").animate({ right: '0' }, "slow");
+    $(".fa-arrow-right").animate({ right: '5%' }, "slow");
+
+}
+
+
+function lewe() {
+    // $(".fa-arrow-right").animate({ opacity: '1' }, "fast");
+    $(".fa-arrow-left").animate({ left: '0' }, "slow");
+    $(".fa-arrow-left").animate({ left: '5%' }, "slow");
+
+}
 
 
 
 
 $(".fa-arrow-right").on("click", function () {
-    $(".fa-arrow-right").animate({ opacity: '1' }, "0.2s");
+    //  $(".fa-arrow-right").animate({ opacity: '1' }, "0.2s");
     $(".fa-arrow-right").removeClass("prawastrzalka");
+    // $(".fa-arrow-right").addClass("praweklikniecie");
+
+
     $("p.opis").removeClass("dodajopiszdolu");
 
     $(".fab").removeClass(icons[licznikikon]);
@@ -33,8 +50,8 @@ $(".fa-arrow-right").on("click", function () {
 
 
     licznikikon++;
-    $(".fa-arrow-right").animate({ right: '0' }, "slow");
-    $(".fa-arrow-right").animate({ right: '5%' }, "slow");
+    // $(".fa-arrow-right").animate({ right: '0' }, "slow");
+    // $(".fa-arrow-right").animate({ right: '5%' }, "slow");
 
 
     $(".umiejetnosc").animate({ opacity: '0.3' }, "fast");
@@ -54,18 +71,17 @@ $(".fa-arrow-right").on("click", function () {
     $(".umiejetnosc").text(umiejetności[licznikikon]);
     $(".fab").animate({ opacity: '1' }, "slow");
     zmientlo(licznikikon);
-
+    // $(".fa-arrow-right").removeClass("praweklikniecie");
 
 })
 $(".fa-arrow-left").on("click", function () {
-    $(".fa-arrow-left").animate({ opacity: '1' }, "0.2s");
+    //   $(".fa-arrow-left").animate({ opacity: '1' }, "0.2s");
     $(".fa-arrow-left").removeClass("lewastrzalka");
 
     $(".tlo3 p.opis").removeClass("dodajopiszdolu");
     $(".fab").removeClass(icons[licznikikon]);
     licznikikon--;
-    $(".fa-arrow-left").animate({ left: '0' }, "slow");
-    $(".fa-arrow-left").animate({ left: '5%' }, "slow");
+
     $(".umiejetnosc").animate({ opacity: '0.3' }, "fast");
     $(".umiejetnosc").animate({ opacity: '1' }, "fast");
     if (licznikikon < 0) {
@@ -194,6 +210,8 @@ $(window).on("scroll", function () {
         $(".tlo3 .fab").addClass("fabadd");
         $(".tytul").addClass("efekttytul");
         $(".kropki").addClass("dodajkropki");
+        $(".fa-arrow-right").removeClass("prawa");
+        $(".fa-arrow-left").removeClass("lewa");
         $(".tlo3 .fa-arrow-right").addClass("prawastrzalka");
         $(".tlo3 .fa-arrow-left").addClass("lewastrzalka");
         $(".tlo3 p.umiejetnosc").addClass("dodajanimacjanazwa");
@@ -215,8 +233,10 @@ $(window).on("scroll", function () {
     }
 
     if (skroll < 100) {
-        $(".fa-arrow-left").animate({ opacity: '0' }, "0.2s");
-        $(".fa-arrow-right").animate({ opacity: '0' }, "0.2s");
+        //    $(".fa-arrow-left").animate({ opacity: '0' }, "0.2s");
+        // $(".fa-arrow-right").animate({ opacity: '0' }, "0.2s");
+        $(".fa-arrow-right").addClass("prawa");
+        $(".fa-arrow-left").addClass("lewa");
         $(".tlo .budynek").removeClass("activeb");
         $(".tlo p").removeClass("tekst");
         $(".tlo2 .budynek").removeClass("active");
