@@ -1,20 +1,17 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-image: url(img/drogamleczna.jpg);
     position: relative;
-   
-    
-    
 }
-.top{
+
+.top {
     position: relative;
-   
     background-image: url(img/landscape-5055384_1920.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,14 +19,14 @@ body{
     min-height: 100vh;
     overflow: hidden;
     background-attachment: fixed;
-  
-   
 }
-.wrapper{
+
+.wrapper {
     max-width: 1420px;
     margin: 0 auto;
 }
-.top p{
+
+.top p {
     display: block;
     position: absolute;
     font-size: 20px;
@@ -46,7 +43,7 @@ body{
 }
 
 
-.top i{
+.top i {
     font-size: 30px;
     position: absolute;
     bottom: 2%;
@@ -57,11 +54,13 @@ body{
     cursor: pointer;
     color: #14213d;
 }
-@keyframes arrow{
-    0%{
-    bottom: 2%;
-    opacity: 0;
+
+@keyframes arrow {
+    0% {
+        bottom: 2%;
+        opacity: 0;
     }
+
     4% {
         opacity: 0;
     }
@@ -77,49 +76,57 @@ body{
     92% {
         opacity: 0;
     }
-    100%{
-    bottom: 0%;
-    opacity: 0;
+
+    100% {
+        bottom: 0%;
+        opacity: 0;
     }
 }
+
 .menu {
     display: none;
     height: 30px;
-    background-color:rgb(58,80,107);
-    border-bottom: 2px solid rgb(58,80,107);
+    background-color: rgb(58, 80, 107);
+    border-bottom: 2px solid rgb(58, 80, 107);
     z-index: 4;
 }
-nav.active{
+
+nav.active {
     display: block;
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    animation: menuappears 2s ;
+    animation: menuappears 2s;
 }
-@keyframes menuappears{
-    0%{
+
+@keyframes menuappears {
+    0% {
         top: -100%;
     }
-    100%{
+
+    100% {
         top: 0;
     }
 }
-.menu ul{
+
+.menu ul {
     list-style: none;
 }
-.menu ul li{
+
+.menu ul li {
     float: left;
     width: 33.333%;
-   
     text-align: center;
 }
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
-  }
-.menu ul li a{
+}
+
+.menu ul li a {
     font-size: 13px;
     text-align: center;
     text-shadow: 1px 1px 1px black;
@@ -131,95 +138,100 @@ nav.active{
     text-decoration-line: none;
     text-transform: uppercase;
 }
-.schools{
+
+.schools {
     height: 100vh;
     position: relative;
-    background-color:rgba(28,37,65,0.7);
+    background-color: rgba(28, 37, 65, 0.7);
 }
 
 
-div.highschool{
+div.highschool {
     width: 100%;
     height: 50%;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
-  
-    background-image:url(img/highschool.jpg);
+    background-image: url(img/highschool.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
 }
 
-div.studies{
+div.studies {
     width: 100%;
     height: 50%;
     position: absolute;
-    top:50% ;
+    top: 50%;
     left: 0;
-   
-    
-    background-image:url(img/uniwersytet.jpg);
+    background-image: url(img/uniwersytet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
 }
-div.studies .tlo2{
+
+div.studies .tlo2 {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
 }
-div.highschool .tlo{
-    
+
+div.highschool .tlo {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    
 }
-.tlo .budynek{
+
+.tlo .budynek {
     width: 150px;
     position: absolute;
     left: 50%;
     top: 20%;
-    
     transform: translateX(-100vw);
     box-shadow: 0 0 15px #3a506b;
 }
-.budynek.activeb{
-    animation:  szkola 2s both linear;
-} 
-@keyframes szkola{
-    0%{
+
+.budynek.activeb {
+    animation: szkola 2s both linear;
+}
+
+@keyframes szkola {
+    0% {
         transform: translateX(-100vw);
     }
-    100%{
+
+    100% {
         transform: translateX(-50%);
     }
 }
 
-.tlo2 .budynek{
+.tlo2 .budynek {
     height: 100px;
     position: absolute;
     top: 20%;
     left: 50%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     transform: translateX(100%);
     box-shadow: 0 0 15px #3a506b;
 }
-.tlo2 .budynek.active{
-    animation:tlo2budynek 2s both linear;
+
+.tlo2 .budynek.active {
+    animation: tlo2budynek 2s both linear;
 }
-@keyframes tlo2budynek{
-    0%{
+
+@keyframes tlo2budynek {
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(-50%);
     }
 }
-.tlo2 p{
+
+.tlo2 p {
     position: absolute;
     bottom: 20px;
     font-size: 14px;
@@ -231,21 +243,24 @@ div.highschool .tlo{
     font-family: 'Comic Neue', cursive;
     text-align: justify;
     box-shadow: 0 0 5px white;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255, 255, 255, 0.4);
 }
-.tlo2 p.tekst2{
+
+.tlo2 p.tekst2 {
     animation: tekst2 2s linear both;
-    }
-@keyframes tekst2{
-    0%{
+}
+
+@keyframes tekst2 {
+    0% {
         left: -100%;
     }
-    100%{
+
+    100% {
         left: 0%;
     }
 }
 
-.tlo p{
+.tlo p {
     position: absolute;
     bottom: 20px;
     font-size: 15px;
@@ -257,39 +272,46 @@ div.highschool .tlo{
     width: 100%;
     padding: 0 10px;
     box-shadow: 0 0 3px white;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
-.tlo p.tekst{
-animation: tekst 2s linear both;
+
+.tlo p.tekst {
+    animation: tekst 2s linear both;
 }
-@keyframes tekst{
-    0%{
+
+@keyframes tekst {
+    0% {
         right: -100%;
     }
-    100%{
+
+    100% {
         right: 0%;
     }
 }
-i.fa-graduation-cap{
-    color: rgb(58,80,107);
+
+i.fa-graduation-cap {
+    color: rgb(58, 80, 107);
     animation: cap 20s infinite linear;
     left: 0;
     bottom: 0;
     position: absolute;
 }
-i.fa-user-graduate{
-    color: rgb(58,80,107);
+
+i.fa-user-graduate {
+    color: rgb(58, 80, 107);
     animation: studies 20s infinite linear;
-    right:  0;
+    right: 0;
     top: 0;
     position: absolute;
 }
-@keyframes cap{
-    0%{
-    left: 0%;
-    bottom: 0;
-    opacity: 0;
+
+@keyframes cap {
+    0% {
+        left: 0%;
+        bottom: 0;
+        opacity: 0;
     }
+
     4% {
         opacity: 0;
     }
@@ -305,18 +327,21 @@ i.fa-user-graduate{
     92% {
         opacity: 0;
     }
-    100%{
-    left: 100%;
-    bottom: 0;
-    opacity: 0;
+
+    100% {
+        left: 100%;
+        bottom: 0;
+        opacity: 0;
     }
 }
-@keyframes studies{
-    0%{
-    right: 0%;
-    top: 0;
-    opacity: 0;
+
+@keyframes studies {
+    0% {
+        right: 0%;
+        top: 0;
+        opacity: 0;
     }
+
     4% {
         opacity: 0;
     }
@@ -332,29 +357,30 @@ i.fa-user-graduate{
     92% {
         opacity: 0;
     }
-    100%{
-    right: 0%;
-    top: 100%;
-    opacity: 0;
+
+    100% {
+        right: 0%;
+        top: 100%;
+        opacity: 0;
     }
 }
-section.skills{
+
+section.skills {
     height: 70vh;
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* background-image: url(img/skill2.jpg); */
-    
-    
 }
-div.tlo3{
+
+div.tlo3 {
     height: 100%;
     position: relative;
     width: 100%;
-     background-color: rgba(0,0,0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.tlo3 .fab{
+
+.tlo3 .fab {
     position: absolute;
     top: 21%;
     left: 50%;
@@ -365,100 +391,121 @@ div.tlo3{
     background-color: #ffffff;
     border-radius: 50%;
     padding: 15px;
-    box-shadow:  0 0 10px white;
+    box-shadow: 0 0 10px white;
 }
-.fabadd{
+
+.fabadd {
     animation: logorosnie 2s both linear;
 }
-@keyframes logorosnie{
-    0%{
+
+@keyframes logorosnie {
+    0% {
         transform: translateX(-50%) scale(0.2);
     }
-    100%{
+
+    100% {
         transform: translateX(-50%) scale(1);
     }
 }
-.tlo3 .fa-arrow-right{
+
+.tlo3 .fa-arrow-right {
     position: absolute;
     top: 30%;
     right: 5%;
     opacity: 1;
+    cursor: pointer;
     color: #b8f2e6;
     font-size: 70px;
 }
-.praweklikniecie{
-    animation:prawaklikniecie 2s both linear ;
+
+.praweklikniecie {
+    animation: prawaklikniecie 2s both linear;
 }
-@keyframes prawaklikniecie{
-    0%{
+
+@keyframes prawaklikniecie {
+    0% {
         right: 0;
     }
-    100%{
+
+    100% {
         right: 5%;
     }
 }
-.prawa{
-    animation:prawaanim 2s linear ;
+
+.prawa {
+    animation: prawaanim 2s linear;
 }
-@keyframes prawaanim{
-    0%{
+
+@keyframes prawaanim {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
 
-.lewa{
-    animation:lewaanim 2s linear ;
+.lewa {
+    animation: lewaanim 2s linear;
 }
-@keyframes lewaanim{
-    0%{
+
+@keyframes lewaanim {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 0;
     }
 }
 
 
-.prawastrzalka{
-    animation:prawaefekt 2s both linear ;
+.prawastrzalka {
+    animation: prawaefekt 2s both linear;
 }
-@keyframes prawaefekt{
-    0%{
+
+@keyframes prawaefekt {
+    0% {
         opacity: 0;
         right: -50%;
-        
+
     }
-    100%{
+
+    100% {
         opacity: 1;
         right: 5%;
-        
+
     }
 }
-.tlo3 .fa-arrow-left{
+
+.tlo3 .fa-arrow-left {
     position: absolute;
     top: 30%;
+    cursor: pointer;
     left: 5%;
     opacity: 1;
     color: #b8f2e6;
     font-size: 70px;
 }
-.lewastrzalka{
-    animation:lewaefekt 2s both linear ;
+
+.lewastrzalka {
+    animation: lewaefekt 2s both linear;
 }
-@keyframes lewaefekt{
-    0%{
+
+@keyframes lewaefekt {
+    0% {
         opacity: 0;
         left: -50%;
     }
-    100%{
+
+    100% {
         opacity: 1;
         left: 5%;
     }
 }
-.tlo3 p.opis{
+
+.tlo3 p.opis {
     position: absolute;
     text-align: center;
     left: 15%;
@@ -466,63 +513,69 @@ div.tlo3{
     right: 15%;
     transform: rotate(10%);
     top: 100%;
-    /* top: calc(33% + 120px); */
 }
-.dodajopiszdolu{
+
+.dodajopiszdolu {
     animation: opiszdolu 2s linear both;
 }
-@keyframes opiszdolu{
-    0%{
+
+@keyframes opiszdolu {
+    0% {
         top: 100%;
     }
-    100%{
+
+    100% {
         top: calc(33% + 120px);
     }
 }
 
 
-.efektopis{
+.efektopis {
     animation: opisefekt 2s both;
 }
-    @keyframes opisefekt{
-        0%{
-            top: calc(33% + 120px);
-            transform: scale(1.2);
-            }
-            
-            100%{
-                top: calc(33% + 120px);
-                transform: scale(1);
-            }
+
+@keyframes opisefekt {
+    0% {
+        top: calc(33% + 120px);
+        transform: scale(1.2);
+    }
+
+    100% {
+        top: calc(33% + 120px);
+        transform: scale(1);
+    }
 }
-.tlo3 p.tytul{
+
+.tlo3 p.tytul {
     position: absolute;
     left: 50%;
     letter-spacing: 10px;
     top: 5%;
     font-size: 23px;
-    transform:translateX(-50%) translateY(-200%);
+    transform: translateX(-50%) translateY(-200%);
     opacity: 0;
-    
+
     color: #b8f2e6;
     text-shadow: 2px 2px 2px #007300;
 }
-.efekttytul{
+
+.efekttytul {
     animation: tytulzgory 2s both linear;
 }
-@keyframes tytulzgory{
-    0%{
-        transform:translateX(-50%) translateY(-200%);
-         opacity: 0;
+
+@keyframes tytulzgory {
+    0% {
+        transform: translateX(-50%) translateY(-200%);
+        opacity: 0;
     }
 
-    100%{
-        transform:translateX(-50%) translateY(0);
-    opacity: 1;
+    100% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
     }
 }
 
-.tlo3 p.umiejetnosc{
+.tlo3 p.umiejetnosc {
     position: absolute;
     left: 50%;
     letter-spacing: 7px;
@@ -530,38 +583,44 @@ div.tlo3{
     overflow: hidden;
     font-size: 30px;
     opacity: 0.2;
-    transform:translateX(-50%) rotate(0);
-    
+    transform: translateX(-50%) rotate(0);
     color: #b8f2e6;
     text-shadow: 2px 2px 2px #7d8597;
 }
-.dodajanimacjanazwa{
+
+.dodajanimacjanazwa {
     animation: opisanimacja2 3s both ease;
 }
-@keyframes opisanimacja2{
-    0%{
+
+@keyframes opisanimacja2 {
+    0% {
         opacity: 0.2;
-        transform:translateX(-50%) rotate(10deg) ;
-    }
-    20%{
-        transform:translateX(-50%) rotate(-10deg);
-    }
-    40%{
-        transform:translateX(-50%) rotate(10deg);
-    }
-    60%{
-        transform:translateX(-50%) rotate(-10deg);
-    }
-    80%{
-        transform:translateX(-50%) rotate(10deg);
-    }
-    100%{
-        opacity: 1;
-        transform:translateX(-50%) rotate(0);
+        transform: translateX(-50%) rotate(10deg);
     }
 
+    20% {
+        transform: translateX(-50%) rotate(-10deg);
+    }
+
+    40% {
+        transform: translateX(-50%) rotate(10deg);
+    }
+
+    60% {
+        transform: translateX(-50%) rotate(-10deg);
+    }
+
+    80% {
+        transform: translateX(-50%) rotate(10deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) rotate(0);
+    }
 }
-.tlo3 div.kropki{
+
+.tlo3 div.kropki {
     position: absolute;
     width: 30%;
     left: 50%;
@@ -571,44 +630,52 @@ div.tlo3{
     display: flex;
     justify-content: space-around;
 }
-.dodajkropki{
+
+.dodajkropki {
     animation: kropkirosnie 2s both linear;
 }
-@keyframes kropkirosnie{
-    0%{
+
+@keyframes kropkirosnie {
+    0% {
         transform: translateX(-50%) scale(0);
     }
-    100%{
+
+    100% {
         transform: translateX(-50%) scale(1);
     }
 }
 
-.tlo3 div.kropki div.kropka{
+.tlo3 div.kropki div.kropka {
     margin: 2px;
     border: 2px solid #d9dbbc;
     height: 80%;
     flex-basis: 11%;
     border-radius: 50%;
 }
-.dodawanietla{
+
+.dodawanietla {
     background-color: #d9dbbc;
 }
-.odejmowanietla{
+
+.odejmowanietla {
     background-color: transparent;
 }
-.efekt{
-animation: zwieksz 2s;
+
+.efekt {
+    animation: zwieksz 2s;
 }
-@keyframes zwieksz{
-    0%{
+
+@keyframes zwieksz {
+    0% {
         transform: translateX(-50%) scale(0.8);
-        }
-        
-        100%{
-            transform: translateX(-50%) scale(1);
-        }
+    }
+
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
 }
-.tlo3 p.numer{
+
+.tlo3 p.numer {
     position: absolute;
     text-align: center;
     left: 50%;
@@ -616,59 +683,61 @@ animation: zwieksz 2s;
     transform: translateX(-50%);
     top: 12%;
 }
-/* .tlo3 .fa-html5{
-    color: black;
-} */
- .active{
-    animation:iconsappear 1s ;
+
+.active {
+    animation: iconsappear 1s;
 }
 
-
-
-@keyframes iconsappear{
-    0%{
-    opacity: 0;
-    }
-    50%{
+@keyframes iconsappear {
+    0% {
         opacity: 0;
     }
-    51%{
+
+    50% {
+        opacity: 0;
+    }
+
+    51% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-.tlo4{
+
+.tlo4 {
     height: 100vh;
-   
 }
-.projects{
+
+.projects {
     height: 150vh;
     overflow: hidden;
     position: relative;
-    background-color: rgba(0,0,0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
-div.first{
+
+div.first {
     position: relative;
     height: 50%;
     width: 100%;
 }
-div.first a{
+
+div.first a {
     display: none;
     right: 8%;
 }
 
-div.first img.wlasciwe{
+div.first img.wlasciwe {
     margin: 0 auto;
     display: block;
     height: 50vh;
     width: 100%;
-    padding:10px 0;
+    padding: 10px 0;
     filter: blur(1px);
-    
 }
-p.first{
+
+p.first {
     position: absolute;
     left: 5%;
     width: 40%;
@@ -676,35 +745,37 @@ p.first{
     top: 50%;
     transform: translateY(-50%) translateX(-120%);
 }
-div.first a:nth-of-type(1){
+
+div.first a:nth-of-type(1) {
     display: block;
     position: absolute;
     transform: translateX(50vw);
     height: 100%;
     left: 53%;
     pointer-events: none;
-   
 }
-div.second{
+
+div.second {
     position: relative;
     height: 50%;
     width: 100%;
 }
-div.second a{
+
+div.second a {
     display: none;
     right: 8%;
 }
 
-div.second img.wlasciwe{
+div.second img.wlasciwe {
     margin: 0 auto;
     display: block;
     height: 50vh;
     width: 100%;
-    padding:10px 0;
+    padding: 10px 0;
     filter: blur(1px);
-    
 }
-p.second{
+
+p.second {
     position: absolute;
     left: 5%;
     width: 40%;
@@ -712,7 +783,8 @@ p.second{
     top: 50%;
     transform: translateY(-50%) translateX(-120%);
 }
-div.second a:nth-of-type(1){
+
+div.second a:nth-of-type(1) {
     display: block;
     position: absolute;
     transform: translateX(50vw);
@@ -720,73 +792,76 @@ div.second a:nth-of-type(1){
     left: 53%;
     pointer-events: none;
 }
-div.second img.focus{
+
+div.second img.focus {
     position: absolute;
     z-index: 2;
-   left: 50%;
-   transform: translateX(-50%);
-   top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
     opacity: 1;
     pointer-events: all;
     height: 60px;
+    cursor: pointer;
 }
 
-div.second img.git{
+div.second img.git {
     position: absolute;
     z-index: 2;
-   left: 50%;
-   
-   transform: translateX(-50%);
-   pointer-events: all;
-   top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: all;
+    top: 160px;
     opacity: 1;
     height: 60px;
+    cursor: pointer;
 }
 
-
-
-
-
-
-div.three{
+div.three {
     position: relative;
     height: 50%;
     width: 100%;
 }
-div.three a{
+
+div.three a {
     display: none;
     right: 8%;
 }
 
-div.three img.wlasciwe{
+div.three img.wlasciwe {
     margin: 0 auto;
     display: block;
     height: 50vh;
     width: 100%;
-    padding:10px 0;
+    padding: 10px 0;
     filter: blur(1px);
 }
-p.three{
+
+p.three {
     position: absolute;
     left: 5%;
     width: 40%;
     color: white;
     top: 50%;
     transform: translateY(-50%) translateX(-120%);
-    
+
 }
-.animacjatytulprojektu{
-    animation:animacjanapisprojekt 2s both linear;
+
+.animacjatytulprojektu {
+    animation: animacjanapisprojekt 2s both linear;
 }
-@keyframes animacjanapisprojekt{
-    0%{
+
+@keyframes animacjanapisprojekt {
+    0% {
         transform: translateY(-50%) translateX(-120%);
     }
-    100%{
+
+    100% {
         transform: translateY(-50%) translateX(0);
     }
 }
-div.three a:nth-of-type(1){
+
+div.three a:nth-of-type(1) {
     display: block;
     position: absolute;
     transform: translateX(50vw);
@@ -794,143 +869,147 @@ div.three a:nth-of-type(1){
     left: 53%;
     pointer-events: none;
 }
-div.three img.focus{
+
+div.three img.focus {
     position: absolute;
     z-index: 2;
-   left: 50%;
-   transform: translateX(-50%);
-   top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
     opacity: 1;
     pointer-events: all;
     height: 60px;
+    cursor: pointer;
 }
 
-div.three img.git{
+div.three img.git {
     position: absolute;
     z-index: 2;
-   left: 50%;
-   
-   transform: translateX(-50%);
-   pointer-events: all;
-   top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: all;
+    top: 160px;
     opacity: 1;
     height: 60px;
+    cursor: pointer;
 }
 
-
-
-
-
-
-
-.klasaprojektyanimacja{
+.klasaprojektyanimacja {
     animation: animacjaprojekty 2s both linear;
 }
-@keyframes animacjaprojekty{
-    0%{
+
+@keyframes animacjaprojekty {
+    0% {
         transform: translateX(50vw);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
 }
-div.first img.focus{
+
+div.first img.focus {
     position: absolute;
     z-index: 2;
-   left: 50%;
-   transform: translateX(-50%);
-   top: 50px;
+    left: 50%;
+    cursor: pointer;
+    transform: translateX(-50%);
+    top: 50px;
     opacity: 1;
     pointer-events: all;
     height: 80px;
 }
 
-div.first img.git{
+div.first img.git {
     position: absolute;
     z-index: 2;
-   left: 50%;
-   
-   transform: translateX(-50%);
-   pointer-events: all;
-   top: 160px;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: all;
+    top: 160px;
     opacity: 1;
     height: 60px;
 }
-div.rest{
+
+div.rest {
     position: relative;
     height: 12vh;
     width: 100%;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
-div.logogita{
+
+div.logogita {
     background-color: #fca311;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 50%;
     animation: swiecenie 6s infinite linear alternate-reverse;
 }
-div.rest img{
-    
+
+div.rest img {
     padding: 10px;
     height: 60px;
-    
+
 }
-@keyframes swiecenie{
-    0%{
-        transform: translate(-50%,-50%) scale(0.7) ;
+
+@keyframes swiecenie {
+    0% {
+        transform: translate(-50%, -50%) scale(0.7);
         box-shadow: 0 0 10px #fca311;
     }
-    100%{
-        transform: translate(-50%,-50%) scale(1) ;
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
         box-shadow: 0 0 50px #fca311;
     }
 }
-footer{
+
+footer {
     height: 4vh;
     width: 100%;
     background-color: black;
 }
-footer p{
+
+footer p {
     color: white;
     text-align: center;
     line-height: 4vh;
 }
-section.contact{
-    
+
+.contact h1,
+p {
+    text-align: center;
+    color: #2ec4b6;
 }
 
-
-
-
-.contact h1, p 
-{
-  text-align: center;
-  color: #2ec4b6;
-}
-.contact label{
+.contact label {
     color: #2ec4b6;
     width: 100%;
     text-align: center;
 }
 
-.contact input, textarea , button
-{
-  width: 100%;
-  background-color: #ddd;
-}    
-.contact textarea
-{
-  height: 100px;
-  background-color: #ddd;
+.contact input,
+textarea,
+button {
+    width: 100%;
+    background-color: #ddd;
 }
-.container{
-    background-color: rgba(0,0,0,0.7);
+
+.contact textarea {
+    height: 100px;
+    background-color: #ddd;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
     max-width: 1420px;
     margin: 0 auto;
 }
-.button-primary{
+
+.button-primary {
     text-align: center;
     width: 90%;
     margin: 2% 5%;
@@ -942,82 +1021,77 @@ section.contact{
     border: none;
 }
 
-@media  only screen and (min-device-width: 768px) 
-{
+/* responsywność od rozmaru telefonow do wiekszych */
+@media only screen and (min-device-width: 768px) {
     .form-container {
-      padding: 5%;
-      background: #ffffff;
-      border: 9px solid #f2f2f2;            
-      max-width: 520px;
-      margin: auto;
+        padding: 5%;
+        background: #ffffff;
+        border: 9px solid #f2f2f2;
+        max-width: 520px;
+        margin: auto;
     }
 
 }
-@media (min-width: 768px) 
-{
-    .top p{
+
+@media (min-width: 768px) {
+    .top p {
         font-size: 60px;
     }
+
     .menu {
         height: 60px;
     }
-    .menu ul li a{
+
+    .menu ul li a {
         font-size: 23px;
-        
         line-height: 60px;
-        
-    }
-    .top i{
-        font-size: 60px;
-       
+
     }
 
-    .tlo p{
-       
-        font-size: 22px;
-        
+    .top i {
+        font-size: 60px;
+
     }
-    .tlo .budynek{
+
+    .tlo p {
+        font-size: 22px;
+    }
+
+    .tlo .budynek {
         width: 350px;
         top: 10%;
     }
-    .tlo2 .budynek{
-        
+
+    .tlo2 .budynek {
         height: 220px;
         top: 10%;
     }
-    .tlo2 p{
-       
+
+    .tlo2 p {
         font-size: 22px;
-        
     }
-    .tlo3 p.tytul{
-        
+
+    .tlo3 p.tytul {
         letter-spacing: 12px;
-        
         font-size: 56px;
-       
     }
 
-    .tlo3 div.kropki{
-        
+    .tlo3 div.kropki {
         top: 20%;
-        
-    }
-    .tlo3 .fab{
-      
-        top: 26%;
-        
-        font-size: 120px;
-        
     }
 
-    .tlo3 p.umiejetnosc{
+    .tlo3 .fab {
+        top: 26%;
+        font-size: 120px;
+    }
+
+    .tlo3 p.umiejetnosc {
         letter-spacing: 7px;
         top: calc(46% + 80px);
         font-size: 60px;
     }
-    .tlo3 p.opis{
+
+    .tlo3 p.opis {
         position: absolute;
         text-align: center;
         left: 8%;
@@ -1026,129 +1100,148 @@ section.contact{
         right: 8%;
         transform: rotate(10%);
         top: 100%;
-        /* top: calc(33% + 120px); */
     }
-    .dodajopiszdolu{
+
+    .dodajopiszdolu {
         animation: opiszdolu 2s linear both;
     }
-    @keyframes opiszdolu{
-        0%{
+
+    @keyframes opiszdolu {
+        0% {
             top: 100%;
         }
-        100%{
+
+        100% {
             top: calc(53% + 120px);
         }
     }
-    .efektopis{
+
+    .efektopis {
         animation: opisefekt 2s both;
     }
-        @keyframes opisefekt{
-            0%{
-                top: calc(53% + 120px);
-                transform: scale(1.2);
-                }
-                
-                100%{
-                    top: calc(53% + 120px);
-                    transform: scale(1);
-                }
+
+    @keyframes opisefekt {
+        0% {
+            top: calc(53% + 120px);
+            transform: scale(1.2);
+        }
+
+        100% {
+            top: calc(53% + 120px);
+            transform: scale(1);
+        }
     }
-    div.first{
+
+    div.first {
         position: relative;
         height: 50%;
         width: 100%;
     }
-    div.first a{
+
+    div.first a {
         display: none;
         position: absolute;
         left: 73%;
     }
-    div.first img.wlasciwe{
+
+    div.first img.wlasciwe {
         margin: 0 auto;
         display: block;
         width: 40vw;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(3px);
     }
-    div.second img.wlasciwe{
+
+    div.second img.wlasciwe {
         margin: 0 auto;
         display: block;
         width: 40vw;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(3px);
     }
-    div.three img.wlasciwe{
+
+    div.three img.wlasciwe {
         margin: 0 auto;
         display: block;
         width: 40vw;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(3px);
     }
-    div.first img.git{
+
+    div.first img.git {
         height: 80px;
-       top: 260px;
+        top: 260px;
     }
-    div.second img.git{
+
+    div.second img.git {
         height: 80px;
-       top: 260px;
+        top: 260px;
     }
-    div.three img.git{
+
+    div.three img.git {
         height: 80px;
-       top: 260px;
+        top: 260px;
     }
-    div.first img.focus{
+
+    div.first img.focus {
         height: 80px;
-       top: 160px; 
+        top: 160px;
     }
-    div.second img.focus{
+
+    div.second img.focus {
         height: 80px;
-        top: 160px; 
-     }
-     div.three img.focus{
+        top: 160px;
+    }
+
+    div.three img.focus {
         height: 80px;
-        top: 160px; 
-     }
-     div.rest img{
+        top: 160px;
+    }
+
+    div.rest img {
         padding: 10px;
         height: 80px;
     }
-    p.first{
-        
-        font-size: 35px;
-        
-    }
-    p.second{
+
+    p.first {
         font-size: 35px;
     }
-    p.three{
+
+    p.second {
+        font-size: 35px;
+    }
+
+    p.three {
         font-size: 35px;
     }
 }
-@media (orientation:landscape)
-{
-    .tlo .budynek{
+
+@media (orientation:landscape) {
+    .tlo .budynek {
         top: 3%;
     }
 
-    .tlo p{
+    .tlo p {
         bottom: 3%;
     }
-    .tlo2 .budynek{
+
+    .tlo2 .budynek {
         transform: translateX(170%);
         height: 80px;
         top: 3%;
     }
 
-    .tlo2 p{
+    .tlo2 p {
         bottom: 3%;
     }
-    .tlo3 .fab{
-        
+
+    .tlo3 .fab {
+
         font-size: 60px;
         top: 30%;
     }
-    .tlo3 div.kropki{
-        
+
+    .tlo3 div.kropki {
         width: 20%;
         left: 50%;
         transform: translateX(-50%) scale(0);
@@ -1157,115 +1250,123 @@ section.contact{
         display: flex;
         justify-content: space-around;
     }
-    .tlo3 p.umiejetnosc{
-        
+
+    .tlo3 p.umiejetnosc {
         top: calc(21% + 120px);
-        
         font-size: 26px;
-        
     }
-    .tlo3 p.opis{
-        
+
+    .tlo3 p.opis {
         left: 2%;
         font-size: 14.5px;
         right: 2%;
-        
-        /* top: calc(33% + 120px); */
     }
-    div.first{
+
+    div.first {
         overflow: hidden;
         position: relative;
         height: 50%;
         width: 50%;
         float: left;
     }
-    div.second{
+
+    div.second {
         overflow: hidden;
         position: relative;
         height: 50%;
         float: left;
         width: 50%;
     }
-    div.three{
+
+    div.three {
         overflow: hidden;
         position: relative;
         height: 50%;
         width: 100%;
     }
-    .projects{
+
+    .projects {
         height: 100vh;
         overflow: hidden;
         position: relative;
-        background-color: rgba(0,0,0, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
     }
-    div.three img.wlasciwe{
+
+    div.three img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
         width: 50%;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
-    div.rest{
+
+    div.rest {
         position: relative;
         height: 20vh;
         width: 100%;
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(0, 0, 0, 0.7);
     }
-    div.first img.git{
+
+    div.first img.git {
         height: 30px;
-       top: 100px;
+        top: 100px;
     }
-    div.second img.git{
+
+    div.second img.git {
         height: 30px;
-       top: 100px;
+        top: 100px;
     }
-    div.three img.git{
+
+    div.three img.git {
         height: 30px;
-       top: 100px;
+        top: 100px;
     }
-    div.first img.focus{
+
+    div.first img.focus {
         height: 30px;
-       top: 30px; 
+        top: 30px;
     }
-    div.second img.focus{
+
+    div.second img.focus {
         height: 30px;
-        top: 30px; 
-     }
-     div.three img.focus{
+        top: 30px;
+    }
+
+    div.three img.focus {
         height: 30px;
-       top: 30px;  
-     }
-    
-    
+        top: 30px;
+    }
+
+
 }
-@media (orientation:landscape) and (min-width: 812px)
-{
-    .top p{
-       
+
+@media (orientation:landscape) and (min-width: 812px) {
+    .top p {
         font-size: 30px;
-        
     }
-    .tlo .budynek{
+
+    .tlo .budynek {
         top: 3%;
         width: 180px;
     }
 
-    .tlo p{
+    .tlo p {
         font-size: 16px;
         bottom: 3%;
     }
-    
 
-    .tlo2 p{
+
+    .tlo2 p {
         font-size: 16px;
         bottom: 3%;
     }
-    .tlo3 .fab{
+
+    .tlo3 .fab {
         font-size: 60px;
         top: 30%;
     }
-    .tlo3 div.kropki{
+
+    .tlo3 div.kropki {
         width: 20%;
         left: 50%;
         transform: translateX(-50%) scale(0);
@@ -1274,181 +1375,203 @@ section.contact{
         display: flex;
         justify-content: space-around;
     }
-    .tlo3 p.umiejetnosc{
+
+    .tlo3 p.umiejetnosc {
         top: 65%;
         font-size: 23px;
-
     }
-    .tlo3 p.tytul{
+
+    .tlo3 p.tytul {
         font-size: 25px;
     }
-    .tlo3 p.opis{
-        
+
+    .tlo3 p.opis {
         left: 2%;
         font-size: 14px;
         right: 2%;
         opacity: 0;
-         top: calc(33% + 120px); 
+        top: calc(33% + 120px);
     }
-    .dodajopiszdolu{
+
+    .dodajopiszdolu {
         animation: opiszdolu 2s linear both;
     }
-    @keyframes opiszdolu{
-        0%{
+
+    @keyframes opiszdolu {
+        0% {
             top: 100%;
             opacity: 0;
         }
-        100%{
+
+        100% {
             top: calc(33% + 120px);
             opacity: 1;
         }
     }
-    .efektopis{
+
+    .efektopis {
         animation: opisefekt 2s both;
     }
-        @keyframes opisefekt{
-            0%{
-                opacity: 0;
-                top: calc(33% + 120px);
-                transform: scale(1.2);
-                }
-                
-                100%{
-                    top: calc(33% + 120px);
-                    opacity: 1;
-                    transform: scale(1);
-                }
+
+    @keyframes opisefekt {
+        0% {
+            opacity: 0;
+            top: calc(33% + 120px);
+            transform: scale(1.2);
+        }
+
+        100% {
+            top: calc(33% + 120px);
+            opacity: 1;
+            transform: scale(1);
+        }
     }
-    div.first{
+
+    div.first {
         overflow: hidden;
         position: relative;
         height: 50%;
         width: 50%;
         float: left;
     }
-    div.second{
+
+    div.second {
         overflow: hidden;
         position: relative;
         height: 50%;
         float: left;
         width: 50%;
     }
-    div.three{
+
+    div.three {
         overflow: hidden;
         position: relative;
         height: 50%;
         width: 100%;
     }
-    .projects{
+
+    .projects {
         height: 100vh;
         overflow: hidden;
         position: relative;
-        background-color: rgba(0,0,0, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
     }
-    div.first img.wlasciwe{
+
+    div.first img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
+
         width: 100px;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
-    div.second img.wlasciwe{
+
+    div.second img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
+
         width: 100px;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
-    div.three img.wlasciwe{
+
+    div.three img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
         width: 100px;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
-    div.rest{
+
+    div.rest {
         position: relative;
         height: 30vh;
         width: 100%;
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(0, 0, 0, 0.7);
     }
-    div.first img.git{
+
+    div.first img.git {
         height: 30px;
-       top: 100px;
+        top: 100px;
     }
-    div.second img.git{
+
+    div.second img.git {
         height: 30px;
-       top: 100px;
+        top: 100px;
     }
-    div.three img.git{
+
+    div.three img.git {
         height: 30px;
-       top: 100px;
+        top: 100px;
     }
-    div.first img.focus{
+
+    div.first img.focus {
         height: 30px;
-       top: 30px; 
+        top: 30px;
     }
-    div.second img.focus{
+
+    div.second img.focus {
         height: 30px;
-        top: 30px; 
-     }
-     div.three img.focus{
+        top: 30px;
+    }
+
+    div.three img.focus {
         height: 30px;
-       top: 30px;  
-     }
-     p.first{
-        
+        top: 30px;
+    }
+
+    p.first {
+
         font-size: 27px;
-        
+
     }
-    p.second{
+
+    p.second {
         font-size: 27px;
     }
-    p.three{
+
+    p.three {
         font-size: 27px;
     }
+
     .menu {
-       
         height: 26px;
-        
     }
-    .menu ul li a{
+
+    .menu ul li a {
         font-size: 18px;
         line-height: 26px;
-        
+
     }
 }
-@media (orientation:landscape) and (min-width: 812px)
-{
 
-   
-    .tlo .budynek{
+@media (orientation:landscape) and (min-width: 812px) {
+    .tlo .budynek {
         top: 3%;
         width: 380px;
     }
 
-    .tlo p{
+    .tlo p {
         font-size: 20px;
         bottom: 3%;
     }
-    .tlo2 .budynek
-    {
+
+    .tlo2 .budynek {
         height: 220px;
     }
-    
 
-    .tlo2 p{
+
+    .tlo2 p {
         font-size: 20px;
         bottom: 3%;
     }
-    .tlo3 .fab{
+
+    .tlo3 .fab {
         font-size: 80px;
         top: 30%;
     }
-    .tlo3 div.kropki{
+
+    .tlo3 div.kropki {
         width: 20%;
         left: 50%;
         transform: translateX(-50%) scale(0);
@@ -1457,340 +1580,355 @@ section.contact{
         display: flex;
         justify-content: space-around;
     }
-    .tlo3 p.umiejetnosc{
+
+    .tlo3 p.umiejetnosc {
         top: 65%;
         font-size: 50px;
 
     }
-    .tlo3 p.tytul{
+
+    .tlo3 p.tytul {
         font-size: 28px;
     }
-    .tlo3 p.opis{
-        
+
+    .tlo3 p.opis {
+
         left: 2%;
         font-size: 22px;
         right: 2%;
         opacity: 0;
-         top: calc(63% + 120px); 
+        top: calc(63% + 120px);
     }
-    .dodajopiszdolu{
+
+    .dodajopiszdolu {
         animation: opiszdolu 2s linear both;
     }
-    @keyframes opiszdolu{
-        0%{
+
+    @keyframes opiszdolu {
+        0% {
             top: 100%;
             opacity: 0;
         }
-        100%{
+
+        100% {
             top: calc(63% + 120px);
             opacity: 1;
         }
     }
-    .efektopis{
+
+    .efektopis {
         animation: opisefekt 2s both;
     }
-        @keyframes opisefekt{
-            0%{
-                opacity: 0;
-                top: calc(63% + 120px);
-                transform: scale(1.2);
-                }
-                
-                100%{
-                    top: calc(63% + 120px);
-                    opacity: 1;
-                    transform: scale(1);
-                }
+
+    @keyframes opisefekt {
+        0% {
+            opacity: 0;
+            top: calc(63% + 120px);
+            transform: scale(1.2);
+        }
+
+        100% {
+            top: calc(63% + 120px);
+            opacity: 1;
+            transform: scale(1);
+        }
     }
-    div.first img.wlasciwe{
+
+    div.first img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
+
         width: 200px;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
-    div.second img.wlasciwe{
+
+    div.second img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
         width: 200px;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
-    div.three img.wlasciwe{
+
+    div.three img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
         width: 200px;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
 
 }
- @media (min-height: 600px) and (orientation:landscape) and (min-width: 1000px) 
-{
+
+@media (min-height: 600px) and (orientation:landscape) and (min-width: 1000px) {
     .menu {
         display: none;
         height: 25px;
-        background-color:rgb(58,80,107);
-        border-bottom: 2px solid rgb(58,80,107);
+        background-color: rgb(58, 80, 107);
+        border-bottom: 2px solid rgb(58, 80, 107);
         z-index: 4;
     }
-    .menu ul li a{
+
+    .menu ul li a {
         font-size: 21px;
-        
+
         line-height: 25px;
-       
+
     }
-    .top p{
+
+    .top p {
         font-size: 30px;
     }
-    .tlo p{
+
+    .tlo p {
         font-size: 24px;
         bottom: 3%;
     }
-    .tlo .budynek{
+
+    .tlo .budynek {
         top: 3%;
         width: 280px;
     }
 
-   
-    .tlo2 .budynek
-    {
+
+    .tlo2 .budynek {
         height: 120px;
     }
-    
-    .tlo2 p{
+
+    .tlo2 p {
         font-size: 15px;
         bottom: 3%;
     }
-    .tlo3 p.umiejetnosc{
+
+    .tlo3 p.umiejetnosc {
         top: 55%;
         font-size: 50px;
 
     }
-    .tlo3 p.tytul{
+
+    .tlo3 p.tytul {
         font-size: 38px;
     }
-    .tlo3 p.opis{
+
+    .tlo3 p.opis {
         font-size: 16px;
-        
     }
-    div.first img.wlasciwe{
+
+    div.first img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
+
         width: 150px;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
-    div.second img.wlasciwe{
+
+    div.second img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
         width: 150px;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
-    div.three img.wlasciwe{
+
+    div.three img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
         width: 150px;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
-    div.first img.git{
+
+    div.first img.git {
         height: 40px;
-       top: 100px;
+        top: 100px;
     }
-    div.second img.git{
+
+    div.second img.git {
         height: 40px;
-       top: 100px;
+        top: 100px;
     }
-    div.three img.git{
+
+    div.three img.git {
         height: 40px;
-       top: 100px;
+        top: 100px;
     }
-    div.first img.focus{
+
+    div.first img.focus {
         height: 40px;
-       top: 50px; 
+        top: 50px;
     }
-    div.second img.focus{
+
+    div.second img.focus {
         height: 40px;
-        top: 50px; 
-     }
-     div.three img.focus{
+        top: 50px;
+    }
+
+    div.three img.focus {
         height: 40px;
-       top: 50px;  
-     }
-} 
-@media (orientation:landscape) and (min-width: 1000px) and (min-height: 500px)
-{
-    .tlo3 p.tytul{
+        top: 50px;
+    }
+}
+
+@media (orientation:landscape) and (min-width: 1000px) and (min-height: 500px) {
+    .tlo3 p.tytul {
         font-size: 38px;
     }
-    .tlo3 p.opis{
-        
+
+    .tlo3 p.opis {
+
         font-size: 22px;
     }
-    @keyframes opiszdolu{
-        0%{
+
+    @keyframes opiszdolu {
+        0% {
             top: 100%;
             opacity: 0;
         }
-        100%{
+
+        100% {
             top: calc(53% + 120px);
             opacity: 1;
         }
     }
-    .efektopis{
+
+    .efektopis {
         animation: opisefekt 2s both;
     }
-        @keyframes opisefekt{
-            0%{
-                opacity: 0;
-                top: calc(53% + 120px);
-                transform: scale(1.2);
-                }
-                
-                100%{
-                    top: calc(53% + 120px);
-                    opacity: 1;
-                    transform: scale(1);
-                }
+
+    @keyframes opisefekt {
+        0% {
+            opacity: 0;
+            top: calc(53% + 120px);
+            transform: scale(1.2);
+        }
+
+        100% {
+            top: calc(53% + 120px);
+            opacity: 1;
+            transform: scale(1);
+        }
     }
-    .tlo2 p{
-        
+
+    .tlo2 p {
         font-size: 25px;
-        
     }
-    .tlo .budynek{
+
+    .tlo .budynek {
         top: 3%;
         width: 260px;
     }
 
-   
-    .tlo2 .budynek
-    {
+
+    .tlo2 .budynek {
         height: 120px;
     }
 
 }
-@media (orientation:landscape) and (min-width: 1366px) and (min-height: 900px)
-{
+
+@media (orientation:landscape) and (min-width: 1366px) and (min-height: 900px) {
     .menu {
         display: none;
         height: 50px;
-        background-color:rgb(58,80,107);
-        border-bottom: 2px solid rgb(58,80,107);
+        background-color: rgb(58, 80, 107);
+        border-bottom: 2px solid rgb(58, 80, 107);
         z-index: 4;
     }
-    .menu ul li a{
+
+    .menu ul li a {
         font-size: 23px;
-        
         line-height: 50px;
-       
     }
-    .tlo p{
+
+    .tlo p {
         font-size: 30px;
         bottom: 3%;
     }
-    .tlo2 p{
+
+    .tlo2 p {
         font-size: 30px;
         bottom: 3%;
     }
-    .tlo3 p.umiejetnosc{
+
+    .tlo3 p.umiejetnosc {
         top: 55%;
         font-size: 50px;
 
     }
-    .tlo3 p.tytul{
+
+    .tlo3 p.tytul {
         font-size: 38px;
     }
-    .tlo3 p.opis{
+
+    .tlo3 p.opis {
         font-size: 32px;
     }
-    div.first img.wlasciwe{
+
+    div.first img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
+
         width: 250px;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
-    div.second img.wlasciwe{
+
+    div.second img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
+
         width: 250px;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
-    .tlo .budynek{
+
+    .tlo .budynek {
         top: 3%;
         width: 380px;
     }
 
-   
-    .tlo2 .budynek
-    {
+
+    .tlo2 .budynek {
         height: 200px;
     }
-    div.three img.wlasciwe{
+
+    div.three img.wlasciwe {
         margin: 0 auto;
         display: block;
-        
+
         width: 250px;
-        padding:10px 0;
+        padding: 10px 0;
         filter: blur(1px);
     }
-    div.first img.git{
+
+    div.first img.git {
         height: 70px;
-       top: 200px;
+        top: 200px;
     }
-    div.second img.git{
+
+    div.second img.git {
         height: 70px;
-       top: 200px;
+        top: 200px;
     }
-    div.three img.git{
+
+    div.three img.git {
         height: 70px;
-       top: 200px;
+        top: 200px;
     }
-    div.first img.focus{
+
+    div.first img.focus {
         height: 70px;
-       top: 100px; 
+        top: 100px;
     }
-    div.second img.focus{
+
+    div.second img.focus {
         height: 70px;
-        top: 100px; 
-     }
-     div.three img.focus{
+        top: 100px;
+    }
+
+    div.three img.focus {
         height: 70px;
-       top: 100px;  
-     }
+        top: 100px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
