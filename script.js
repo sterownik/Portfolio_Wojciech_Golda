@@ -149,7 +149,7 @@ $("div.three img.git").on("click", function () {
 })
 $("div.second img.git").on("click", function () {
     document.querySelector("div.three a:nth-of-type(1)").href = "#";
-    window.open("https://github.com/sterownik/mPogoda", "_self");
+    window.open("https://github.com/sterownik/mFiszki", "_self");
 })
 $("div.three img.git").on("click", function () {
     document.querySelector("div.three a:nth-of-type(1)").href = "#";
