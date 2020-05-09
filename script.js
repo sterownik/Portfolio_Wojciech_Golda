@@ -1,5 +1,7 @@
 var i = 0;
 var w = 0;
+var sprawdz = 1;
+var sprawdz2 = 1;
 var licznikikon = 0;
 var txt3 = "Nazywam się Wojciech Gołda i oto moje portfolio";
 var speed = 75;
@@ -8,7 +10,7 @@ typeWriter();
 var umiejetności = ["Android", "HTML5", "CSS3", "JavaScript", "Java", "Github", "React.js", "Node.js"];
 var icons = ["fa-android", "fa-html5", "fa-css3-alt", "fa-js", "fa-java", "fa-git-square", "fa-react", "fa-node-js"];
 var opisy = ["Mam roczne komercyjne doświadczenie w programowaniu aplikacji na system android dodatkowo tematem mojej pracy inżynierskiej było między innymi zaprogramowanie aplikacji mobilnej ", "Na studiach nauka obejmowała zakres HTML5 stąd znam podstawy. Od 5 miesięcy szkole się projektując własne strony za pomocą HTML5. Wiedzę zdobywałem również na kusie WebSamuraja na platformie Udemy",
-    "Naukeeee kaskadowego arkusza stylów rozpocząłem na studiach i od 5 miesięcy równolegle z HTMLem uczę sie kolejnych informacji", "Nauke JavaScripta rozpocząłem również na studiach i po poznaniu HTMLa oraz CSS zdobywam kolejną bardziej zaawansowaną wiedzę",
+    "Nauke kaskadowego arkusza stylów rozpocząłem na studiach i od 5 miesięcy równolegle z HTMLem uczę sie kolejnych informacji", "Nauke JavaScripta rozpocząłem również na studiach i po poznaniu HTMLa oraz CSS zdobywam kolejną bardziej zaawansowaną wiedzę",
     "Język Java jest przeze mnie najbardziej znany ponieważ w jęzku tym pracowałem z klinetami komercyjnymi oraz poznawałem go pisząc prace dyplomową",
     "Platforme Github poznałem na studiach i od początku tworzenia przeze mnie projektów korzystam z niej i wrzucam na nią swoją pracę",
     "W bliskiej przyszłosci planuje uczyć się Reacta.js", "W przyszłości planuje zgłebiać swoją wiedze na temad Node.js"
@@ -19,26 +21,31 @@ $(".umiejetnosc").text(umiejetności[0]);
 zmientlo(0);
 //animacja nacisniecia zeby strzalka szla w prawo
 function prawe() {
-    $(".fa-arrow-right").animate({
+
+
+    $(".tlo3 .fa-arrow-right").removeClass("prawastrzalka");
+    $(".tlo3 .fa-arrow-right").animate({
         right: '0'
     }, "slow");
-    $(".fa-arrow-right").animate({
+    $(".tlo3 .fa-arrow-right").animate({
         right: '5%'
     }, "slow");
+    sprawdz = 2;
+
 
 }
-
 //animacja nacisniecia zeby strzalka szla w lewo
 function lewe() {
-    $(".fa-arrow-left").animate({
+    $(".tlo3 .fa-arrow-left").removeClass("lewastrzalka");
+    $(".tlo3 .fa-arrow-left").animate({
         left: '0'
     }, "slow");
-    $(".fa-arrow-left").animate({
+    $(".tlo3 .fa-arrow-left").animate({
         left: '5%'
     }, "slow");
+    sprawdz = 2;
 }
 $(".fa-arrow-right").on("click", function () {
-    $(".fa-arrow-right").removeClass("prawastrzalka");
     $("p.opis").removeClass("dodajopiszdolu");
     $(".fab").removeClass(icons[licznikikon]);
     $(".umiejetnosc").removeClass("efekt");
@@ -66,34 +73,40 @@ $(".fa-arrow-right").on("click", function () {
         opacity: '1'
     }, "slow");
     zmientlo(licznikikon);
+
 })
 $(".fa-arrow-left").on("click", function () {
-    $(".fa-arrow-left").removeClass("lewastrzalka");
-    $(".tlo3 p.opis").removeClass("dodajopiszdolu");
-    $(".fab").removeClass(icons[licznikikon]);
-    licznikikon--;
+    $(".tlo3p .opis").removeClass("dodajopiszdolu");
+    $(".tlo3 .fab").removeClass(icons[licznikikon]);
+    $(".tlo3 .umiejetnosc").removeClass("efekt");
+    $("p.opis").removeClass("efektopis");
+
     $(".umiejetnosc").animate({
         opacity: '0.3'
     }, "fast");
     $(".umiejetnosc").animate({
         opacity: '1'
     }, "fast");
+    licznikikon--;
+
     if (licznikikon < 0) {
         licznikikon = icons.length - 1;
     }
-    zmientlo(licznikikon);
-
-
+    $(".opis").css("opacity", "1");
     $(".fab").animate({
         opacity: '0'
     }, "slow");
+    $(".umiejetnosc").addClass("efekt");
     $(".fab").addClass(icons[licznikikon]);
     $(".opis").text(opisy[licznikikon]);
+    $(".opis").addClass("efektopis");
     $(".umiejetnosc").text(umiejetności[licznikikon]);
-
     $(".fab").animate({
         opacity: '1'
     }, "slow");
+    zmientlo(licznikikon);
+
+
 })
 //zmiana umiejetnosci po nacisneiu
 function zmientlo(licznik) {
@@ -209,16 +222,22 @@ $(window).on("scroll", function () {
     }
 
     if (skroll > pos4 + wys4 - windowHeight) {
+        $(".tlo3 .fa-arrow-right").css("opacity", "1");
+        $(".tlo3 .fa-arrow-left").css("opacity", "1");
+        if (sprawdz != 2) {
+            $(".tlo3 .fa-arrow-right").addClass("prawastrzalka");
+            $(".tlo3 .fa-arrow-left").addClass("lewastrzalka");
+
+        }
+        $(".tlo3 p.umiejetnosc").css("opacity", "1");
+        $(".tlo3 p.opis").css("opacity", "1");
         $(".tlo3 .fab").addClass("fabadd");
         $(".tytul").addClass("efekttytul");
         $(".kropki").addClass("dodajkropki");
-        $(".fa-arrow-right").removeClass("prawa");
-        $(".fa-arrow-left").removeClass("lewa");
-        $(".tlo3 .fa-arrow-right").addClass("prawastrzalka");
-        $(".tlo3 .fa-arrow-left").addClass("lewastrzalka");
+
+
         $(".tlo3 p.umiejetnosc").addClass("dodajanimacjanazwa");
         $(".tlo3 p.opis").addClass("dodajopiszdolu");
-        //  $(".tlo2 p").addClass("tekst2");
     }
     if (skroll > pos5 + wys5 - windowHeight) {
         $("div.first a:nth-of-type(1)").addClass("klasaprojektyanimacja");
@@ -227,6 +246,9 @@ $(window).on("scroll", function () {
     if (skroll > pos6 + wys6 - windowHeight) {
         $("div.second a:nth-of-type(1)").addClass("klasaprojektyanimacja");
         $("p.second").addClass("animacjatytulprojektu");
+
+    }
+    if (skroll > pos7 + wys7 - windowHeight) {
         $("div.three a:nth-of-type(1)").addClass("klasaprojektyanimacja");
         $("p.three").addClass("animacjatytulprojektu");
     }
@@ -235,8 +257,16 @@ $(window).on("scroll", function () {
     if (skroll < 100) {
         //    $(".fa-arrow-left").animate({ opacity: '0' }, "0.2s");
         // $(".fa-arrow-right").animate({ opacity: '0' }, "0.2s");
-        $(".fa-arrow-right").addClass("prawa");
-        $(".fa-arrow-left").addClass("lewa");
+        sprawdz = 1;
+        sprawdz2 = 1;
+        $(".tlo3 .fa-arrow-right").css("opacity", "0");
+        $(".tlo3 .fa-arrow-left").css("opacity", "0");
+        $(".tlo3 .fa-arrow-right").removeClass("prawastrzalka");
+        $(".tlo3 .fa-arrow-left").removeClass("lewastrzalka");
+        $(".umiejetnosc").removeClass("efekt");
+
+        $(".opis").removeClass("efektopis");
+        // $(".fa-arrow-left").addClass("lewa");
         $(".tlo .budynek").removeClass("activeb");
         $(".tlo p").removeClass("tekst");
         $(".tlo2 .budynek").removeClass("active");
@@ -244,10 +274,12 @@ $(window).on("scroll", function () {
         $(".tlo3 .fab").removeClass("fabadd");
         $(".tytul").removeClass("efekttytul");
         $(".kropki").removeClass("dodajkropki");
-        $(".tlo3 .fa-arrow-right").removeClass("prawastrzalka");
-        $(".tlo3 .fa-arrow-left").removeClass("lewastrzalka");
+        // $(".tlo3 .fa-arrow-right").removeClass("prawa");
         $(".tlo3 p.umiejetnosc").removeClass("dodajanimacjanazwa");
+        $(".tlo3 p.umiejetnosc").css("opacity", "0");
+
         $(".tlo3 p.opis").removeClass("dodajopiszdolu");
+        $(".tlo3 p.opis").css("opacity", "0");
         $("div.first a:nth-of-type(1)").removeClass("klasaprojektyanimacja");
         $("p.first").removeClass("animacjatytulprojektu");
         $("div.second a:nth-of-type(1)").removeClass("klasaprojektyanimacja");

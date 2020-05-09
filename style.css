@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Cantora One', sans-serif;
     background-image: url(img/drogamleczna.jpg);
     position: relative;
 }
@@ -30,7 +30,7 @@ body {
     display: block;
     position: absolute;
     font-size: 20px;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Cantora One', sans-serif;
     color: #a8dadc;
     text-shadow: 1px 1px 1px black;
     top: 30%;
@@ -49,7 +49,7 @@ body {
     bottom: 2%;
     left: 50%;
     transform: translateX(-50%);
-    animation: arrow 1s 6s linear infinite;
+    animation: arrow 1s 3s linear infinite;
     opacity: 0;
     cursor: pointer;
     color: #14213d;
@@ -240,7 +240,7 @@ div.highschool .tlo {
     padding: 0 10px;
     width: 100%;
     left: -100%;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Cantora One', sans-serif;
     text-align: justify;
     box-shadow: 0 0 5px white;
     background-color: rgba(255, 255, 255, 0.4);
@@ -265,7 +265,7 @@ div.highschool .tlo {
     bottom: 20px;
     font-size: 15px;
     color: black;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Cantora One', sans-serif;
     width: calc(100% - 40px);
     text-align: justify;
     right: -100%;
@@ -412,54 +412,11 @@ div.tlo3 {
     position: absolute;
     top: 30%;
     right: 5%;
-    opacity: 1;
+    opacity: 0;
     cursor: pointer;
     color: #b8f2e6;
     font-size: 70px;
 }
-
-.praweklikniecie {
-    animation: prawaklikniecie 2s both linear;
-}
-
-@keyframes prawaklikniecie {
-    0% {
-        right: 0;
-    }
-
-    100% {
-        right: 5%;
-    }
-}
-
-.prawa {
-    animation: prawaanim 2s linear;
-}
-
-@keyframes prawaanim {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-.lewa {
-    animation: lewaanim 2s linear;
-}
-
-@keyframes lewaanim {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
 
 .prawastrzalka {
     animation: prawaefekt 2s both linear;
@@ -467,26 +424,14 @@ div.tlo3 {
 
 @keyframes prawaefekt {
     0% {
-        opacity: 0;
-        right: -50%;
 
+        right: -50%;
     }
 
     100% {
-        opacity: 1;
+
         right: 5%;
-
     }
-}
-
-.tlo3 .fa-arrow-left {
-    position: absolute;
-    top: 30%;
-    cursor: pointer;
-    left: 5%;
-    opacity: 1;
-    color: #b8f2e6;
-    font-size: 70px;
 }
 
 .lewastrzalka {
@@ -495,20 +440,32 @@ div.tlo3 {
 
 @keyframes lewaefekt {
     0% {
-        opacity: 0;
+
         left: -50%;
     }
 
     100% {
-        opacity: 1;
         left: 5%;
     }
 }
+
+.tlo3 .fa-arrow-left {
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+    left: 5%;
+    opacity: 0;
+    color: #b8f2e6;
+    font-size: 70px;
+}
+
+
 
 .tlo3 p.opis {
     position: absolute;
     text-align: center;
     left: 15%;
+    opacity: 0;
     color: #d9dbbc;
     right: 15%;
     transform: rotate(10%);
@@ -516,7 +473,7 @@ div.tlo3 {
 }
 
 .dodajopiszdolu {
-    animation: opiszdolu 2s linear both;
+    animation: opiszdolu 2s linear;
 }
 
 @keyframes opiszdolu {
@@ -531,7 +488,7 @@ div.tlo3 {
 
 
 .efektopis {
-    animation: opisefekt 2s both;
+    animation: opisefekt 2s linear;
 }
 
 @keyframes opisefekt {
@@ -582,7 +539,7 @@ div.tlo3 {
     top: calc(23% + 120px);
     overflow: hidden;
     font-size: 30px;
-    opacity: 0.2;
+    opacity: 0;
     transform: translateX(-50%) rotate(0);
     color: #b8f2e6;
     text-shadow: 2px 2px 2px #7d8597;
@@ -679,7 +636,7 @@ div.tlo3 {
     position: absolute;
     text-align: center;
     left: 50%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cantora One', sans-serif;
     transform: translateX(-50%);
     top: 12%;
 }
@@ -1013,7 +970,7 @@ button {
     text-align: center;
     width: 90%;
     margin: 2% 5%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Cantora One', sans-serif;
     text-transform: uppercase;
     border: 2px solid black;
     border-radius: 5%;
