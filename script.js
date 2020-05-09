@@ -11,7 +11,7 @@ var opisy = ["Mam roczne komercyjne doświadczenie w programowaniu aplikacji na 
     "Nauke kaskadowego arkusza stylów rozpocząłem na studiach i od 5 miesięcy równolegle z HTMLem uczę sie kolejnych informacji", "Nauke JavaScripta rozpocząłem również na studiach i po poznaniu HTMLa oraz CSS zdobywam kolejną bardziej zaawansowaną wiedzę",
     "Język Java jest przeze mnie najbardziej znany ponieważ w jęzku tym pracowałem z klinetami komercyjnymi oraz poznawałem go pisząc prace dyplomową",
     "Platforme Github poznałem na studiach i od początku tworzenia przeze mnie projektów korzystam z niej i wrzucam na nią swoją pracę",
-    "Reacta zaczałem uczyć sie od miesiąca i staram się go coraz bardziej poznawać", "W przyszłości planuje zgłebiać swoją wiedze na temad Node.js"
+    "W bliskiej przyszłosci planuje uczyć się Reacta.js", "W przyszłości planuje zgłebiać swoją wiedze na temad Node.js"
 ];
 var liczbaumiejetnosci = icons.length;
 $(".opis").text(opisy[0]);
