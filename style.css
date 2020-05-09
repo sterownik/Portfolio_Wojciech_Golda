@@ -899,6 +899,7 @@ div.rest {
 div.logogita {
     background-color: #fca311;
     position: absolute;
+    cursor: pointer;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
