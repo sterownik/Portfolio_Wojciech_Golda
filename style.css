@@ -883,6 +883,11 @@ div.three img:hover {
     }
 }
 
+div.first img {
+    transition: .5s;
+}
+
+
 div.first img.focus {
     position: absolute;
     z-index: 2;
@@ -1133,6 +1138,14 @@ button {
         width: 40vw;
         padding: 10px 0;
         filter: blur(3px);
+    }
+
+    div.second img {
+        transition: .5s;
+    }
+
+    div.three img {
+        transition: .5s;
     }
 
     div.second img.wlasciwe {
