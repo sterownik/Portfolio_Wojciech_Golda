@@ -137,6 +137,12 @@ nav.active {
     color: white;
     text-decoration-line: none;
     text-transform: uppercase;
+    transition: .5s;
+}
+
+.menu ul li a:hover {
+    color: rgb(58, 80, 107);
+    background-color: #a8dadc;
 }
 
 .schools {
@@ -760,6 +766,7 @@ div.second img.focus {
     pointer-events: all;
     height: 60px;
     cursor: pointer;
+
 }
 
 div.second img.git {
@@ -773,6 +780,12 @@ div.second img.git {
     height: 60px;
     cursor: pointer;
 }
+
+div.second img:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+
+
 
 div.three {
     position: relative;
@@ -851,6 +864,11 @@ div.three img.git {
     cursor: pointer;
 }
 
+
+div.three img:hover {
+    transform: translateX(-50%) scale(1.2);
+}
+
 .klasaprojektyanimacja {
     animation: animacjaprojekty 2s both linear;
 }
@@ -877,6 +895,8 @@ div.first img.focus {
     height: 60px;
 }
 
+
+
 div.first img.git {
     position: absolute;
     z-index: 2;
@@ -887,6 +907,10 @@ div.first img.git {
     top: 160px;
     opacity: 1;
     height: 60px;
+}
+
+div.first img:hover {
+    transform: translateX(-50%) scale(1.2);
 }
 
 div.rest {
