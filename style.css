@@ -675,24 +675,24 @@ div.tlo3 {
 }
 
 .projects {
-    height: 150vh;
+    height: 200vh;
     overflow: hidden;
     position: relative;
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-div.first {
+.projects div {
     position: relative;
-    height: 50%;
+    height: 50vh;
     width: 100%;
 }
 
-div.first a {
+.projects div a {
     display: none;
     right: 8%;
 }
 
-div.first img.wlasciwe {
+.projects div img.wlasciwe {
     margin: 0 auto;
     display: block;
     height: 50vh;
@@ -701,7 +701,7 @@ div.first img.wlasciwe {
     filter: blur(1px);
 }
 
-p.first {
+.projects div p {
     position: absolute;
     left: 5%;
     width: 40%;
@@ -710,7 +710,7 @@ p.first {
     transform: translateY(-50%) translateX(-120%);
 }
 
-div.first a:nth-of-type(1) {
+.projects div a:nth-of-type(1) {
     display: block;
     position: absolute;
     transform: translateX(50vw);
@@ -719,104 +719,35 @@ div.first a:nth-of-type(1) {
     pointer-events: none;
 }
 
-div.second {
-    position: relative;
-    height: 50%;
-    width: 100%;
-}
-
-div.second a {
-    display: none;
-    right: 8%;
-}
-
-div.second img.wlasciwe {
-    margin: 0 auto;
-    display: block;
-    height: 50vh;
-    width: 100%;
-    padding: 10px 0;
-    filter: blur(1px);
-}
-
-p.second {
-    position: absolute;
-    left: 5%;
-    width: 40%;
-    color: white;
-    top: 50%;
-    transform: translateY(-50%) translateX(-120%);
-}
-
-div.second a:nth-of-type(1) {
-    display: block;
-    position: absolute;
-    transform: translateX(50vw);
-    height: 100%;
-    left: 53%;
-    pointer-events: none;
-}
-
-div.second img.focus {
+.projects div img.focus {
     position: absolute;
     z-index: 2;
     left: 50%;
+    cursor: pointer;
     transform: translateX(-50%);
     top: 50px;
     opacity: 1;
     pointer-events: all;
     height: 60px;
-    cursor: pointer;
-
 }
 
-div.second img.git {
+.projects div img.git {
     position: absolute;
     z-index: 2;
+    cursor: pointer;
     left: 50%;
     transform: translateX(-50%);
     pointer-events: all;
     top: 160px;
     opacity: 1;
     height: 60px;
-    cursor: pointer;
 }
 
-div.second img:hover {
+.projects div img:hover {
     transform: translateX(-50%) scale(1.2);
 }
 
 
-
-div.three {
-    position: relative;
-    height: 50%;
-    width: 100%;
-}
-
-div.three a {
-    display: none;
-    right: 8%;
-}
-
-div.three img.wlasciwe {
-    margin: 0 auto;
-    display: block;
-    height: 50vh;
-    width: 100%;
-    padding: 10px 0;
-    filter: blur(1px);
-}
-
-p.three {
-    position: absolute;
-    left: 5%;
-    width: 40%;
-    color: white;
-    top: 50%;
-    transform: translateY(-50%) translateX(-120%);
-
-}
 
 .animacjatytulprojektu {
     animation: animacjanapisprojekt 2s both linear;
@@ -824,51 +755,15 @@ p.three {
 
 @keyframes animacjanapisprojekt {
     0% {
-        transform: translateY(-50%) translateX(-120%);
+        transform: translateY(0) translateX(-120%);
     }
 
     100% {
-        transform: translateY(-50%) translateX(0);
+        transform: translateY(0) translateX(0);
     }
 }
 
-div.three a:nth-of-type(1) {
-    display: block;
-    position: absolute;
-    transform: translateX(50vw);
-    height: 100%;
-    left: 53%;
-    pointer-events: none;
-}
 
-div.three img.focus {
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 50px;
-    opacity: 1;
-    pointer-events: all;
-    height: 60px;
-    cursor: pointer;
-}
-
-div.three img.git {
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: all;
-    top: 160px;
-    opacity: 1;
-    height: 60px;
-    cursor: pointer;
-}
-
-
-div.three img:hover {
-    transform: translateX(-50%) scale(1.2);
-}
 
 .klasaprojektyanimacja {
     animation: animacjaprojekty 2s both linear;
@@ -884,40 +779,7 @@ div.three img:hover {
     }
 }
 
-div.first img {
-    transition: .5s;
-}
 
-
-div.first img.focus {
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    cursor: pointer;
-    transform: translateX(-50%);
-    top: 50px;
-    opacity: 1;
-    pointer-events: all;
-    height: 60px;
-}
-
-
-
-div.first img.git {
-    position: absolute;
-    z-index: 2;
-    cursor: pointer;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: all;
-    top: 160px;
-    opacity: 1;
-    height: 60px;
-}
-
-div.first img:hover {
-    transform: translateX(-50%) scale(1.2);
-}
 
 div.rest {
     position: relative;
@@ -1121,19 +983,7 @@ button {
         }
     }
 
-    div.first {
-        position: relative;
-        height: 50%;
-        width: 100%;
-    }
-
-    div.first a {
-        display: none;
-        position: absolute;
-        left: 73%;
-    }
-
-    div.first img.wlasciwe {
+    .projects div img.wlasciwe {
         margin: 0 auto;
         display: block;
         width: 40vw;
@@ -1141,76 +991,24 @@ button {
         filter: blur(3px);
     }
 
-    div.second img {
-        transition: .5s;
-    }
-
-    div.three img {
-        transition: .5s;
-    }
-
-    div.second img.wlasciwe {
-        margin: 0 auto;
-        display: block;
-        width: 40vw;
-        padding: 10px 0;
-        filter: blur(3px);
-    }
-
-    div.three img.wlasciwe {
-        margin: 0 auto;
-        display: block;
-        width: 40vw;
-        padding: 10px 0;
-        filter: blur(3px);
-    }
-
-    div.first img.git {
-        height: 80px;
-        top: 260px;
-    }
-
-    div.second img.git {
-        height: 80px;
-        top: 260px;
-    }
-
-    div.three img.git {
-        height: 80px;
-        top: 260px;
-    }
-
-    div.first img.focus {
+    .projects div img.focus {
         height: 80px;
         top: 160px;
     }
 
-    div.second img.focus {
+    .projects div img.git {
         height: 80px;
-        top: 160px;
+        top: 260px;
     }
 
-    div.three img.focus {
-        height: 80px;
-        top: 160px;
-    }
-
-    div.rest img {
-        padding: 10px;
-        height: 80px;
-    }
-
-    p.first {
+    .projects div p {
         font-size: 35px;
     }
 
-    p.second {
-        font-size: 35px;
-    }
 
-    p.three {
-        font-size: 35px;
-    }
+
+
+
 }
 
 @media (orientation:landscape) {
@@ -1258,29 +1056,6 @@ button {
         right: 2%;
     }
 
-    div.first {
-        overflow: hidden;
-        position: relative;
-        height: 50%;
-        width: 50%;
-        float: left;
-    }
-
-    div.second {
-        overflow: hidden;
-        position: relative;
-        height: 50%;
-        float: left;
-        width: 50%;
-    }
-
-    div.three {
-        overflow: hidden;
-        position: relative;
-        height: 50%;
-        width: 100%;
-    }
-
     .projects {
         height: 100vh;
         overflow: hidden;
@@ -1288,13 +1063,19 @@ button {
         background-color: rgba(0, 0, 0, 0.7);
     }
 
-    div.three img.wlasciwe {
-        margin: 0 auto;
-        display: block;
+    .projects div {
+        overflow: hidden;
+        position: relative;
+        height: 50%;
         width: 50%;
-        padding: 10px 0;
-        filter: blur(1px);
+        float: left;
     }
+
+
+
+
+
+
 
     div.rest {
         position: relative;
@@ -1303,35 +1084,17 @@ button {
         background-color: rgba(0, 0, 0, 0.7);
     }
 
-    div.first img.git {
-        height: 30px;
-        top: 100px;
-    }
-
-    div.second img.git {
-        height: 30px;
-        top: 100px;
-    }
-
-    div.three img.git {
-        height: 30px;
-        top: 100px;
-    }
-
-    div.first img.focus {
+    .projects div img.focus {
         height: 30px;
         top: 30px;
     }
 
-    div.second img.focus {
+    .projects div img.git {
         height: 30px;
-        top: 30px;
+        top: 100px;
     }
 
-    div.three img.focus {
-        height: 30px;
-        top: 30px;
-    }
+
 
 
 }
@@ -1423,28 +1186,7 @@ button {
         }
     }
 
-    div.first {
-        overflow: hidden;
-        position: relative;
-        height: 50%;
-        width: 50%;
-        float: left;
-    }
 
-    div.second {
-        overflow: hidden;
-        position: relative;
-        height: 50%;
-        float: left;
-        width: 50%;
-    }
-
-    div.three {
-        overflow: hidden;
-        position: relative;
-        height: 50%;
-        width: 100%;
-    }
 
     .projects {
         height: 100vh;
@@ -1453,7 +1195,7 @@ button {
         background-color: rgba(0, 0, 0, 0.7);
     }
 
-    div.first img.wlasciwe {
+    .projects div img.wlasciwe {
         margin: 0 auto;
         display: block;
 
@@ -1462,22 +1204,7 @@ button {
         filter: blur(1px);
     }
 
-    div.second img.wlasciwe {
-        margin: 0 auto;
-        display: block;
 
-        width: 100px;
-        padding: 10px 0;
-        filter: blur(1px);
-    }
-
-    div.three img.wlasciwe {
-        margin: 0 auto;
-        display: block;
-        width: 100px;
-        padding: 10px 0;
-        filter: blur(1px);
-    }
 
     div.rest {
         position: relative;
@@ -1486,49 +1213,22 @@ button {
         background-color: rgba(0, 0, 0, 0.7);
     }
 
-    div.first img.git {
-        height: 30px;
-        top: 100px;
-    }
-
-    div.second img.git {
-        height: 30px;
-        top: 100px;
-    }
-
-    div.three img.git {
-        height: 30px;
-        top: 100px;
-    }
-
-    div.first img.focus {
-        height: 30px;
+    .projects div img.focus {
+        height: 50px;
         top: 30px;
     }
 
-    div.second img.focus {
-        height: 30px;
-        top: 30px;
+    .projects div img.git {
+        height: 50px;
+        top: 100px;
     }
 
-    div.three img.focus {
-        height: 30px;
-        top: 30px;
-    }
-
-    p.first {
-
-        font-size: 27px;
-
-    }
-
-    p.second {
+    .projects div p {
         font-size: 27px;
     }
 
-    p.three {
-        font-size: 27px;
-    }
+
+
 
     .menu {
         height: 26px;
@@ -1630,7 +1330,7 @@ button {
         }
     }
 
-    div.first img.wlasciwe {
+    .projects div img.wlasciwe {
         margin: 0 auto;
         display: block;
 
@@ -1639,21 +1339,7 @@ button {
         filter: blur(1px);
     }
 
-    div.second img.wlasciwe {
-        margin: 0 auto;
-        display: block;
-        width: 200px;
-        padding: 10px 0;
-        filter: blur(1px);
-    }
 
-    div.three img.wlasciwe {
-        margin: 0 auto;
-        display: block;
-        width: 200px;
-        padding: 10px 0;
-        filter: blur(1px);
-    }
 
 }
 
@@ -1709,7 +1395,7 @@ button {
         font-size: 16px;
     }
 
-    div.first img.wlasciwe {
+    .projects div img.wlasciwe {
         margin: 0 auto;
         display: block;
 
@@ -1718,51 +1404,19 @@ button {
         filter: blur(1px);
     }
 
-    div.second img.wlasciwe {
-        margin: 0 auto;
-        display: block;
-        width: 190px;
-        padding: 10px 0;
-        filter: blur(1px);
-    }
-
-    div.three img.wlasciwe {
-        margin: 0 auto;
-        display: block;
-        width: 190px;
-        padding: 10px 0;
-        filter: blur(1px);
-    }
-
-    div.first img.git {
-        height: 60px;
-        top: 150px;
-    }
-
-    div.second img.git {
-        height: 60px;
-        top: 150px;
-    }
-
-    div.three img.git {
-        height: 60px;
-        top: 150px;
-    }
-
-    div.first img.focus {
+    .projects div img.focus {
         height: 60px;
         top: 70px;
     }
 
-    div.second img.focus {
+    .projects div img.git {
         height: 60px;
-        top: 70px;
+        top: 150px;
     }
 
-    div.three img.focus {
-        height: 60px;
-        top: 70px;
-    }
+
+
+
 }
 
 @media (orientation:landscape) and (min-width: 1000px) and (min-height: 500px) {
@@ -1772,7 +1426,7 @@ button {
 
     .tlo3 p.opis {
 
-        font-size: 17px;
+        font-size: 23px;
     }
 
     @keyframes opiszdolu {
@@ -1859,7 +1513,7 @@ button {
         font-size: 32px;
     }
 
-    div.first img.wlasciwe {
+    .projects div img.wlasciwe {
         margin: 0 auto;
         display: block;
 
@@ -1868,14 +1522,7 @@ button {
         filter: blur(1px);
     }
 
-    div.second img.wlasciwe {
-        margin: 0 auto;
-        display: block;
 
-        width: 250px;
-        padding: 10px 0;
-        filter: blur(1px);
-    }
 
     .tlo .budynek {
         top: 3%;
@@ -1887,42 +1534,17 @@ button {
         height: 200px;
     }
 
-    div.three img.wlasciwe {
-        margin: 0 auto;
-        display: block;
-
-        width: 250px;
-        padding: 10px 0;
-        filter: blur(1px);
-    }
-
-    div.first img.git {
-        height: 70px;
-        top: 200px;
-    }
-
-    div.second img.git {
-        height: 70px;
-        top: 200px;
-    }
-
-    div.three img.git {
-        height: 70px;
-        top: 200px;
-    }
-
-    div.first img.focus {
+    .projects div img.focus {
         height: 70px;
         top: 100px;
     }
 
-    div.second img.focus {
+    .projects div img.git {
         height: 70px;
-        top: 100px;
+        top: 200px;
     }
 
-    div.three img.focus {
-        height: 70px;
-        top: 100px;
-    }
+
+
+
 }

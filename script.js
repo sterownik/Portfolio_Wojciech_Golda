@@ -168,6 +168,16 @@ $("div.three img.git").on("click", function () {
     document.querySelector("div.three a:nth-of-type(1)").href = "#";
     window.open("https://github.com/sterownik/mPogoda", "_self");
 })
+
+$("div.four img.git").on("click", function () {
+    document.querySelector("div.three a:nth-of-type(1)").href = "#";
+    window.open("https://github.com/sterownik/mCoronovirus", "_self");
+})
+$("div.four img.focus").on("click", function () {
+    document.querySelector("div.three a:nth-of-type(1)").href = "#";
+    window.open("https://sterownik.github.io/mCoronovirus/", "_self");
+})
+
 $("div.logogita").on("click", function () {
     window.open("https://github.com/sterownik?tab=repositories", "_self");
 })
@@ -207,6 +217,9 @@ $(window).on("scroll", function () {
 
     const wys7 = $(".three").outerHeight();
     const pos7 = $(".three").offset().top;
+
+    const wys8 = $(".four").outerHeight();
+    const pos8 = $(".four").offset().top;
 
     const windowHeight = $(window).height();
 
@@ -253,6 +266,11 @@ $(window).on("scroll", function () {
         $("p.three").addClass("animacjatytulprojektu");
     }
 
+    if (skroll > pos8 + wys8 - windowHeight) {
+        $("div.four a:nth-of-type(1)").addClass("klasaprojektyanimacja");
+        $("p.four").addClass("animacjatytulprojektu");
+    }
+
     // usuwanie animacji zeby byly nie widoczne po powroocie do poczatku
     if (skroll < 100) {
         //    $(".fa-arrow-left").animate({ opacity: '0' }, "0.2s");
@@ -286,5 +304,8 @@ $(window).on("scroll", function () {
         $("p.second").removeClass("animacjatytulprojektu");
         $("div.three a:nth-of-type(1)").removeClass("klasaprojektyanimacja");
         $("p.three").removeClass("animacjatytulprojektu");
+
+        $("div.four a:nth-of-type(1)").removeClass("klasaprojektyanimacja");
+        $("p.four").removeClass("animacjatytulprojektu");
     }
 })
