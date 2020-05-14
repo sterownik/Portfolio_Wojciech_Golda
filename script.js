@@ -160,6 +160,10 @@ $("div.three img.git").on("click", function () {
     document.querySelector("div.three a:nth-of-type(1)").href = "#";
     window.open("https://github.com/sterownik/mPogoda", "_self");
 })
+$("div.first img.git").on("click", function () {
+    document.querySelector("div.three a:nth-of-type(1)").href = "#";
+    window.open("https://github.com/sterownik/Referee-Master", "_self");
+})
 $("div.second img.git").on("click", function () {
     document.querySelector("div.three a:nth-of-type(1)").href = "#";
     window.open("https://github.com/sterownik/mFiszki", "_self");
