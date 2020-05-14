@@ -438,7 +438,7 @@
     try {
       document.createEvent('TouchEvent');
       alwaysShowNav = (this.options.alwaysShowNavOnTouchDevices) ? true : false;
-    } catch (e) { }
+    } catch (e) {}
 
     this.$lightbox.find('.lb-nav').show();
 
