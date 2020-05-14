@@ -4,7 +4,22 @@ var sprawdz = 1;
 var sprawdz2 = 1;
 var licznikikon = 0;
 var txt3 = "Nazywam się Wojciech Gołda i oto moje portfolio";
-var speed = 75;
+var speed = 65;
+var jezykpl = document.querySelector("img.pl");
+var jezykeng = document.querySelector("img.eng");
+jezykpl.addEventListener("click", function () {
+    console.log('polski');
+    forpolish();
+
+
+})
+jezykeng.addEventListener("click", function () {
+    // document.getElementById("text2").textContent = "I am Wojciech Gołda and this is my portfolio";
+    forenglish();
+
+
+
+})
 typeWriter();
 // napisy do wstawienia w sekcji umiejetnosci
 var umiejetności = ["Android", "HTML5", "CSS3", "JavaScript", "Java", "Github", "React.js", "Node.js"];
@@ -45,69 +60,7 @@ function lewe() {
     }, "slow");
     sprawdz = 2;
 }
-$(".fa-arrow-right").on("click", function () {
-    $("p.opis").removeClass("dodajopiszdolu");
-    $(".fab").removeClass(icons[licznikikon]);
-    $(".umiejetnosc").removeClass("efekt");
-    $("p.opis").removeClass("efektopis");
-    licznikikon++;
-    $(".umiejetnosc").animate({
-        opacity: '0.3'
-    }, "fast");
-    $(".umiejetnosc").animate({
-        opacity: '1'
-    }, "fast");
 
-    if (licznikikon == icons.length) {
-        licznikikon = 0;
-    }
-    $(".fab").animate({
-        opacity: '0'
-    }, "slow");
-    $(".umiejetnosc").addClass("efekt");
-    $(".fab").addClass(icons[licznikikon]);
-    $(".opis").text(opisy[licznikikon]);
-    $(".opis").addClass("efektopis");
-    $(".umiejetnosc").text(umiejetności[licznikikon]);
-    $(".fab").animate({
-        opacity: '1'
-    }, "slow");
-    zmientlo(licznikikon);
-
-})
-$(".fa-arrow-left").on("click", function () {
-    $(".tlo3p .opis").removeClass("dodajopiszdolu");
-    $(".tlo3 .fab").removeClass(icons[licznikikon]);
-    $(".tlo3 .umiejetnosc").removeClass("efekt");
-    $("p.opis").removeClass("efektopis");
-
-    $(".umiejetnosc").animate({
-        opacity: '0.3'
-    }, "fast");
-    $(".umiejetnosc").animate({
-        opacity: '1'
-    }, "fast");
-    licznikikon--;
-
-    if (licznikikon < 0) {
-        licznikikon = icons.length - 1;
-    }
-    $(".opis").css("opacity", "1");
-    $(".fab").animate({
-        opacity: '0'
-    }, "slow");
-    $(".umiejetnosc").addClass("efekt");
-    $(".fab").addClass(icons[licznikikon]);
-    $(".opis").text(opisy[licznikikon]);
-    $(".opis").addClass("efektopis");
-    $(".umiejetnosc").text(umiejetności[licznikikon]);
-    $(".fab").animate({
-        opacity: '1'
-    }, "slow");
-    zmientlo(licznikikon);
-
-
-})
 //zmiana umiejetnosci po nacisneiu
 function zmientlo(licznik) {
     for (i = 1; i <= 8; i++) {
@@ -199,6 +152,122 @@ $(".menu ul li a.kontakty").on("click", function () {
     $('body,html').animate({
         scrollTop: $(".contact").offset().top
     }, 1000);
+})
+
+function forenglish() {
+    jezykpl.classList.add("jezyki");
+    jezykeng.classList.remove("jezyki");
+    document.getElementById("text2").innerHTML = "I am Wojciech Gołda and this is my portfolio";
+    $(".menu ul li a.nauka").text("Study");
+    $(".menu ul li a.projekty").text("Projects");
+    $(".menu ul li a.kontakty").text("Contact");
+
+    $(".tlo p").html('In 2012 I started my studies at the Four High School in Rzeszów on the profile Mat-phy-inf<br>Three years later in 2015 I graduated from high school and passed my mature degree');
+    $(".tlo2 p").html('In 2016, I started engineering studies in computer science at the Rzeszów University of Technology to graduate in 2020 and receive an engineering diploma<br>From 2020, I studying Masters in Rzeszów University of Technology');
+    $(".tytul").text("Skills");
+    opisy = ["I have one year of commercial experience in programming applications for the android system, additionally, the topic of my engineering thesis was, among others, programming the mobile application ", " In college, science covered the scope of HTML5, hence I know the basics. For 5 months, the school has been designing its own websites using HTML5. I also gained knowledge on the WebSamuraj's temptation on the Udemy platform, ",
+        "I started learning the cascading style sheet in college and for 5 months in parallel with HTML I learn more information", "I also started learning JavaScript in college and after learning HTML and CSS I gain more advanced knowledge",
+        "Java is the best known by me because in this language I worked with commercial clusters and got to know it while writing my thesis",
+        "I got to know the Github platform in college and from the beginning of creating projects I use it and put my work on it",
+        "I plan to learn Reacta.js in the near future", "In the future I plan to learn more about Node.js"
+    ];
+    $(".opis").text(opisy[licznikikon]);
+    $("p.first").text("Mobile application Referee Master");
+    $("p.second").text("Mobile application mFiszki");
+    $("p.three").text("Mobile application pogodowa");
+    $("p.four").text("Web application Coronovirus");
+
+
+
+}
+
+function forpolish() {
+    jezykpl.classList.remove("jezyki");
+    jezykeng.classList.add("jezyki");
+
+    document.getElementById("text2").innerHTML = "Nazywam się Wojciech Gołda i oto moje portfolio";
+    $(".menu ul li a.nauka").text("Nauka");
+    $(".menu ul li a.projekty").text("Projekty");
+    $(".menu ul li a.kontakty").text("Kontakt");
+    $(".tlo p").html('W roku 2012 rozpocząłem nauke w IV Liceum Ogólnokształcącym w Rzeszowie na profilu Mat-fiz-inf<br>Trzy lata poźniej w roku 2015 ukończyłem szkołe średnią i zdałem mature');
+    $(".tlo2 p").html('W roku 2016 rozpocząłem studia inżynierskie o kierunku informatycznym naPolitechnice Rzeszowskiej by w roku 2020 je ukończyć i otrzymać dyplom inżyniera<br>Od roku 2020 dotychczas studiuje na studiach magisterskich o kierunku informatyka rownież na Politechnice')
+    $(".tytul").text("Umiejętności");
+
+    opisy = ["Mam roczne komercyjne doświadczenie w programowaniu aplikacji na system android dodatkowo tematem mojej pracy inżynierskiej było między innymi zaprogramowanie aplikacji mobilnej ", "Na studiach nauka obejmowała zakres HTML5 stąd znam podstawy. Od 5 miesięcy szkole się projektując własne strony za pomocą HTML5. Wiedzę zdobywałem również na kusie WebSamuraja na platformie Udemy",
+        "Nauke kaskadowego arkusza stylów rozpocząłem na studiach i od 5 miesięcy równolegle z HTMLem uczę sie kolejnych informacji", "Nauke JavaScripta rozpocząłem również na studiach i po poznaniu HTMLa oraz CSS zdobywam kolejną bardziej zaawansowaną wiedzę",
+        "Język Java jest przeze mnie najbardziej znany ponieważ w jęzku tym pracowałem z klinetami komercyjnymi oraz poznawałem go pisząc prace dyplomową",
+        "Platforme Github poznałem na studiach i od początku tworzenia przeze mnie projektów korzystam z niej i wrzucam na nią swoją pracę",
+        "W bliskiej przyszłosci planuje uczyć się Reacta.js", "W przyszłości planuje zgłebiać swoją wiedze na temad Node.js"
+    ];
+    $(".opis").text(opisy[licznikikon]);
+    $("p.first").text("Mobilna aplikacja Referee Master");
+    $("p.second").text("Mobilna aplikacja mFiszki");
+    $("p.three").text("Mobilna aplikacja pogodowa");
+    $("p.four").text("Webowa aplikacja Coronovirus");
+
+}
+$(".fa-arrow-right").on("click", function () {
+    $("p.opis").removeClass("dodajopiszdolu");
+    $(".fab").removeClass(icons[licznikikon]);
+    $(".umiejetnosc").removeClass("efekt");
+    $("p.opis").removeClass("efektopis");
+    licznikikon++;
+    $(".umiejetnosc").animate({
+        opacity: '0.3'
+    }, "fast");
+    $(".umiejetnosc").animate({
+        opacity: '1'
+    }, "fast");
+
+    if (licznikikon == icons.length) {
+        licznikikon = 0;
+    }
+    $(".fab").animate({
+        opacity: '0'
+    }, "slow");
+    $(".umiejetnosc").addClass("efekt");
+    $(".fab").addClass(icons[licznikikon]);
+    $(".opis").text(opisy[licznikikon]);
+    $(".opis").addClass("efektopis");
+    $(".umiejetnosc").text(umiejetności[licznikikon]);
+    $(".fab").animate({
+        opacity: '1'
+    }, "slow");
+    zmientlo(licznikikon);
+
+})
+$(".fa-arrow-left").on("click", function () {
+    $(".tlo3p .opis").removeClass("dodajopiszdolu");
+    $(".tlo3 .fab").removeClass(icons[licznikikon]);
+    $(".tlo3 .umiejetnosc").removeClass("efekt");
+    $("p.opis").removeClass("efektopis");
+
+    $(".umiejetnosc").animate({
+        opacity: '0.3'
+    }, "fast");
+    $(".umiejetnosc").animate({
+        opacity: '1'
+    }, "fast");
+    licznikikon--;
+
+    if (licznikikon < 0) {
+        licznikikon = icons.length - 1;
+    }
+    $(".opis").css("opacity", "1");
+    $(".fab").animate({
+        opacity: '0'
+    }, "slow");
+    $(".umiejetnosc").addClass("efekt");
+    $(".fab").addClass(icons[licznikikon]);
+    $(".opis").text(opisy[licznikikon]);
+    $(".opis").addClass("efektopis");
+    $(".umiejetnosc").text(umiejetności[licznikikon]);
+    $(".fab").animate({
+        opacity: '1'
+    }, "slow");
+    zmientlo(licznikikon);
+
+
 })
 
 // dodanie animacji po skrollu na dany element

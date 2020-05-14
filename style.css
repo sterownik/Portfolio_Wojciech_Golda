@@ -42,6 +42,43 @@ body {
     text-align: center;
 }
 
+.top img {
+    position: absolute;
+    height: 34px;
+    right: 16px;
+    cursor: pointer;
+    transition: .8s;
+    animation: jezyki 1.5s 3.7s both;
+}
+
+@keyframes jezyki {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.top img:hover {
+    transform: scale(1.2);
+}
+
+.top img.pl {
+    top: 48px;
+}
+
+.top img.eng {
+    top: 92px;
+}
+
+.jezyki {
+
+    opacity: 0.6;
+    filter: blur(2px);
+}
+
 
 .top i {
     font-size: 30px;
@@ -883,7 +920,25 @@ button {
 
 }
 
+
+
+
+
 @media (min-width: 768px) {
+    .top img {
+        position: absolute;
+        height: 64px;
+        right: 6px;
+    }
+
+    .top img.pl {
+        top: 68px;
+    }
+
+    .top img.eng {
+        top: 148px;
+    }
+
     .top p {
         font-size: 60px;
     }
