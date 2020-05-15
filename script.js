@@ -36,11 +36,11 @@ setTimeout(() => {
 // napisy do wstawienia w sekcji umiejetnosci
 var umiejetności = ["Android", "HTML5", "CSS3", "JavaScript", "Java", "Github", "React.js", "Node.js"];
 var icons = ["fa-android", "fa-html5", "fa-css3-alt", "fa-js", "fa-java", "fa-git-square", "fa-react", "fa-node-js"];
-var opisy = ["Mam roczne komercyjne doświadczenie w programowaniu aplikacji na system android dodatkowo tematem mojej pracy inżynierskiej było między innymi zaprogramowanie aplikacji mobilnej ", "Na studiach nauka obejmowała zakres HTML5 stąd znam podstawy. Od 5 miesięcy szkole się projektując własne strony za pomocą HTML5. Wiedzę zdobywałem również na kusie WebSamuraja na platformie Udemy",
-    "Nauke kaskadowego arkusza stylów rozpocząłem na studiach i od 5 miesięcy równolegle z HTMLem uczę sie kolejnych informacji", "Nauke JavaScripta rozpocząłem również na studiach i po poznaniu HTMLa oraz CSS zdobywam kolejną bardziej zaawansowaną wiedzę",
-    "Język Java jest przeze mnie najbardziej znany ponieważ w jęzku tym pracowałem z klinetami komercyjnymi oraz poznawałem go pisząc prace dyplomową",
-    "Platforme Github poznałem na studiach i od początku tworzenia przeze mnie projektów korzystam z niej i wrzucam na nią swoją pracę",
-    "W bliskiej przyszłosci planuje uczyć się Reacta.js", "W przyszłości planuje zgłebiać swoją wiedze na temad Node.js"
+var opisy = ["Mam roczne komercyjne doświadczenie w programowaniu aplikacji na system android, dodatkowo tematem mojej pracy inżynierskiej było między innymi zaprogramowanie programu na urządzenia mobilne.", "Na studiach nauka obejmowała zakres HTML5 stąd znam podstawy. Od 5 miesięcy szkole się projektując własne strony za pomocą HTML5. Wiedzę zdobywałem również na kusie WebSamuraja na platformie Udemy.",
+    "Nauke kaskadowego arkusza stylów rozpocząłem na studiach i od 5 miesięcy równolegle z HTMLem uczę sie kolejnych informacji.", "Nauke JavaScripta rozpocząłem również na studiach i po poznaniu HTMLa oraz CSS zdobywam kolejną bardziej zaawansowaną wiedzę.",
+    "Język Java jest przeze mnie najbardziej znany ponieważ w jęzku tym pracowałem z klinetami komercyjnymi oraz poznawałem go pisząc prace dyplomową.",
+    "Platforme Github poznałem na studiach i od początku tworzenia przeze mnie projektów korzystam z niej i wrzucam na nią swoją pracę.",
+    "W bliskiej przyszłosci planuje uczyć się Reacta.js", "W przyszłości planuje zgłebiać swoją wiedze na temad Node.js."
 ];
 var liczbaumiejetnosci = icons.length;
 $(".opis").text(opisy[0]);
@@ -201,11 +201,11 @@ function forenglish() {
     $(".tlo p").html('In 2012 I started my studies at the Four High School in Rzeszów on the profile Mat-phy-inf<br>Three years later in 2015 I graduated from high school and passed my mature degree');
     $(".tlo2 p").html('In 2016, I started engineering studies in computer science at the Rzeszów University of Technology to graduate in 2020 and receive an engineering diploma<br>From 2020, I studying Masters in Rzeszów University of Technology');
     $(".tytul").text("Skills");
-    opisy = ["I have one year of commercial experience in programming applications for the android system, additionally, the topic of my engineering thesis was, among others, programming the mobile application ", " In college, science covered the scope of HTML5, hence I know the basics. For 5 months, the school has been designing its own websites using HTML5. I also gained knowledge on the WebSamuraj's temptation on the Udemy platform, ",
-        "I started learning the cascading style sheet in college and for 5 months in parallel with HTML I learn more information", "I also started learning JavaScript in college and after learning HTML and CSS I gain more advanced knowledge",
-        "Java is the best known by me because in this language I worked with commercial clusters and got to know it while writing my thesis",
-        "I got to know the Github platform in college and from the beginning of creating projects I use it and put my work on it",
-        "I plan to learn Reacta.js in the near future", "In the future I plan to learn more about Node.js"
+    opisy = ["I have one year of commercial experience in programming applications for the android system, additionally, the topic of my engineering thesis was, among others, programming the mobile application.", " In college, science covered the scope of HTML5, hence I know the basics. For 5 months, the school has been designing its own websites using HTML5. I also gained knowledge on the WebSamuraj's temptation on the Udemy platform.",
+        "I started learning the cascading style sheet in college and for 5 months in parallel with HTML I learn more information.", "I also started learning JavaScript in college and after learning HTML and CSS I gain more advanced knowledge.",
+        "Java is the best known by me because in this language I worked with commercial clusters and got to know it while writing my thesis.",
+        "I got to know the Github platform in college and from the beginning of creating projects I use it and put my work on it.",
+        "I plan to learn Reacta.js in the near future", "In the future I plan to learn more about Node.js."
     ];
     $(".opis").text(opisy[licznikikon]);
     $("p.first").text("Mobile application Referee Master");
@@ -229,14 +229,14 @@ function forpolish() {
     $(".menu ul li a.projekty").text("Projekty");
     $(".menu ul li a.kontakty").text("Kontakt");
     $(".tlo p").html('W roku 2012 rozpocząłem nauke w IV Liceum Ogólnokształcącym w Rzeszowie na profilu Mat-fiz-inf<br>Trzy lata poźniej w roku 2015 ukończyłem szkołe średnią i zdałem mature');
-    $(".tlo2 p").html('W roku 2016 rozpocząłem studia inżynierskie o kierunku informatycznym naPolitechnice Rzeszowskiej by w roku 2020 je ukończyć i otrzymać dyplom inżyniera<br>Od roku 2020 dotychczas studiuje na studiach magisterskich o kierunku informatyka rownież na Politechnice')
+    $(".tlo2 p").html('W roku 2016 rozpocząłem studia inżynierskie o kierunku informatycznym na Politechnice Rzeszowskiej by w roku 2020 je ukończyć i otrzymać dyplom inżyniera.<br>Od roku 2020 dotychczas studiuje na studiach magisterskich o kierunku informatyka rownież na Politechnice Rzeszowskiej.')
     $(".tytul").text("Umiejętności");
 
-    opisy = ["Mam roczne komercyjne doświadczenie w programowaniu aplikacji na system android dodatkowo tematem mojej pracy inżynierskiej było między innymi zaprogramowanie aplikacji mobilnej ", "Na studiach nauka obejmowała zakres HTML5 stąd znam podstawy. Od 5 miesięcy szkole się projektując własne strony za pomocą HTML5. Wiedzę zdobywałem również na kusie WebSamuraja na platformie Udemy",
-        "Nauke kaskadowego arkusza stylów rozpocząłem na studiach i od 5 miesięcy równolegle z HTMLem uczę sie kolejnych informacji", "Nauke JavaScripta rozpocząłem również na studiach i po poznaniu HTMLa oraz CSS zdobywam kolejną bardziej zaawansowaną wiedzę",
-        "Język Java jest przeze mnie najbardziej znany ponieważ w jęzku tym pracowałem z klinetami komercyjnymi oraz poznawałem go pisząc prace dyplomową",
-        "Platforme Github poznałem na studiach i od początku tworzenia przeze mnie projektów korzystam z niej i wrzucam na nią swoją pracę",
-        "W bliskiej przyszłosci planuje uczyć się Reacta.js", "W przyszłości planuje zgłebiać swoją wiedze na temad Node.js"
+    opisy = ["Mam roczne komercyjne doświadczenie w programowaniu aplikacji na system android, dodatkowo tematem mojej pracy inżynierskiej było między innymi zaprogramowanie programu na urządzenia mobilne.", "Na studiach nauka obejmowała zakres HTML5 stąd znam podstawy. Od 5 miesięcy szkole się projektując własne strony za pomocą HTML5. Wiedzę zdobywałem również na kusie WebSamuraja na platformie Udemy.",
+        "Nauke kaskadowego arkusza stylów rozpocząłem na studiach i od 5 miesięcy równolegle z HTMLem uczę sie kolejnych informacji.", "Nauke JavaScripta rozpocząłem również na studiach i po poznaniu HTMLa oraz CSS zdobywam kolejną bardziej zaawansowaną wiedzę.",
+        "Język Java jest przeze mnie najbardziej znany ponieważ w jęzku tym pracowałem z klinetami komercyjnymi oraz poznawałem go pisząc prace dyplomową.",
+        "Platforme Github poznałem na studiach i od początku tworzenia przeze mnie projektów korzystam z niej i wrzucam na nią swoją pracę.",
+        "W bliskiej przyszłosci planuje uczyć się Reacta.js", "W przyszłości planuje zgłebiać swoją wiedze na temad Node.js."
     ];
     $(".opis").text(opisy[licznikikon]);
     $("p.first").text("Mobilna aplikacja Referee Master");
