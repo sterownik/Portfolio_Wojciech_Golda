@@ -35,11 +35,47 @@ body {
     text-shadow: 1px 1px 1px black;
     top: 30%;
     left: 0;
-    padding: 10px;
+    padding: 15px;
     transform: translateY(-50%);
     opacity: 0.9;
     width: 100%;
     text-align: center;
+}
+
+.top p+p {
+    display: block;
+    position: absolute;
+    font-size: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    color: #f0f3bd;
+
+    text-shadow: 1px 1px white;
+    top: 35%;
+    left: 0;
+    padding: 15px;
+    transform: translateY(-50%);
+    opacity: 0.9;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.top p+p+p {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Cantora One', sans-serif;
+    color: #a8dadc;
+    text-shadow: 1px 1px 1px black;
+    top: 40%;
+    left: 0;
+    padding: 15px;
+    transform: translateY(-50%);
+    opacity: 0.9;
+    width: 100%;
+    text-align: center;
+    text-transform: none;
 }
 
 .top img {
@@ -940,7 +976,22 @@ button {
     }
 
     .top p {
+        padding: 15px;
         font-size: 60px;
+    }
+
+    .top p+p {
+        padding: 15px;
+        top: 37%;
+        font-size: 63px;
+
+    }
+
+    .top p+p+p {
+        padding: 15px;
+        top: 44%;
+        font-size: 60px;
+
     }
 
     .menu {
@@ -1157,6 +1208,20 @@ button {
 @media (orientation:landscape) and (min-width: 812px) {
     .top p {
         font-size: 30px;
+    }
+
+    .top p+p {
+
+        top: 36%;
+        font-size: 33px;
+
+    }
+
+    .top p+p+p {
+
+        top: 42%;
+        font-size: 30px;
+
     }
 
     .tlo .budynek {

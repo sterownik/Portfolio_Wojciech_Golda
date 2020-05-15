@@ -1,9 +1,13 @@
 var i = 0;
 var w = 0;
+var k = 0;
+var j = 0;
 var sprawdz = 1;
 var sprawdz2 = 1;
 var licznikikon = 0;
-var txt3 = "Nazywam się Wojciech Gołda i oto moje portfolio";
+var txt3 = "Nazywam się";
+var txt4 = "Wojciech Gołda";
+var txt5 = "i oto moje portfolio";
 var speed = 65;
 var jezykpl = document.querySelector("img.pl");
 var jezykeng = document.querySelector("img.eng");
@@ -21,6 +25,14 @@ jezykeng.addEventListener("click", function () {
 
 })
 typeWriter();
+setTimeout(() => {
+    typeWriter2();
+}, 1215);
+setTimeout(() => {
+    typeWriter3();
+}, 2215);
+
+
 // napisy do wstawienia w sekcji umiejetnosci
 var umiejetności = ["Android", "HTML5", "CSS3", "JavaScript", "Java", "Github", "React.js", "Node.js"];
 var icons = ["fa-android", "fa-html5", "fa-css3-alt", "fa-js", "fa-java", "fa-git-square", "fa-react", "fa-node-js"];
@@ -82,6 +94,28 @@ function typeWriter() {
         document.getElementById("text2").innerHTML += txt3.charAt(w);
         w++;
         setTimeout(typeWriter, speed);
+    }
+
+
+    setTimeout(() => {
+
+    }, 2210);
+
+}
+
+function typeWriter2() {
+    if (k < txt4.length) {
+        document.getElementById("text3").innerHTML += txt4.charAt(k);
+        k++;
+        setTimeout(typeWriter2, speed);
+    }
+}
+
+function typeWriter3() {
+    if (j < txt5.length) {
+        document.getElementById("text4").innerHTML += txt5.charAt(j);
+        j++;
+        setTimeout(typeWriter3, speed);
     }
 }
 $(document).on("scroll", function () {
@@ -157,7 +191,9 @@ $(".menu ul li a.kontakty").on("click", function () {
 function forenglish() {
     jezykpl.classList.add("jezyki");
     jezykeng.classList.remove("jezyki");
-    document.getElementById("text2").innerHTML = "I am Wojciech Gołda and this is my portfolio";
+    document.getElementById("text2").innerHTML = "I am ";
+
+    document.getElementById("text4").innerHTML = "and this is my portfolio";
     $(".menu ul li a.nauka").text("Study");
     $(".menu ul li a.projekty").text("Projects");
     $(".menu ul li a.kontakty").text("Contact");
@@ -185,7 +221,10 @@ function forpolish() {
     jezykpl.classList.remove("jezyki");
     jezykeng.classList.add("jezyki");
 
-    document.getElementById("text2").innerHTML = "Nazywam się Wojciech Gołda i oto moje portfolio";
+
+    document.getElementById("text2").innerHTML = "Nazywam się ";
+
+    document.getElementById("text4").innerHTML = "i oto moje portfolio";
     $(".menu ul li a.nauka").text("Nauka");
     $(".menu ul li a.projekty").text("Projekty");
     $(".menu ul li a.kontakty").text("Kontakt");
