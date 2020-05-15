@@ -84,6 +84,7 @@ body {
     right: 16px;
     cursor: pointer;
     transition: .8s;
+    z-index: 3;
     animation: jezyki 1.5s 3.7s both;
 }
 
@@ -98,7 +99,8 @@ body {
 }
 
 .top img:hover {
-    transform: scale(1.2);
+    right: 22px;
+
 }
 
 .top img.pl {
@@ -965,6 +967,11 @@ button {
         position: absolute;
         height: 64px;
         right: 6px;
+    }
+
+    .top img:hover {
+
+        right: 12px;
     }
 
     .top img.pl {
