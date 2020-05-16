@@ -221,6 +221,7 @@ function forenglish() {
     $("p.second").text("Mobile application mFiszki");
     $("p.three").text("Mobile application pogodowa");
     $("p.four").text("Web application Coronovirus");
+    $("p.five").text("Web application Exchange Money");
 
 
 
@@ -252,6 +253,7 @@ function forpolish() {
     $("p.second").text("Mobilna aplikacja mFiszki");
     $("p.three").text("Mobilna aplikacja pogodowa");
     $("p.four").text("Webowa aplikacja Coronovirus");
+    $("p.five").text("Webowa aplikacja Exchange Money");
 
 }
 $(".fa-arrow-right").on("click", function () {
