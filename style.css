@@ -750,7 +750,7 @@ div.tlo3 {
 }
 
 .projects {
-    height: 200vh;
+    height: 250vh;
     overflow: hidden;
     position: relative;
     background-color: rgba(0, 0, 0, 0.7);
@@ -1170,7 +1170,7 @@ button {
     }
 
     .projects {
-        height: 100vh;
+        height: 150vh;
         overflow: hidden;
         position: relative;
         background-color: rgba(0, 0, 0, 0.7);
@@ -1179,9 +1179,17 @@ button {
     .projects div {
         overflow: hidden;
         position: relative;
-        height: 50%;
+        height: 33.222%;
+        margin: 0 auto;
         width: 50%;
         float: left;
+    }
+
+    .projects div+div+div+div+div {
+        left: 50%;
+        transform: translateX(-50%);
+        height: 33.222%;
+
     }
 
 
@@ -1316,7 +1324,7 @@ button {
 
 
     .projects {
-        height: 100vh;
+        height: 150vh;
         overflow: hidden;
         position: relative;
         background-color: rgba(0, 0, 0, 0.7);

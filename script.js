@@ -169,6 +169,15 @@ $("div.four img.focus").on("click", function () {
     window.open("https://sterownik.github.io/mCoronovirus/", "_self");
 })
 
+$("div.five img.git").on("click", function () {
+    document.querySelector("div.three a:nth-of-type(1)").href = "#";
+    window.open("https://github.com/sterownik/Exchange-Money", "_self");
+})
+$("div.five img.focus").on("click", function () {
+    document.querySelector("div.three a:nth-of-type(1)").href = "#";
+    window.open("https://sterownik.github.io/Exchange-Money/", "_self");
+})
+
 $("div.logogita").on("click", function () {
     window.open("https://github.com/sterownik?tab=repositories", "_self");
 })
@@ -333,6 +342,9 @@ $(window).on("scroll", function () {
     const wys8 = $(".four").outerHeight();
     const pos8 = $(".four").offset().top;
 
+    const wys9 = $(".five").outerHeight();
+    const pos9 = $(".five").offset().top;
+
     const windowHeight = $(window).height();
 
     if (skroll > pos2 + wys2 - windowHeight) {
@@ -382,6 +394,10 @@ $(window).on("scroll", function () {
         $("div.four a:nth-of-type(1)").addClass("klasaprojektyanimacja");
         $("p.four").addClass("animacjatytulprojektu");
     }
+    if (skroll > pos9 + wys9 - windowHeight) {
+        $("div.five a:nth-of-type(1)").addClass("klasaprojektyanimacja");
+        $("p.five").addClass("animacjatytulprojektu");
+    }
 
     // usuwanie animacji zeby byly nie widoczne po powroocie do poczatku
     if (skroll < 100) {
@@ -419,5 +435,8 @@ $(window).on("scroll", function () {
 
         $("div.four a:nth-of-type(1)").removeClass("klasaprojektyanimacja");
         $("p.four").removeClass("animacjatytulprojektu");
+
+        $("div.five a:nth-of-type(1)").removeClass("klasaprojektyanimacja");
+        $("p.five").removeClass("animacjatytulprojektu");
     }
 })
