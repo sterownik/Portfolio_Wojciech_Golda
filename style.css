@@ -81,7 +81,7 @@ body {
 .top img.pl,
 .top img.eng {
     position: absolute;
-    height: 34px;
+    height: 49px;
     right: 16px;
     cursor: pointer;
     transition: .8s;
@@ -102,7 +102,7 @@ a.cv {
 
 img.circullum {
 
-    height: 34px;
+    height: 49px;
 
 }
 
@@ -132,7 +132,7 @@ img.circullum {
 }
 
 .top img.eng {
-    top: 92px;
+    top: 107px;
 }
 
 .jezyki {
@@ -994,7 +994,7 @@ button {
     .top img.pl,
     .top img.eng {
         position: absolute;
-        height: 64px;
+        height: 74px;
         right: 6px;
         cursor: pointer;
         transition: .8s;
@@ -1016,7 +1016,7 @@ button {
 
 
     img.circullum {
-        height: 64px;
+        height: 74px;
     }
 
     .top img.pl:hover,
@@ -1033,7 +1033,7 @@ button {
     }
 
     .top img.eng {
-        top: 148px;
+        top: 158px;
     }
 
     .top p {
