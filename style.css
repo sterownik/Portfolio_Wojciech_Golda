@@ -112,10 +112,22 @@ body {
 }
 
 .jezyki {
-
     opacity: 0.6;
     filter: blur(2px);
 }
+
+img.circullum {
+    position: absolute;
+    height: 34px;
+    right: 16px;
+    top: 48px;
+    cursor: pointer;
+    transition: .8s;
+    z-index: 3;
+    animation: jezyki 1.5s 3.7s both;
+}
+
+
 
 
 .top i {
