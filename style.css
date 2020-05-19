@@ -78,7 +78,8 @@ body {
     text-transform: none;
 }
 
-.top img {
+.top img.pl,
+.top img.eng {
     position: absolute;
     height: 34px;
     right: 16px;
@@ -86,6 +87,23 @@ body {
     transition: .8s;
     z-index: 3;
     animation: jezyki 1.5s 3.7s both;
+}
+
+a.cv {
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 48px;
+    cursor: pointer;
+    transition: .8s;
+    z-index: 3;
+    animation: jezyki 1.5s 3.7s both;
+}
+
+img.circullum {
+
+    height: 34px;
+
 }
 
 @keyframes jezyki {
@@ -98,8 +116,14 @@ body {
     }
 }
 
-.top img:hover {
-    right: 22px;
+.top img.pl:hover,
+.top img.eng:hover {
+    right: 23px;
+
+}
+
+.top img.circullum:hover {
+    right: 23px;
 
 }
 
@@ -116,16 +140,7 @@ body {
     filter: blur(2px);
 }
 
-img.circullum {
-    position: absolute;
-    height: 34px;
-    right: 16px;
-    top: 48px;
-    cursor: pointer;
-    transition: .8s;
-    z-index: 3;
-    animation: jezyki 1.5s 3.7s both;
-}
+
 
 
 
@@ -975,15 +990,42 @@ button {
 
 
 @media (min-width: 768px) {
-    .top img {
+
+    .top img.pl,
+    .top img.eng {
         position: absolute;
         height: 64px;
         right: 6px;
+        cursor: pointer;
+        transition: .8s;
+        z-index: 3;
+        animation: jezyki 1.5s 3.7s both;
     }
 
-    .top img:hover {
+    a.cv {
+        display: block;
+        position: absolute;
+        left: 6px;
+        top: 68px;
+        cursor: pointer;
+        transition: .8s;
+        z-index: 3;
+        animation: jezyki 1.5s 3.7s both;
+    }
 
-        right: 12px;
+
+
+    img.circullum {
+        height: 64px;
+    }
+
+    .top img.pl:hover,
+    .top img.eng:hover {
+        right: 21px;
+    }
+
+    .top a.cv:hover {
+        left: 21px;
     }
 
     .top img.pl {
