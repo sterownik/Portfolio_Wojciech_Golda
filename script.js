@@ -10,6 +10,7 @@ var txt4 = "Wojciech Gołda";
 var txt5 = "i oto moje portfolio";
 var speed = 65;
 var jezykpl = document.querySelector("img.pl");
+var googleplay = document.querySelector("img.googleplay");
 var jezykeng = document.querySelector("img.eng");
 jezykpl.addEventListener("click", function () {
     console.log('polski');
@@ -17,6 +18,9 @@ jezykpl.addEventListener("click", function () {
 
 
 })
+googleplay.addEventListener("click", function () {
+    window.open("https://play.google.com/store/apps/developer?id=Wojciech+Go%C5%82da", "_self");
+});
 jezykeng.addEventListener("click", function () {
     // document.getElementById("text2").textContent = "I am Wojciech Gołda and this is my portfolio";
     forenglish();

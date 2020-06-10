@@ -89,6 +89,16 @@ body {
     animation: jezyki 1.5s 3.7s both;
 }
 
+.top img.googleplay {
+    position: absolute;
+    height: 49px;
+    left: 16px;
+    cursor: pointer;
+    transition: .8s;
+    z-index: 3;
+    animation: jezyki 1.5s 3.7s both;
+}
+
 a.cv {
     display: block;
     position: absolute;
@@ -119,7 +129,10 @@ img.circullum {
 .top img.pl:hover,
 .top img.eng:hover {
     right: 23px;
+}
 
+.top img.googleplay:hover {
+    left: 23px;
 }
 
 .top img.circullum:hover {
@@ -138,6 +151,10 @@ img.circullum {
 .jezyki {
     opacity: 0.6;
     filter: blur(2px);
+}
+
+.top img.googleplay {
+    top: 107px;
 }
 
 
@@ -1002,6 +1019,16 @@ button {
         animation: jezyki 1.5s 3.7s both;
     }
 
+    .top img.googleplay {
+        position: absolute;
+        height: 74px;
+        left: 6px;
+        cursor: pointer;
+        transition: .8s;
+        z-index: 3;
+        animation: jezyki 1.5s 3.7s both;
+    }
+
     a.cv {
         display: block;
         position: absolute;
@@ -1024,6 +1051,10 @@ button {
         right: 21px;
     }
 
+    .top img.googleplay:hover {
+        right: 21px;
+    }
+
     .top a.cv:hover {
         left: 21px;
     }
@@ -1033,6 +1064,10 @@ button {
     }
 
     .top img.eng {
+        top: 158px;
+    }
+
+    .top img.googleplay {
         top: 158px;
     }
 
