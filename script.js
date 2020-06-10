@@ -13,7 +13,7 @@ var jezykpl = document.querySelector("img.pl");
 var googleplay = document.querySelector("img.googleplay");
 var jezykeng = document.querySelector("img.eng");
 jezykpl.addEventListener("click", function () {
-    console.log('polski');
+    // console.log('polski');
     forpolish();
 
 
@@ -84,10 +84,10 @@ function zmientlo(licznik) {
         $(".tlo3 div.kropki div.kropka:nth-of-type(" + i + ")").removeClass("odejmowanietla");
         if (i <= licznik + 1) {
             $(".tlo3 div.kropki div.kropka:nth-of-type(" + i + ")").addClass("dodawanietla");
-            console.log("dodaj" + i);
+            //  console.log("dodaj" + i);
 
         } else {
-            console.log("odejmij" + i);
+            //     console.log("odejmij" + i);
             $(".tlo3 div.kropki div.kropka:nth-of-type(" + i + ")").addClass("odejmowanietla");
         }
     }
@@ -132,7 +132,7 @@ $(document).on("scroll", function () {
 })
 // animacja strzalki w headerze
 $(".fa-arrow-down").on("click", function () {
-    console.log("kliknieto");
+    //   console.log("kliknieto");
     //robi odrazu id
 
     $('.schools').addClass("height");
@@ -356,7 +356,7 @@ $(window).on("scroll", function () {
     if (skroll > pos2 + wys2 - windowHeight) {
         $(".tlo .budynek").addClass("activeb");
         $(".tlo p").addClass("tekst");
-        console.log("teraz");
+        //  console.log("teraz");
     }
 
     if (skroll > pos3 + wys3 - windowHeight) {
