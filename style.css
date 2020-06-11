@@ -277,7 +277,8 @@ div.highschool {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(img/highschool.jpg);
+    /* background-image: url(img/highschool.jpg); */
+    background-color: rgba(255, 255, 255, 0.5);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -330,8 +331,8 @@ div.highschool .tlo {
     text-align: justify;
     width: 100%;
     padding: 0 10px;
-    box-shadow: 0 0 3px white;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* box-shadow: 0 0 3px white; */
+
 }
 
 .tlo p.tekst {
