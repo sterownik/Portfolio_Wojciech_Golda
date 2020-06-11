@@ -278,7 +278,7 @@ div.highschool {
     top: 0;
     left: 0;
     /* background-image: url(img/highschool.jpg); */
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -325,7 +325,7 @@ div.highschool .tlo {
     opacity: 0;
     margin-top: 20%;
     font-size: 16px;
-    color: black;
+    color: rgba(255, 255, 255, 0.6);
     font-family: 'Cantora One', sans-serif;
     display: block;
     text-align: justify;
