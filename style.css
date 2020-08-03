@@ -1310,18 +1310,13 @@ button {
     .projects div {
         overflow: hidden;
         position: relative;
-        height: 33.222%;
+        height: 25%;
         margin: 0 auto;
         width: 50%;
         float: left;
     }
 
-    .projects div+div+div+div+div {
-        left: 50%;
-        transform: translateX(-50%);
-        height: 33.222%;
 
-    }
 
 
 
@@ -1455,7 +1450,7 @@ button {
 
 
     .projects {
-        height: 150vh;
+        height: 200vh;
         overflow: hidden;
         position: relative;
         background-color: rgba(0, 0, 0, 0.7);

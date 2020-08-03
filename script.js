@@ -182,6 +182,26 @@ $("div.five img.focus").on("click", function () {
     window.open("https://sterownik.github.io/Exchange-Money/", "_self");
 })
 
+
+$("div.six img.git").on("click", function () {
+    document.querySelector("div.three a:nth-of-type(1)").href = "#";
+    window.open("https://github.com/sterownik/Example-Company", "_self");
+})
+$("div.six img.focus").on("click", function () {
+    document.querySelector("div.three a:nth-of-type(1)").href = "#";
+    window.open("https://sterownik.github.io/Example-Company/", "_self");
+})
+
+
+$("div.seven img.git").on("click", function () {
+    document.querySelector("div.three a:nth-of-type(1)").href = "#";
+    window.open("https://github.com/sterownik/Random-Generator", "_self");
+})
+$("div.seven img.focus").on("click", function () {
+    document.querySelector("div.three a:nth-of-type(1)").href = "#";
+    window.open("https://sterownik.github.io/Random-Generator/", "_self");
+})
+
 $("div.logogita").on("click", function () {
     window.open("https://github.com/sterownik?tab=repositories", "_self");
 })
@@ -226,6 +246,8 @@ function forenglish() {
     $("p.three").text("Mobile application pogodowa");
     $("p.four").text("Web application Coronovirus");
     $("p.five").text("Web application Exchange Money");
+    $("p.six").text("Web Example Company");
+    $("p.seven").text("Web App Random Generator");
 
 
 
@@ -258,6 +280,8 @@ function forpolish() {
     $("p.three").text("Mobilna aplikacja pogodowa");
     $("p.four").text("Webowa aplikacja Coronovirus");
     $("p.five").text("Webowa aplikacja Exchange Money");
+    $("p.six").text("Strona Web Firmy");
+    $("p.seven").text("Webowa aplikacja generatora liczb losowych");
 
 }
 $(".fa-arrow-right").on("click", function () {
@@ -351,6 +375,12 @@ $(window).on("scroll", function () {
     const wys9 = $(".five").outerHeight();
     const pos9 = $(".five").offset().top;
 
+    const wys10 = $(".six").outerHeight();
+    const pos10 = $(".six").offset().top;
+
+    const wys11 = $(".seven").outerHeight();
+    const pos11 = $(".seven").offset().top;
+
     const windowHeight = $(window).height();
 
     if (skroll > pos2 + wys2 - windowHeight) {
@@ -405,6 +435,16 @@ $(window).on("scroll", function () {
         $("p.five").addClass("animacjatytulprojektu");
     }
 
+    if (skroll > pos10 + wys10 - windowHeight) {
+        $("div.six a:nth-of-type(1)").addClass("klasaprojektyanimacja");
+        $("p.six").addClass("animacjatytulprojektu");
+    }
+
+    if (skroll > pos11 + wys11 - windowHeight) {
+        $("div.seven a:nth-of-type(1)").addClass("klasaprojektyanimacja");
+        $("p.seven").addClass("animacjatytulprojektu");
+    }
+
     // usuwanie animacji zeby byly nie widoczne po powroocie do poczatku
     if (skroll < 100) {
         //    $(".fa-arrow-left").animate({ opacity: '0' }, "0.2s");
@@ -444,5 +484,11 @@ $(window).on("scroll", function () {
 
         $("div.five a:nth-of-type(1)").removeClass("klasaprojektyanimacja");
         $("p.five").removeClass("animacjatytulprojektu");
+
+        $("div.six a:nth-of-type(1)").removeClass("klasaprojektyanimacja");
+        $("p.six").removeClass("animacjatytulprojektu");
+
+        $("div.seven a:nth-of-type(1)").removeClass("klasaprojektyanimacja");
+        $("p.seven").removeClass("animacjatytulprojektu");
     }
 })
